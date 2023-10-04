@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>short_description</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Short Description contains test warning</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+if (g_form.getValue('short_description').indexOf('test')>=0)
+{
+	g_form.showFieldMsg('short_description','bear in mind this ticket will be considered test as it contains "test"');
+	userdata();
+}
+else
+{
+	g_form.hideFieldMsg('short_description');
+}
+   //Type appropriate comment here, and begin script below
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>narendranath.reddy</sys_created_by>
+        <sys_created_on>2023-09-14 13:53:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d88589519751711081a6bb46f053af42</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Short Description contains test warning</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_script_client_d88589519751711081a6bb46f053af42</sys_update_name>
+        <sys_updated_by>narendranath.reddy</sys_updated_by>
+        <sys_updated_on>2023-10-04 05:59:30</sys_updated_on>
+        <table>incident</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</claim_owner_scope>
+        <claim_timestamp>18af94519f70000001</claim_timestamp>
+        <metadata_update_name>sys_script_client_d88589519751711081a6bb46f053af42</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>GlobalScopeChagnes</previous_claim_name>
+        <previous_claim_scope>bd98deaf9765311081a6bb46f053af78</previous_claim_scope>
+        <sys_created_by>narendranath.reddy</sys_created_by>
+        <sys_created_on>2023-10-04 05:59:30</sys_created_on>
+        <sys_id>47595e2397a5311081a6bb46f053af71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>narendranath.reddy</sys_updated_by>
+        <sys_updated_on>2023-10-04 05:59:30</sys_updated_on>
+    </sys_claim>
+</record_update>

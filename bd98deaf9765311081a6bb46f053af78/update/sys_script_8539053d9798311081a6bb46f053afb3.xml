@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>public</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>incident</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Incident BR with Functions</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[function globalbr(gr){
+	gs.addInfoMessage(gr.getTableName());	
+}
+function validateadmin(roles){
+	var userisadmin=false;
+	for(var i=0;i<roles.length;i++)
+	{
+        //gs.info(roles[i]);
+		if(roles[i]=='admin')
+		{
+			userisadmin=true;
+		}
+	}
+	return userisadmin;
+}
+var funcobjs= {
+'userroles': function(user){return gs.getUser().getUserByID(user).getMyGroups();}
+};
+
+//(function temp(){gs.addInfoMessage('Message from seft invoking expression of funtions BR');})();
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>narendranath.reddy</sys_created_by>
+        <sys_created_on>2023-07-28 10:21:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8539053d9798311081a6bb46f053afb3</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>Incident BR with Functions</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_script_8539053d9798311081a6bb46f053afb3</sys_update_name>
+        <sys_updated_by>narendranath.reddy</sys_updated_by>
+        <sys_updated_on>2023-10-04 05:59:29</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=8539053d9798311081a6bb46f053afb3"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</claim_owner_scope>
+        <claim_timestamp>18af94519920000001</claim_timestamp>
+        <metadata_update_name>sys_script_8539053d9798311081a6bb46f053afb3</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>GlobalScopeChagnes</previous_claim_name>
+        <previous_claim_scope>bd98deaf9765311081a6bb46f053af78</previous_claim_scope>
+        <sys_created_by>narendranath.reddy</sys_created_by>
+        <sys_created_on>2023-10-04 05:59:29</sys_created_on>
+        <sys_id>0b595e2397a5311081a6bb46f053af52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>narendranath.reddy</sys_updated_by>
+        <sys_updated_on>2023-10-04 05:59:29</sys_updated_on>
+    </sys_claim>
+</record_update>

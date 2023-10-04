@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <condition/>
+        <description>Allow list_edit for all fields in incident, if the ACL script returns true.</description>
+        <name>incident.*</name>
+        <operation display_value="list_edit">54f535270a0a0b8c007c67009ab2bdc0</operation>
+        <script><![CDATA[answer=false;]]></script>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>narendranath.reddy</sys_created_by>
+        <sys_created_on>2023-08-28 11:20:15</sys_created_on>
+        <sys_id>c17f70bb97b0f91081a6bb46f053af86</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>incident.*</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_security_acl_c17f70bb97b0f91081a6bb46f053af86</sys_update_name>
+        <sys_updated_by>narendranath.reddy</sys_updated_by>
+        <sys_updated_on>2023-10-04 05:59:28</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</claim_owner_scope>
+        <claim_timestamp>18af94514450000001</claim_timestamp>
+        <metadata_update_name>sys_security_acl_c17f70bb97b0f91081a6bb46f053af86</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>GlobalScopeChagnes</previous_claim_name>
+        <previous_claim_scope>bd98deaf9765311081a6bb46f053af78</previous_claim_scope>
+        <sys_created_by>narendranath.reddy</sys_created_by>
+        <sys_created_on>2023-10-04 05:59:28</sys_created_on>
+        <sys_id>3a5956eb9725311081a6bb46f053af5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>narendranath.reddy</sys_updated_by>
+        <sys_updated_on>2023-10-04 05:59:28</sys_updated_on>
+    </sys_claim>
+</record_update>

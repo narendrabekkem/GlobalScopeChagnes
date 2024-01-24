@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_filter_option_dynamic">
+    <sys_filter_option_dynamic action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <available_for_default>false</available_for_default>
+        <available_for_filter>true</available_for_filter>
+        <available_for_ref_qual>false</available_for_ref_qual>
+        <field_type display_value="Reference">52a227c1bf3320001875647fcf07396a</field_type>
+        <label>Admin Users</label>
+        <order/>
+        <roles/>
+        <script>new global.GetAdminUsersSI().DynamicFilter()</script>
+        <script_reference_id/>
+        <script_reference_table/>
+        <sys_class_name>sys_filter_option_dynamic</sys_class_name>
+        <sys_created_by>narendranath.reddy</sys_created_by>
+        <sys_created_on>2023-12-19 14:37:23</sys_created_on>
+        <sys_id>b57863cc975fb51081a6bb46f053afd5</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Admin Users</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_filter_option_dynamic_b57863cc975fb51081a6bb46f053afd5</sys_update_name>
+        <sys_updated_by>narendranath.reddy</sys_updated_by>
+        <sys_updated_on>2024-01-24 14:58:47</sys_updated_on>
+        <table>sys_user</table>
+        <table_containing_filter/>
+    </sys_filter_option_dynamic>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</claim_owner_scope>
+        <claim_timestamp>18d3bfb15990000001</claim_timestamp>
+        <metadata_update_name>sys_filter_option_dynamic_b57863cc975fb51081a6bb46f053afd5</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>GlobalScopeChagnes</previous_claim_name>
+        <previous_claim_scope>bd98deaf9765311081a6bb46f053af78</previous_claim_scope>
+        <sys_created_by>narendranath.reddy</sys_created_by>
+        <sys_created_on>2024-01-24 14:58:47</sys_created_on>
+        <sys_id>7ad6c93797f3bd9081a6bb46f053af89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>narendranath.reddy</sys_updated_by>
+        <sys_updated_on>2024-01-24 14:58:47</sys_updated_on>
+    </sys_claim>
+</record_update>

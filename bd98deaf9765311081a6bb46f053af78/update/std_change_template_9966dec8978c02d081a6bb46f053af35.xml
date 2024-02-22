@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="std_change_template">
+    <std_change_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <global>true</global>
+        <group/>
+        <groups/>
+        <link_element/>
+        <name>Azure Server Create</name>
+        <next/>
+        <next_child/>
+        <roles/>
+        <short_description>Azure Server Create</short_description>
+        <show_on_template_bar>false</show_on_template_bar>
+        <stand_alone>false</stand_alone>
+        <sys_class_name>std_change_template</sys_class_name>
+        <sys_created_by>narendranath.reddy</sys_created_by>
+        <sys_created_on>2024-01-25 15:24:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9966dec8978c02d081a6bb46f053af35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Azure Server Create</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>std_change_template_9966dec8978c02d081a6bb46f053af35</sys_update_name>
+        <sys_updated_by>narendranath.reddy</sys_updated_by>
+        <sys_updated_on>2024-01-25 15:24:46</sys_updated_on>
+        <table>change_request</table>
+        <template>short_description=Include a title for your change no greater than 100 characters^description=Describe what you plan to do^implementation_plan=List the steps in order of completion that will be worked through when implementing this change.&#13;
+&#13;
+Note who will perform each step and whether there are dependencies&#13;
+			between steps.^backout_plan=Describe the steps you will take to revert the change to its pre-implementation state.&#13;
+&#13;
+At what point during the implementation will you take the decision to&#13;
+			backout your change?&#13;
+&#13;
+			Does your change window include time to backout if you need&#13;
+			to?^test_plan=Explain what testing you have done or will do prior to implementation that gives you confidence this change will be successful.&#13;
+&#13;
+Describe the tests that will be carried out after implementation to confirm&#13;
+			that the change has been successful.^assignment_group=c797091a40d9e110f8777134cdb008eb^justification=test^risk_impact_analysis=test^EQ</template>
+        <user display_value="Narendranath Reddy">c5da428b97cf311081a6bb46f053af05</user>
+        <view/>
+    </std_change_template>
+</record_update>

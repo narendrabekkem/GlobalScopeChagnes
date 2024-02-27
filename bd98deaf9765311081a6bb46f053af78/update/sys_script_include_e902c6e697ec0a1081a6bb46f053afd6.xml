@@ -11,13 +11,19 @@
 firstclass.prototype = {
     initialize: function() {
 		this.name='first class';
-		secondclass.prototype.initialize.call(this)
+		secondclass.prototype.initialize.call(this);//calling second class constructor fucntion to include its class properties too.
     },
+	//Getter method accept property name as parameter and return the property value of 'this' obj (Current initiated class object)
 	classpropget:function(parm){
 		return this[parm];
 	},
+	//Setter method accepts two params, one is property name and other is value. This function sets the prop value to 'this' obj (Current initiated class object)
 	classpropset:function(value, parm){
 		this[parm]=value;
+	},
+	//same as setter function but we are creating a property and setting a hardcoded value
+	func: function(){
+		this.newprop='Prop set in fucntion'; 
 	},
 
     type: 'doubleclass'
@@ -37,14 +43,14 @@ secondclass.prototype={
         <sys_created_by>narendranath.reddy</sys_created_by>
         <sys_created_on>2024-02-27 04:53:57</sys_created_on>
         <sys_id>e902c6e697ec0a1081a6bb46f053afd6</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>doubleclass</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
         <sys_update_name>sys_script_include_e902c6e697ec0a1081a6bb46f053afd6</sys_update_name>
         <sys_updated_by>narendranath.reddy</sys_updated_by>
-        <sys_updated_on>2024-02-27 05:14:17</sys_updated_on>
+        <sys_updated_on>2024-02-27 05:26:28</sys_updated_on>
     </sys_script_include>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</claim_owner_scope>

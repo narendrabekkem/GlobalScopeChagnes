@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.doubleclass</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>doubleclass</name>
+        <script><![CDATA[var firstclass = Class.create();
+firstclass.prototype = {
+    initialize: function() {
+		this.name='first class';
+		secondclass.prototype.initialize.call(this)
+    },
+	classpropget:function(parm){
+		return this[parm];
+	},
+	classpropset:function(value, parm){
+		this[parm]=value;
+	},
+
+    type: 'doubleclass'
+};
+
+var secondclass=Class.create();
+secondclass.prototype={
+	initialize:function(){
+		this.namex='secondclass';
+	},
+	classprop:function(){
+		return this.name;
+	}
+
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>narendranath.reddy</sys_created_by>
+        <sys_created_on>2024-02-27 04:53:57</sys_created_on>
+        <sys_id>e902c6e697ec0a1081a6bb46f053afd6</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>doubleclass</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_script_include_e902c6e697ec0a1081a6bb46f053afd6</sys_update_name>
+        <sys_updated_by>narendranath.reddy</sys_updated_by>
+        <sys_updated_on>2024-02-27 05:14:17</sys_updated_on>
+    </sys_script_include>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</claim_owner_scope>
+        <claim_timestamp>18de8fc2d740000001</claim_timestamp>
+        <metadata_update_name>sys_script_include_e902c6e697ec0a1081a6bb46f053afd6</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>GlobalScopeChagnes</previous_claim_name>
+        <previous_claim_scope>bd98deaf9765311081a6bb46f053af78</previous_claim_scope>
+        <sys_created_by>narendranath.reddy</sys_created_by>
+        <sys_created_on>2024-02-27 05:14:17</sys_created_on>
+        <sys_id>dc274aa297204a1081a6bb46f053af7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>narendranath.reddy</sys_updated_by>
+        <sys_updated_on>2024-02-27 05:14:17</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="da644824472fc2105afe9889316d4338" extends="sys_import_set_row" label="Load CMDB with Robust Transform" max_length="40" name="u_cmdb_load_robusttransform" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Business Service" label="Business Service" max_length="40" name="u_business_service" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Server" label="Server" max_length="40" name="u_server" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Type" label="Type" max_length="40" name="u_type" type="string"/>
+    </element>
+</database>

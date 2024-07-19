@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_entity_mapping">
+    <sys_rte_eb_entity_mapping action="INSERT_OR_UPDATE">
+        <condition_script><![CDATA[/* Example Script 
+ (function() {
+ 
+         //step1: access the input variables
+         if (input && input.temp.u_type == 'Disk') {
+         //step2: return true/false 
+            return true;
+         }
+         return false;
+ 
+ })();
+ */
+ 
+ (function(input) {
+     // Add your code here.
+ })(input);]]></condition_script>
+        <encoded_query/>
+        <entity_mapping_group/>
+        <ignore>false</ignore>
+        <is_conditional>false</is_conditional>
+        <name>Load Relationship</name>
+        <order>600</order>
+        <source_sys_rte_eb_entity display_value="Intermediate Table">7e95c8a4472fc2105afe9889316d43b9</source_sys_rte_eb_entity>
+        <sys_class_name>sys_rte_eb_entity_mapping</sys_class_name>
+        <sys_created_by>narendranath.reddy</sys_created_by>
+        <sys_created_on>2024-07-18 18:13:39</sys_created_on>
+        <sys_id>d93b0464476fc2105afe9889316d4327</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Load Relationship</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Robust Transform CIs ETL">c2d44c64472fc2105afe9889316d431f</sys_rte_eb_definition>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_rte_eb_entity_mapping_d93b0464476fc2105afe9889316d4327</sys_update_name>
+        <sys_updated_by>narendranath.reddy</sys_updated_by>
+        <sys_updated_on>2024-07-19 05:35:07</sys_updated_on>
+        <target_sys_rte_eb_entity display_value="Relationship from CI to Service">a0b70c2c472fc2105afe9889316d43cf</target_sys_rte_eb_entity>
+    </sys_rte_eb_entity_mapping>
+</record_update>

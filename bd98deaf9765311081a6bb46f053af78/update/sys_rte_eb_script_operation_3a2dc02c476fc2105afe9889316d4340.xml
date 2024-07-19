@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_script_operation">
+    <sys_rte_eb_script_operation action="INSERT_OR_UPDATE">
+        <conditional_fields/>
+        <conditional_script><![CDATA[/* Example Script
+(function(batch, output) {
+    for (var i = 0; i < batch.length; i++) {
+        
+        // step1: access the input variables
+        var a = batch[i].input;
+
+        // step2: your script code goes here
+        // based on the input variables assign variable 'b' to true or false.
+        var b = true; // or false;
+
+        // step3: set the output for each element
+        output[i] = b;
+    }
+})(batch, output);
+*/
+(function(batch, output) {
+    // add your code here
+    
+})(batch, output);]]></conditional_script>
+        <is_conditional>false</is_conditional>
+        <name>Set Default Relationship Type</name>
+        <operation_group/>
+        <order>100</order>
+        <script><![CDATA[/* Example Script 
+ (function(batch, output) {
+     for (var i = 0; i < batch.length; i++) {
+ 
+         //step1: access the input variables
+         var a = batch[i].input; //Value of the source field. 
+ 
+         //step2: Your script/code goes here.
+         var b = a + 1;
+ 
+         //step3: set the output for each elements
+         output[i] = b;
+     }
+ 
+ })(batch, output);
+ */
+ 
+ (function(batch, output) {
+	for (var item in batch)
+	{
+		output[item]='Depends on::Used by';
+	}
+  
+ })(batch, output);]]></script>
+        <source_sys_rte_eb_field display_value="Type">498acc24476fc2105afe9889316d43ee</source_sys_rte_eb_field>
+        <source_sys_rte_eb_fields/>
+        <sys_class_name>sys_rte_eb_script_operation</sys_class_name>
+        <sys_created_by>narendranath.reddy</sys_created_by>
+        <sys_created_on>2024-07-18 18:24:53</sys_created_on>
+        <sys_id>3a2dc02c476fc2105afe9889316d4340</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Set Default Relationship Type</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Robust Transform CIs ETL">c2d44c64472fc2105afe9889316d431f</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="Relationship from CI to Service">a0b70c2c472fc2105afe9889316d43cf</sys_rte_eb_entity>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_rte_eb_script_operation_3a2dc02c476fc2105afe9889316d4340</sys_update_name>
+        <sys_updated_by>narendranath.reddy</sys_updated_by>
+        <sys_updated_on>2024-07-18 19:20:21</sys_updated_on>
+        <target_sys_rte_eb_field display_value="Type">498acc24476fc2105afe9889316d43ee</target_sys_rte_eb_field>
+        <target_sys_rte_eb_fields/>
+        <type display_value="Script Operation">941f88e273b333002b6265a751ab9e84</type>
+        <use_unique_input_sets>true</use_unique_input_sets>
+    </sys_rte_eb_script_operation>
+</record_update>

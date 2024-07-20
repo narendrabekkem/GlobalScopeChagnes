@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_script_operation">
+    <sys_rte_eb_script_operation action="INSERT_OR_UPDATE">
+        <conditional_fields/>
+        <conditional_script><![CDATA[/* Example Script
+(function(batch, output) {
+    for (var i = 0; i < batch.length; i++) {
+        
+        // step1: access the input variables
+        var a = batch[i].input;
+
+        // step2: your script code goes here
+        // based on the input variables assign variable 'b' to true or false.
+        var b = true; // or false;
+
+        // step3: set the output for each element
+        output[i] = b;
+    }
+})(batch, output);
+*/
+(function(batch, output) {
+    // add your code here
+    
+})(batch, output);]]></conditional_script>
+        <is_conditional>false</is_conditional>
+        <name>Add 6months by default to install date</name>
+        <operation_group/>
+        <order>100</order>
+        <script><![CDATA[/* Example Script 
+ (function(batch, output) {
+     for (var i = 0; i < batch.length; i++) {
+ 
+         //step1: access the input variables
+         var a = batch[i].input; //Value of the source field. 
+ 
+         //step2: Your script/code goes here.
+         var b = a + 1;
+ 
+         //step3: set the output for each elements
+         output[i] = b;
+     }
+ 
+ })(batch, output);
+ */
+
+(function(batch, output) {
+    for (var item in batch){
+
+		gs.info('Value of batch item'+ JSON.stringify(batch[item]));
+        var gd = new GlideDateTime();
+        gd.setDisplayValue(batch[item].input+'','dd-MM-yyyy');
+        gd.add(86400 * 180 * 1000);
+        output[item] = (gd);
+    }
+})(batch, output);]]></script>
+        <source_sys_rte_eb_field display_value="Install Date">77f874c5476b0a105afe9889316d436f</source_sys_rte_eb_field>
+        <source_sys_rte_eb_fields/>
+        <sys_class_name>sys_rte_eb_script_operation</sys_class_name>
+        <sys_created_by>narendranath.reddy</sys_created_by>
+        <sys_created_on>2024-07-20 11:05:08</sys_created_on>
+        <sys_id>d92b340d476b0a105afe9889316d4355</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Add 6months by default to install date</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Robust Transform CIs ETL">c2d44c64472fc2105afe9889316d431f</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="Linux Server">9a274ce8472fc2105afe9889316d4358</sys_rte_eb_entity>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_rte_eb_script_operation_d92b340d476b0a105afe9889316d4355</sys_update_name>
+        <sys_updated_by>narendranath.reddy</sys_updated_by>
+        <sys_updated_on>2024-07-20 16:47:05</sys_updated_on>
+        <target_sys_rte_eb_field display_value="Install Date">77f874c5476b0a105afe9889316d436f</target_sys_rte_eb_field>
+        <target_sys_rte_eb_fields/>
+        <type display_value="Script Operation">941f88e273b333002b6265a751ab9e84</type>
+        <use_unique_input_sets>true</use_unique_input_sets>
+    </sys_rte_eb_script_operation>
+</record_update>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_map">
+    <sys_transform_map action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copy_empty_fields>false</copy_empty_fields>
+        <create_new_record_on_empty_coalesce_fields>false</create_new_record_on_empty_coalesce_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <name>Load Linux Server</name>
+        <order>100</order>
+        <run_business_rules>true</run_business_rules>
+        <run_script>true</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+if (!(source.u_type=='Linux Server')){
+	ignore=true;
+}
+
+})(source, target, map, log, action==="update");]]></script>
+        <source_table>u_load_cmdb_date_with_trasnsform_map</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>narendranath.reddy</sys_created_by>
+        <sys_created_on>2024-07-20 15:06:20</sys_created_on>
+        <sys_id>1673b54547634a105afe9889316d43f5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Load Linux Server</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_transform_map_1673b54547634a105afe9889316d43f5</sys_update_name>
+        <sys_updated_by>narendranath.reddy</sys_updated_by>
+        <sys_updated_on>2024-07-20 15:11:32</sys_updated_on>
+        <target_table>cmdb_ci_linux_server</target_table>
+    </sys_transform_map>
+</record_update>

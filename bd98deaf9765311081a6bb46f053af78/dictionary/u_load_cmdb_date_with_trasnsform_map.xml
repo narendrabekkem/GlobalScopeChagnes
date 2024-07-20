@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="da644824472fc2105afe9889316d4338" extends="sys_import_set_row" label="Load CMDB with Robust Transform" max_length="40" name="u_cmdb_load_robusttransform" type="collection">
+    <element db_object_id="19c3b1c547634a105afe9889316d4384" extends="sys_import_set_row" label="Load CMDB Date with Trasnsform Map" max_length="40" name="u_load_cmdb_date_with_trasnsform_map" type="collection">
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Business Service" label="Business Service" max_length="40" name="u_business_service" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Install Date" label="Install Date" max_length="40" name="u_install_date" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Server" label="Server" max_length="40" name="u_server" type="string"/>

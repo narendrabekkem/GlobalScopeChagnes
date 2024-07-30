@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.AttachmentUploader</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>AttachmentUploader</name>
+        <script><![CDATA[var AttachmentUploader = Class.create();
+AttachmentUploader.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+    UploadLocally: function() {
+        try {
+            var sysId = this.getParameter('record_sys_id');
+            var table = this.getParameter('table');
+            var category = this.getParameter('category');
+            var sub_category = this.getParameter('sub_category');
+            var fileName = this.getParameter('file_name');
+            var fileData = this.getParameter('file_content');
+            var content_type = this.getParameter('file_content_type');
+            var gr = new GlideRecord(table);
+            gr.get(sysId);
+            var base64Bytes = GlideStringUtil.base64DecodeAsBytes(fileData.split(',')[1]);
+            var sa = new GlideSysAttachment();
+            var attachmentSysId = sa.write(gr, fileName, content_type, base64Bytes);
+            var gra = new GlideRecord('sys_attachment');
+            gra.get(attachmentSysId);
+            gra.u_category = category;
+            gra.u_sub_category = sub_category;
+            gra.update();
+
+        } catch (e) {
+            gs.logError(e, 'AttachmentUploader');
+        }
+        return 'Attachment with SysID ' + attachmentSysId + ' is created';
+    },
+    UploadRemotely: function() {
+
+        var category = this.getParameter('category');
+        var sub_category = this.getParameter('sub_category');
+        var fileName = this.getParameter('filename');
+        var downloadLink = this.getParameter('downloadLink');
+        var table_name = this.getParameter('table_name');
+        var record_sys_id = this.getParameter('record_sys_id');
+        var gr = new GlideRecord('u_remote_attachments');
+        gr.initialize();
+        gr.u_task_type = table_name;
+        gr.u_task_record = record_sys_id;
+        gr.u_attachment_link = downloadLink;
+        gr.u_category = category;
+        gr.u_sub_category = sub_category;
+        gr.insert();
+
+
+    }
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>narendranath.reddy</sys_created_by>
+        <sys_created_on>2024-07-07 19:04:18</sys_created_on>
+        <sys_id>0d4d63f8471f86105afe9889316d435c</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>AttachmentUploader</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_script_include_0d4d63f8471f86105afe9889316d435c</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-07-30 16:53:09</sys_updated_on>
+    </sys_script_include>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</claim_owner_scope>
+        <claim_timestamp>191048f5a420000001</claim_timestamp>
+        <metadata_update_name>sys_script_include_0d4d63f8471f86105afe9889316d435c</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>GlobalScopeChagnes</previous_claim_name>
+        <previous_claim_scope>bd98deaf9765311081a6bb46f053af78</previous_claim_scope>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-07-30 16:53:09</sys_created_on>
+        <sys_id>47ebad14477f02105afe9889316d432f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-07-30 16:53:09</sys_updated_on>
+    </sys_claim>
+</record_update>

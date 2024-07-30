@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_permissions">
+    <pa_dashboards_permissions action="INSERT_OR_UPDATE">
+        <dashboard display_value="Service Desk Chat Monitor">8374b1c9f3b30200eaae19d854612b3e</dashboard>
+        <delete>true</delete>
+        <group/>
+        <identity>pa_admin</identity>
+        <read>true</read>
+        <role display_value="pa_admin" name="pa_admin">a4cc30b3bf101100b96dac808c073918</role>
+        <sys_class_name>pa_dashboards_permissions</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-07-28 18:20:38</sys_created_on>
+        <sys_id>91cc2f6747e706105afe9889316d4359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>pa_admin</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>pa_dashboards_permissions_91cc2f6747e706105afe9889316d4359</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-07-28 18:20:38</sys_updated_on>
+        <type>1</type>
+        <user/>
+        <write>true</write>
+    </pa_dashboards_permissions>
+</record_update>

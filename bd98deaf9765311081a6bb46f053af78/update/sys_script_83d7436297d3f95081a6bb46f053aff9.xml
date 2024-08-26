@@ -6,7 +6,7 @@
         <action_insert>true</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -44,15 +44,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>83d7436297d3f95081a6bb46f053aff9</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>Task BR</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
         <sys_policy/>
         <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
         <sys_update_name>sys_script_83d7436297d3f95081a6bb46f053aff9</sys_update_name>
-        <sys_updated_by>narendranath.reddy</sys_updated_by>
-        <sys_updated_on>2024-02-22 04:42:12</sys_updated_on>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-08-15 15:33:52</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
@@ -71,4 +71,15 @@
         <sys_updated_by>narendranath.reddy</sys_updated_by>
         <sys_updated_on>2024-01-20 04:56:01</sys_updated_on>
     </sys_claim>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>83d7436297d3f95081a6bb46f053aff9</id>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-08-15 15:33:51</sys_created_on>
+        <sys_id>2933f39947c4da105afe9889316d435a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-08-15 15:33:51</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
 </record_update>

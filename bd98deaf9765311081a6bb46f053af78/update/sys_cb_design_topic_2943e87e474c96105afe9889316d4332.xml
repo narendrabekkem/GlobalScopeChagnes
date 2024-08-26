@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="Hardware Incident">ad432cf6470c96105afe9889316d4366</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"9cc86df91a744af996c8a3140bf3796d","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"9cc86df91a744af996c8a3140bf3796d"}],"goals":[{"name":"primary","trigger_id":"9cc86df91a744af996c8a3140bf3796d","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"a52dde32e791457193644d88ce8d7a10","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"ad6365e1c8d04fb7be2f4527a6b9c1cc","name":"End","expert_mode":false},{"type":"InputPrompt","variable_id":"dd41896d9d2240d49a03bf525bda6105","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Please tell us briefly about your issue\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":true,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"0faf2bf754ad4bf7b20f3e29c6072137","name":"Describe Issue","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"formatType":"Text","validationScript":"","description":""},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"Thanks for providing you input. Few more questions to help us assist you better\", vaContext.getRequesterLang())"}],"request_feedback":true,"id":"35780fd5a292475791693905fa7048ec","name":"Thank for providing input","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"ReferenceChoiceInputPrompt","mode":"glide_record","id":"baf7a8485c59468aa514b9073ad5398b","name":"Select your hardware","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"675657b2b18e4c0298ea96e5bb277d27","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Select your hardware\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"no_options_found_message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"No Hardware found assigned to you\", vaContext.getRequesterLang())"},"condition":{"type":"Condition","mode":"glide_query","value":"assigned_to={{vaInputs.user}}"},"description":""},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"Hardware Selected","expression":{"type":"Applicability","mode":"query","value":"select_your_hardwareISNOTEMPTY"},"id":"baed43360466485aaee1db8deb1d3fc9","name":"Hardware Selected","expert_mode":false},{"type":"Branch","label":"Hardware Not Selected","expression":{"type":"Applicability","mode":"query","value":"select_your_hardwareISEMPTY"},"id":"2f9dc764a892485090302c8e620f0426","name":"Hardware Not Selected","expert_mode":false},{"type":"Branch","label":"Hardware Seleected","expression":{"type":"Applicability","mode":"query","value":"select_your_hardwareISNOTEMPTY"},"id":"fbd6ca250f4541b0b7af9e6a3d80d819","name":"Hardware Seleected","expert_mode":false}],"id":"efa25787cc5d4275b789d3cc424bcd78","goal_id":"primary","expert_mode":false},{"type":"InputPrompt","variable_id":"f76bebcb66bc4ad0a24c02ae9a3d33a6","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Set by NLU\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":false},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"ef57cc6b5e0e497ea29809d664861147","name":"Selected_Hardware","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"(function() { return false; })()"},"expert_mode":false,"formatType":"Text","validationScript":"","description":""},{"type":"InputPrompt","variable_id":"0e222d75a0ac493788f44cb1d47b53f0","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Enter your Hardware Asset Tag\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":true,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"770f1be0e5c046759a4120f0451a368d","name":"Typed Hardware","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"formatType":"Text","validationScript":"","description":""},{"type":"ScriptedAction","script":"(function execute() {\n    /* Code your scripted action here. For example, you might update a\n       record based on conditional logic:\n\n        if (vaVars.my_flag == 'say hello') {\n            gs.info('hi there');\n        } else {\n            gs.info('bye now');\n        }\n    */\n    if(vaInputs.select_your_hardware=='')\n    {\n        vaInputs.selected_hardware=vaInputs.typed_hardware;\n    }\n    else{\n        vaInputs.selected_hardware=vaInputs.select_your_hardware;\n    }\n})()\n","id":"f441992e9e5a42df84ef090c85719815","name":"Merge Hardware Input","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","id":"ca0cbab57802427db5047c4282c6157c","name":"ImplicitEnd__2b4cb0905cfc49739da28c65028da4f5","expert_mode":false},{"type":"CRUDAction","mode":"create","query":"short_description={{vaInputs.describe_issue}}^caller_id={{vaInputs.user}}^cmdb_ci={{vaInputs.selected_hardware}}","variable_id":"585daefedb21414faff74db6754ccf3f","id":"1eeb9071f74b418db98150a364992836","name":"Create Incident","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"attachments":[{"type":"String","mode":"string","value":""}]},{"type":"CardOutputPrompt","templateName":"Small image with text","fields":[{"name":"title","value":{"type":"String","mode":"string","value":"{{vaInputs.create_incident.number}}"},"required":true},{"name":"description","value":{"type":"String","mode":"string","value":"{{vaInputs.create_incident.short_description}}"},"required":false},{"name":"image","value":{"type":"String","mode":"script","value":"(function execute() { var url = gs.getProperty(\"glide.servlet.uri\"); return url + \"Picxel logo_1724084110052.png\";})()"},"required":true},{"name":"imageAlt","value":{"type":"String","mode":"string","value":""},"required":false}],"id":"081970a74d5f4247b68125a86f702421","name":"Incident Created","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"request_feedback":true}],"edges":[{"type":"Edge","source_node_id":"efa25787cc5d4275b789d3cc424bcd78","target_node_id":"ad6365e1c8d04fb7be2f4527a6b9c1cc","branch_id":"baed43360466485aaee1db8deb1d3fc9","id":"def4a1506bf04a4498c2e394cb547075","name":"baed43360466485aaee1db8deb1d3fc9"},{"type":"Edge","source_node_id":"35780fd5a292475791693905fa7048ec","target_node_id":"0faf2bf754ad4bf7b20f3e29c6072137","id":"88457871d9c04975b1ca616da0957ce9"},{"type":"Edge","source_node_id":"0faf2bf754ad4bf7b20f3e29c6072137","target_node_id":"baf7a8485c59468aa514b9073ad5398b","id":"aed749cec4a74a66a904a584e6b900cc"},{"type":"Edge","source_node_id":"baf7a8485c59468aa514b9073ad5398b","target_node_id":"efa25787cc5d4275b789d3cc424bcd78","id":"57eced0665a24071a66c2c0bcea720d2"},{"type":"Edge","source_node_id":"a52dde32e791457193644d88ce8d7a10","target_node_id":"ef57cc6b5e0e497ea29809d664861147","id":"8c67a47728d54961a6b33a3f56e3a6ab"},{"type":"Edge","source_node_id":"ef57cc6b5e0e497ea29809d664861147","target_node_id":"35780fd5a292475791693905fa7048ec","id":"77f510227e5a49eda003cbb01d385fb5"},{"type":"Edge","source_node_id":"efa25787cc5d4275b789d3cc424bcd78","target_node_id":"770f1be0e5c046759a4120f0451a368d","branch_id":"2f9dc764a892485090302c8e620f0426","id":"70177de58e684079b0ad4d55a605edae","name":"2f9dc764a892485090302c8e620f0426"},{"type":"Edge","source_node_id":"770f1be0e5c046759a4120f0451a368d","target_node_id":"f441992e9e5a42df84ef090c85719815","id":"59c0963b3c2a4375af6e69550f84a0da"},{"type":"Edge","source_node_id":"f441992e9e5a42df84ef090c85719815","target_node_id":"1eeb9071f74b418db98150a364992836","id":"2730cc4064ab4f3bbf9e52a8df695538"},{"type":"Edge","source_node_id":"efa25787cc5d4275b789d3cc424bcd78","target_node_id":"f441992e9e5a42df84ef090c85719815","branch_id":"fbd6ca250f4541b0b7af9e6a3d80d819","id":"bb51c135fe574a6d97497532a21e5a39","name":"fbd6ca250f4541b0b7af9e6a3d80d819"},{"type":"Edge","source_node_id":"1eeb9071f74b418db98150a364992836","target_node_id":"081970a74d5f4247b68125a86f702421","id":"d02289c1c2c74911b2e8af48a43e44e5"},{"type":"Edge","source_node_id":"081970a74d5f4247b68125a86f702421","target_node_id":"ca0cbab57802427db5047c4282c6157c","id":"5a2d81f82fbd483b87248c832af5b61a"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"String","name":"describe_issue","list":false,"id":"dd41896d9d2240d49a03bf525bda6105","formatType":"Text","validationScript":"","secure":false,"sensitive":false,"aiInput":false},{"type":"Reference","table":"cmdb_ci","reference_qualifier_condition":"assigned_to={{vaInputs.user}}","id":"675657b2b18e4c0298ea96e5bb277d27","name":"select_your_hardware","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"String","name":"typed_hardware","list":false,"id":"0e222d75a0ac493788f44cb1d47b53f0","formatType":"Text","validationScript":"","secure":false,"sensitive":false,"aiInput":false},{"type":"String","name":"selected_hardware","list":false,"id":"f76bebcb66bc4ad0a24c02ae9a3d33a6","formatType":"text","secure":false,"sensitive":false,"aiInput":false},{"type":"Reference","table":"incident","id":"585daefedb21414faff74db6754ccf3f","name":"create_incident","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"bd98deaf9765311081a6bb46f053af78","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"71d710ba47c896105afe9889316d430b","name":"Hardware Incident","key_phrases":["Hardware Incident","Having a generic issue"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"description":"","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"Hardware Incident","library":false,"readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>71d710ba47c896105afe9889316d430b</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.68",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "a52dde32e791457193644d88ce8d7a10": {
+          "id": "a52dde32e791457193644d88ce8d7a10",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "ad6365e1c8d04fb7be2f4527a6b9c1cc": {
+          "id": "ad6365e1c8d04fb7be2f4527a6b9c1cc",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "0faf2bf754ad4bf7b20f3e29c6072137": {
+          "id": "0faf2bf754ad4bf7b20f3e29c6072137",
+          "stepType": "TextPrompt",
+          "name": "Describe Issue",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please tell us briefly about your issue"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "dd41896d9d2240d49a03bf525bda6105",
+          "detailDescription": "",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "requestFeedback": true
+        },
+        "35780fd5a292475791693905fa7048ec": {
+          "id": "35780fd5a292475791693905fa7048ec",
+          "stepType": "TextOutput",
+          "name": "Thank for providing input",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Thanks for providing you input. Few more questions to help us assist you better"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "02248cecbdd9421f98477b9c6e07d0fc"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "baf7a8485c59468aa514b9073ad5398b": {
+          "name": "Select your hardware",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Select your hardware"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "675657b2b18e4c0298ea96e5bb277d27",
+          "detailDescription": "",
+          "id": "baf7a8485c59468aa514b9073ad5398b",
+          "stepType": "ReferenceChoicePrompt",
+          "mode": "glide_record",
+          "script": "",
+          "metadataScript": "",
+          "cardData": {},
+          "isMultipleSelect": false,
+          "noRecordsResponseMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "No Hardware found assigned to you"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": "assigned_to={{vaInputs.user}}"
+          },
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "efa25787cc5d4275b789d3cc424bcd78": {
+          "id": "efa25787cc5d4275b789d3cc424bcd78",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "ef57cc6b5e0e497ea29809d664861147": {
+          "id": "ef57cc6b5e0e497ea29809d664861147",
+          "stepType": "SlotFillPrompt",
+          "name": "Selected_Hardware",
+          "type": "string",
+          "withNluUserInput": false,
+          "skipIfFulfilled": true,
+          "variableId": "f76bebcb66bc4ad0a24c02ae9a3d33a6",
+          "values": {
+            "supportedControlNote": "",
+            "name": "",
+            "variableName": "",
+            "label": "Text 97",
+            "prompt": {
+              "mode": "simple",
+              "value": "Set by NLU"
+            },
+            "inputType": {
+              "format": "Text",
+              "script": ""
+            },
+            "detailDescription": "",
+            "skipIfFulfilled": false,
+            "node_id": "",
+            "variable_name": "",
+            "secureNote": "User input will be securely masked. For passwords, please use Action inputs instead.",
+            "secure": false,
+            "encryptionHashFunction": "SHA-256",
+            "encryptionSalt": {
+              "value": "MTcyNDA4MjEwOTg2MiBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+              "mode": "simple"
+            },
+            "defaultValueNote": "Define a value for the user response to the prompt. For example, if we already know the user name, the default value might be (Script Variables &gt; Last username).",
+            "defaultValue": {
+              "value": "",
+              "mode": "simple"
+            },
+            "acknowledgeMsg": {
+              "value": "",
+              "mode": "simple"
+            },
+            "confirmMessage": {
+              "value": "",
+              "mode": "simple"
+            },
+            "withNluUserInput": false,
+            "applicabilityNote": "By default, this node will be shown in the conversation and input from the user will be required.",
+            "applicability": {
+              "mode": "script",
+              "value": "(function() { return false; })()"
+            },
+            "skippable": {
+              "value": "",
+              "mode": "query"
+            },
+            "skipReprompt": {
+              "value": "",
+              "mode": "query"
+            }
+          },
+          "hidden": true,
+          "detailDescription": ""
+        },
+        "770f1be0e5c046759a4120f0451a368d": {
+          "id": "770f1be0e5c046759a4120f0451a368d",
+          "stepType": "TextPrompt",
+          "name": "Typed Hardware",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Enter your Hardware Asset Tag"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "0e222d75a0ac493788f44cb1d47b53f0",
+          "detailDescription": "",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "requestFeedback": true
+        },
+        "f441992e9e5a42df84ef090c85719815": {
+          "id": "f441992e9e5a42df84ef090c85719815",
+          "name": "Merge Hardware Input",
+          "script": "(function execute() {\n    /* Code your scripted action here. For example, you might update a\n       record based on conditional logic:\n\n        if (vaVars.my_flag == 'say hello') {\n            gs.info('hi there');\n        } else {\n            gs.info('bye now');\n        }\n    */\n    if(vaInputs.select_your_hardware=='')\n    {\n        vaInputs.selected_hardware=vaInputs.typed_hardware;\n    }\n    else{\n        vaInputs.selected_hardware=vaInputs.select_your_hardware;\n    }\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "ca0cbab57802427db5047c4282c6157c": {
+          "id": "ca0cbab57802427db5047c4282c6157c",
+          "stepType": "ImplicitEnd"
+        },
+        "1eeb9071f74b418db98150a364992836": {
+          "id": "1eeb9071f74b418db98150a364992836",
+          "stepType": "CrudAction",
+          "name": "Create Incident",
+          "template": {
+            "query": {
+              "terms": [
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "short_description",
+                  "expression": "{{vaInputs.describe_issue}}",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaInputs.describe_issue}}",
+                            "displayValue": "Input Variables➛Describe Issue"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "caller_id",
+                  "expression": "{{vaInputs.user}}"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "cmdb_ci",
+                  "expression": "{{vaInputs.selected_hardware}}"
+                }
+              ]
+            },
+            "queryString": "short_description={{vaInputs.describe_issue}}^caller_id={{vaInputs.user}}^cmdb_ci={{vaInputs.selected_hardware}}"
+          },
+          "mode": "create",
+          "record": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "attachments": [
+            {
+              "value": "",
+              "mode": "simple"
+            }
+          ],
+          "variableId": "585daefedb21414faff74db6754ccf3f"
+        },
+        "081970a74d5f4247b68125a86f702421": {
+          "id": "081970a74d5f4247b68125a86f702421",
+          "stepType": "RecordOutput",
+          "name": "Incident Created",
+          "variableId": "",
+          "cardTemplate": "Small image with text",
+          "cardFields": {
+            "1cf75c317313101081e06502edf6a738_title": {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.create_incident.number}}",
+                        "displayValue": "Input Variables➛Create Incident➛Number"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple"
+            },
+            "1cf75c317313101081e06502edf6a738_description": {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.create_incident.short_description}}",
+                        "displayValue": "Input Variables➛Create Incident➛Short description"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple"
+            },
+            "1cf75c317313101081e06502edf6a738_image": {
+              "value": "Picxel logo_1724084110052.png",
+              "mode": "db_image"
+            }
+          },
+          "mode": "variable",
+          "tableName": "",
+          "fields": [],
+          "cardDefinition": {
+            "sys_id": "1cf75c317313101081e06502edf6a738",
+            "name": "Small image with text",
+            "sys_name": "Small image with text",
+            "thumbnail.name": "Small image with text.svg",
+            "fields": [
+              {
+                "label": "Title",
+                "position": "1",
+                "mandatory": true,
+                "name": "title",
+                "id": "1cf75c317313101081e06502edf6a738_title"
+              },
+              {
+                "label": "Description",
+                "position": "2",
+                "mandatory": false,
+                "name": "description",
+                "id": "1cf75c317313101081e06502edf6a738_description"
+              },
+              {
+                "label": "Image URL link",
+                "position": "3",
+                "mandatory": true,
+                "type": "image",
+                "name": "image",
+                "id": "1cf75c317313101081e06502edf6a738_image"
+              },
+              {
+                "label": "Image alt text",
+                "position": "4",
+                "mandatory": false,
+                "name": "imageAlt",
+                "id": "1cf75c317313101081e06502edf6a738_imageAlt"
+              }
+            ],
+            "value": "Small image with text",
+            "hasTemplateError": false
+          },
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "def4a1506bf04a4498c2e394cb547075",
+          "edgeType": "Branch",
+          "source": "efa25787cc5d4275b789d3cc424bcd78",
+          "target": "ad6365e1c8d04fb7be2f4527a6b9c1cc",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.select_your_hardwareISNOTEMPTY",
+            "mode": "query"
+          },
+          "label": "Hardware Selected"
+        },
+        {
+          "id": "88457871d9c04975b1ca616da0957ce9",
+          "edgeType": "Edge",
+          "source": "35780fd5a292475791693905fa7048ec",
+          "target": "0faf2bf754ad4bf7b20f3e29c6072137",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "aed749cec4a74a66a904a584e6b900cc",
+          "edgeType": "Edge",
+          "source": "0faf2bf754ad4bf7b20f3e29c6072137",
+          "target": "baf7a8485c59468aa514b9073ad5398b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "57eced0665a24071a66c2c0bcea720d2",
+          "edgeType": "Edge",
+          "source": "baf7a8485c59468aa514b9073ad5398b",
+          "target": "efa25787cc5d4275b789d3cc424bcd78",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "8c67a47728d54961a6b33a3f56e3a6ab",
+          "edgeType": "Edge",
+          "source": "a52dde32e791457193644d88ce8d7a10",
+          "target": "ef57cc6b5e0e497ea29809d664861147",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "77f510227e5a49eda003cbb01d385fb5",
+          "edgeType": "Edge",
+          "source": "ef57cc6b5e0e497ea29809d664861147",
+          "target": "35780fd5a292475791693905fa7048ec",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "70177de58e684079b0ad4d55a605edae",
+          "edgeType": "Branch",
+          "source": "efa25787cc5d4275b789d3cc424bcd78",
+          "target": "770f1be0e5c046759a4120f0451a368d",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.select_your_hardwareISEMPTY",
+            "mode": "query"
+          },
+          "label": "Hardware Not Selected"
+        },
+        {
+          "id": "59c0963b3c2a4375af6e69550f84a0da",
+          "edgeType": "Edge",
+          "source": "770f1be0e5c046759a4120f0451a368d",
+          "target": "f441992e9e5a42df84ef090c85719815",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "2730cc4064ab4f3bbf9e52a8df695538",
+          "edgeType": "Edge",
+          "source": "f441992e9e5a42df84ef090c85719815",
+          "target": "1eeb9071f74b418db98150a364992836",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "bb51c135fe574a6d97497532a21e5a39",
+          "edgeType": "Branch",
+          "source": "efa25787cc5d4275b789d3cc424bcd78",
+          "target": "f441992e9e5a42df84ef090c85719815",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.select_your_hardwareISNOTEMPTY",
+            "mode": "query"
+          },
+          "label": "Hardware Seleected"
+        },
+        {
+          "id": "d02289c1c2c74911b2e8af48a43e44e5",
+          "edgeType": "Edge",
+          "source": "1eeb9071f74b418db98150a364992836",
+          "target": "081970a74d5f4247b68125a86f702421",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "5a2d81f82fbd483b87248c832af5b61a",
+          "edgeType": "Edge",
+          "source": "081970a74d5f4247b68125a86f702421",
+          "target": "ca0cbab57802427db5047c4282c6157c",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "dd41896d9d2240d49a03bf525bda6105": {
+      "id": "dd41896d9d2240d49a03bf525bda6105",
+      "name": "describe_issue",
+      "label": "Describe Issue",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTcyNDA4MTE4Njc1NiBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "0faf2bf754ad4bf7b20f3e29c6072137",
+      "isHidden": false
+    },
+    "675657b2b18e4c0298ea96e5bb277d27": {
+      "id": "675657b2b18e4c0298ea96e5bb277d27",
+      "name": "select_your_hardware",
+      "label": "Select Your Hardware",
+      "varType": "reference",
+      "table": "cmdb_ci",
+      "category": "vaInputs",
+      "nodeId": "baf7a8485c59468aa514b9073ad5398b",
+      "isHidden": false
+    },
+    "0e222d75a0ac493788f44cb1d47b53f0": {
+      "id": "0e222d75a0ac493788f44cb1d47b53f0",
+      "name": "typed_hardware",
+      "label": "Typed Hardware",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTcyNDA4MTU1Nzk2OSBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "770f1be0e5c046759a4120f0451a368d",
+      "isHidden": false
+    },
+    "f76bebcb66bc4ad0a24c02ae9a3d33a6": {
+      "id": "f76bebcb66bc4ad0a24c02ae9a3d33a6",
+      "name": "selected_hardware",
+      "label": "Selected_Hardware",
+      "varType": "string",
+      "category": "vaInputs",
+      "nodeId": "ef57cc6b5e0e497ea29809d664861147",
+      "isHidden": true
+    },
+    "585daefedb21414faff74db6754ccf3f": {
+      "id": "585daefedb21414faff74db6754ccf3f",
+      "name": "create_incident",
+      "label": "Create Incident",
+      "varType": "reference",
+      "table": "incident",
+      "inactive": false,
+      "category": "vaInputs",
+      "nodeId": "1eeb9071f74b418db98150a364992836",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <name>Hardware Incident</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-08-19 16:16:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>2943e87e474c96105afe9889316d4332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_cb_design_topic_2943e87e474c96105afe9889316d4332</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-08-19 16:16:15</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

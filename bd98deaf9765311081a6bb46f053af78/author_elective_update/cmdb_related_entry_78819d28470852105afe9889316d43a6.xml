@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_related_entry">
+    <cmdb_related_entry action="DELETE">
+        <active>true</active>
+        <allow_null_attribute>false</allow_null_attribute>
+        <attributes>u_attribute_2,u_attribute_1</attributes>
+        <condition/>
+        <identifier display_value="cmdb_ci_hardware">a1d19344c3b33100d8d4bea192d3aedc</identifier>
+        <order>100</order>
+        <referenced_field>u_hardware_item</referenced_field>
+        <sys_class_name>cmdb_related_entry</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-08-12 19:51:57</sys_created_on>
+        <sys_id>78819d28470852105afe9889316d43a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>cmdb_related_entry_78819d28470852105afe9889316d43a6</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-08-12 19:51:57</sys_updated_on>
+        <table>u_special_hardware_attributes</table>
+    </cmdb_related_entry>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>cmdb_related_entry_78819d28470852105afe9889316d43a6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_related_entry"><cmdb_related_entry action="INSERT_OR_UPDATE"><active>true</active><allow_null_attribute>false</allow_null_attribute><attributes>u_attribute_2,u_attribute_1</attributes><condition/><identifier display_value="cmdb_ci_hardware">a1d19344c3b33100d8d4bea192d3aedc</identifier><order>100</order><referenced_field>u_hardware_item</referenced_field><sys_class_name>cmdb_related_entry</sys_class_name><sys_created_by>narendrabekkem</sys_created_by><sys_created_on>2024-08-12 19:51:57</sys_created_on><sys_id>78819d28470852105afe9889316d43a6</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package><sys_policy/><sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope><sys_update_name>cmdb_related_entry_78819d28470852105afe9889316d43a6</sys_update_name><sys_updated_by>narendrabekkem</sys_updated_by><sys_updated_on>2024-08-12 19:51:57</sys_updated_on><table>u_special_hardware_attributes</table></cmdb_related_entry></record_update>]]></payload>
+        <payload_hash>-897146080</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>8d63c860472fc2105afe9889316d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-08-12 19:51:57</sys_created_on>
+        <sys_id>09819d28470852105afe9889316d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1914825b7ce0000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-08-12 19:51:57</sys_updated_on>
+        <type>Related Entry</type>
+        <update_guid>c9819d28b808521018cbe1e323c7e1a8</update_guid>
+        <update_guid_history>c9819d28b808521018cbe1e323c7e1a8:-897146080</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">35672fa847cc92105afe9889316d4307</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-08-13 06:46:49</sys_created_on>
+        <sys_db_object display_value="" name="cmdb_related_entry">cmdb_related_entry</sys_db_object>
+        <sys_id>c1836204830a429d968ab84768bfefd9</sys_id>
+        <sys_metadata>78819d28470852105afe9889316d43a6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>cmdb_related_entry_78819d28470852105afe9889316d43a6</sys_update_name>
+        <sys_update_version display_value="cmdb_related_entry_78819d28470852105afe9889316d43a6">09819d28470852105afe9889316d43a9</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-08-13 06:46:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

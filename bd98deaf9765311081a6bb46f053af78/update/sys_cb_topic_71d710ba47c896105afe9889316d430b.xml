@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <context_profiles/>
+        <description/>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{
+  "graph_api_version": "1.0.68",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "a52dde32e791457193644d88ce8d7a10": {
+          "id": "a52dde32e791457193644d88ce8d7a10",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "ad6365e1c8d04fb7be2f4527a6b9c1cc": {
+          "id": "ad6365e1c8d04fb7be2f4527a6b9c1cc",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "0faf2bf754ad4bf7b20f3e29c6072137": {
+          "id": "0faf2bf754ad4bf7b20f3e29c6072137",
+          "stepType": "TextPrompt",
+          "name": "Describe Issue",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please tell us briefly about your issue"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "dd41896d9d2240d49a03bf525bda6105",
+          "detailDescription": "",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "requestFeedback": true
+        },
+        "35780fd5a292475791693905fa7048ec": {
+          "id": "35780fd5a292475791693905fa7048ec",
+          "stepType": "TextOutput",
+          "name": "Thank for providing input",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Thanks for providing you input. Few more questions to help us assist you better"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "02248cecbdd9421f98477b9c6e07d0fc"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "baf7a8485c59468aa514b9073ad5398b": {
+          "name": "Select your hardware",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Select your hardware"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "675657b2b18e4c0298ea96e5bb277d27",
+          "detailDescription": "",
+          "id": "baf7a8485c59468aa514b9073ad5398b",
+          "stepType": "ReferenceChoicePrompt",
+          "mode": "glide_record",
+          "script": "",
+          "metadataScript": "",
+          "cardData": {},
+          "isMultipleSelect": false,
+          "noRecordsResponseMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "No Hardware found assigned to you"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": "assigned_to={{vaInputs.user}}"
+          },
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "ef57cc6b5e0e497ea29809d664861147": {
+          "id": "ef57cc6b5e0e497ea29809d664861147",
+          "stepType": "SlotFillPrompt",
+          "name": "Selected_Hardware",
+          "type": "string",
+          "withNluUserInput": false,
+          "skipIfFulfilled": true,
+          "variableId": "f76bebcb66bc4ad0a24c02ae9a3d33a6",
+          "values": {
+            "supportedControlNote": "",
+            "name": "",
+            "variableName": "",
+            "label": "Text 97",
+            "prompt": {
+              "mode": "simple",
+              "value": "Set by NLU"
+            },
+            "inputType": {
+              "format": "Text",
+              "script": ""
+            },
+            "detailDescription": "",
+            "skipIfFulfilled": false,
+            "node_id": "",
+            "variable_name": "",
+            "secureNote": "User input will be securely masked. For passwords, please use Action inputs instead.",
+            "secure": false,
+            "encryptionHashFunction": "SHA-256",
+            "encryptionSalt": {
+              "value": "MTcyNDA4MjEwOTg2MiBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+              "mode": "simple"
+            },
+            "defaultValueNote": "Define a value for the user response to the prompt. For example, if we already know the user name, the default value might be (Script Variables &gt; Last username).",
+            "defaultValue": {
+              "value": "",
+              "mode": "simple"
+            },
+            "acknowledgeMsg": {
+              "value": "",
+              "mode": "simple"
+            },
+            "confirmMessage": {
+              "value": "",
+              "mode": "simple"
+            },
+            "withNluUserInput": false,
+            "applicabilityNote": "By default, this node will be shown in the conversation and input from the user will be required.",
+            "applicability": {
+              "mode": "script",
+              "value": "(function() { return false; })()"
+            },
+            "skippable": {
+              "value": "",
+              "mode": "query"
+            },
+            "skipReprompt": {
+              "value": "",
+              "mode": "query"
+            }
+          },
+          "hidden": true,
+          "detailDescription": ""
+        },
+        "dda7212ac57b478c8d065bb4229da2e3": {
+          "id": "dda7212ac57b478c8d065bb4229da2e3",
+          "stepType": "CrudAction",
+          "name": "Create Incident",
+          "template": {
+            "query": {
+              "terms": [
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "short_description",
+                  "expression": "{{vaInputs.describe_issue}}",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaInputs.describe_issue}}",
+                            "displayValue": "Input Variables➛Describe Issue"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "caller_id",
+                  "expression": "{{vaInputs.user}}"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "cmdb_ci",
+                  "expression": "{{vaInputs.select_your_hardware}}"
+                }
+              ]
+            },
+            "queryString": "short_description={{vaInputs.describe_issue}}^caller_id={{vaInputs.user}}^cmdb_ci={{vaInputs.select_your_hardware}}"
+          },
+          "mode": "create",
+          "record": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "attachments": [
+            {
+              "value": "",
+              "mode": "simple"
+            }
+          ],
+          "variableId": "4be2f5708cb54964b23e33f804445f27"
+        },
+        "87e331e6d26b439fbef6a2ccd22b39c5": {
+          "id": "87e331e6d26b439fbef6a2ccd22b39c5",
+          "stepType": "RecordOutput",
+          "name": "Show Created Incidents",
+          "variableId": "4be2f5708cb54964b23e33f804445f27",
+          "cardTemplate": "General",
+          "cardFields": {},
+          "mode": "variable",
+          "tableName": "incident",
+          "fields": [
+            "number",
+            "cmdb_ci",
+            "short_description"
+          ],
+          "cardDefinition": {
+            "name": "Record",
+            "value": "General"
+          },
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": ""
+          }
+        },
+        "65cef709aad0407bb3f55d65b1c71f07": {
+          "id": "65cef709aad0407bb3f55d65b1c71f07",
+          "stepType": "ReusableTopic",
+          "name": "Request Catalog Item Inline-seismic",
+          "fields": [],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "useTemplateTopic": false,
+          "reusableTopicChoice": "Request Catalog Item Inline-seismic",
+          "reusableTopicId": "689a151977b00210c5c6b2a07b5a99ea",
+          "inputs": {
+            "catalogitemid": {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "7198552237b1300054b6a3549dbe5dea"
+                    }
+                  ]
+                }
+              ],
+              "mode": "string",
+              "type": "String"
+            },
+            "requestedforid": {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.user}}",
+                        "displayValue": "Input Variables➛User"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "string",
+              "type": "String"
+            }
+          },
+          "outputs": [
+            {
+              "id": "48230c1044cb465ba71e27f875d06f17",
+              "value": "record_id",
+              "mapping": "record_id"
+            },
+            {
+              "id": "c5b511f35c9a4c9e865b0940e232362c",
+              "value": "record_table",
+              "mapping": "record_table"
+            },
+            {
+              "id": "e5d8d78b8b8349cead6d3475363cb6f8",
+              "value": "message",
+              "mapping": "message"
+            },
+            {
+              "id": "7ff52a89fd7e43e7ba1a4b24d7dc1bc4",
+              "value": "status",
+              "mapping": "status"
+            }
+          ],
+          "variableIds": [
+            "48230c1044cb465ba71e27f875d06f17",
+            "c5b511f35c9a4c9e865b0940e232362c",
+            "e5d8d78b8b8349cead6d3475363cb6f8",
+            "7ff52a89fd7e43e7ba1a4b24d7dc1bc4"
+          ],
+          "dynamicTopicBlockName": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputDynamicModal": {},
+          "outputDynamicModal": {}
+        }
+      },
+      "edges": [
+        {
+          "id": "88457871d9c04975b1ca616da0957ce9",
+          "edgeType": "Edge",
+          "source": "35780fd5a292475791693905fa7048ec",
+          "target": "0faf2bf754ad4bf7b20f3e29c6072137",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "aed749cec4a74a66a904a584e6b900cc",
+          "edgeType": "Edge",
+          "source": "0faf2bf754ad4bf7b20f3e29c6072137",
+          "target": "baf7a8485c59468aa514b9073ad5398b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "8c67a47728d54961a6b33a3f56e3a6ab",
+          "edgeType": "Edge",
+          "source": "a52dde32e791457193644d88ce8d7a10",
+          "target": "ef57cc6b5e0e497ea29809d664861147",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "77f510227e5a49eda003cbb01d385fb5",
+          "edgeType": "Edge",
+          "source": "ef57cc6b5e0e497ea29809d664861147",
+          "target": "35780fd5a292475791693905fa7048ec",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "57eced0665a24071a66c2c0bcea720d2",
+          "edgeType": "Edge",
+          "source": "baf7a8485c59468aa514b9073ad5398b",
+          "target": "dda7212ac57b478c8d065bb4229da2e3",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "065b8d641170453fa17d81e8c45b1f63",
+          "edgeType": "Edge",
+          "source": "dda7212ac57b478c8d065bb4229da2e3",
+          "target": "87e331e6d26b439fbef6a2ccd22b39c5",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "2550a93fdc714990be617320aac13ae5",
+          "edgeType": "Edge",
+          "source": "87e331e6d26b439fbef6a2ccd22b39c5",
+          "target": "65cef709aad0407bb3f55d65b1c71f07",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "156738e7761044cab4cc964c5b686ef9",
+          "edgeType": "Edge",
+          "source": "65cef709aad0407bb3f55d65b1c71f07",
+          "target": "ad6365e1c8d04fb7be2f4527a6b9c1cc",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "dd41896d9d2240d49a03bf525bda6105": {
+      "id": "dd41896d9d2240d49a03bf525bda6105",
+      "name": "describe_issue",
+      "label": "Describe Issue",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTcyNDA4MTE4Njc1NiBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "0faf2bf754ad4bf7b20f3e29c6072137",
+      "isHidden": false
+    },
+    "675657b2b18e4c0298ea96e5bb277d27": {
+      "id": "675657b2b18e4c0298ea96e5bb277d27",
+      "name": "select_your_hardware",
+      "label": "Select Your Hardware",
+      "varType": "reference",
+      "table": "cmdb_ci",
+      "category": "vaInputs",
+      "nodeId": "baf7a8485c59468aa514b9073ad5398b",
+      "isHidden": false
+    },
+    "f76bebcb66bc4ad0a24c02ae9a3d33a6": {
+      "id": "f76bebcb66bc4ad0a24c02ae9a3d33a6",
+      "name": "selected_hardware",
+      "label": "Selected_Hardware",
+      "varType": "string",
+      "category": "vaInputs",
+      "nodeId": "ef57cc6b5e0e497ea29809d664861147",
+      "isHidden": true
+    },
+    "4be2f5708cb54964b23e33f804445f27": {
+      "id": "4be2f5708cb54964b23e33f804445f27",
+      "name": "create_incident",
+      "label": "Create Incident",
+      "varType": "reference",
+      "table": "incident",
+      "inactive": false,
+      "category": "vaInputs",
+      "nodeId": "87e331e6d26b439fbef6a2ccd22b39c5",
+      "isHidden": false
+    },
+    "48230c1044cb465ba71e27f875d06f17": {
+      "id": "48230c1044cb465ba71e27f875d06f17",
+      "name": "record_id",
+      "label": "Record_id",
+      "defaultValue": "record_id",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "nodeId": "65cef709aad0407bb3f55d65b1c71f07",
+      "isHidden": false
+    },
+    "c5b511f35c9a4c9e865b0940e232362c": {
+      "id": "c5b511f35c9a4c9e865b0940e232362c",
+      "name": "record_table",
+      "label": "Record_table",
+      "defaultValue": "record_table",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "nodeId": "65cef709aad0407bb3f55d65b1c71f07",
+      "isHidden": false
+    },
+    "e5d8d78b8b8349cead6d3475363cb6f8": {
+      "id": "e5d8d78b8b8349cead6d3475363cb6f8",
+      "name": "message",
+      "label": "Message",
+      "defaultValue": "message",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "nodeId": "65cef709aad0407bb3f55d65b1c71f07",
+      "isHidden": false
+    },
+    "7ff52a89fd7e43e7ba1a4b24d7dc1bc4": {
+      "id": "7ff52a89fd7e43e7ba1a4b24d7dc1bc4",
+      "name": "status",
+      "label": "Status",
+      "defaultValue": "status",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "nodeId": "65cef709aad0407bb3f55d65b1c71f07",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <key_phrases>having a specific hardware issue</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <model_type>nlu_keyword</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>Hardware Incident</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-08-19 15:26:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>71d710ba47c896105afe9889316d430b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Hardware Incident</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_cb_topic_71d710ba47c896105afe9889316d430b</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-08-19 16:34:47</sys_updated_on>
+        <title>Hardware Incident</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+    </sys_cb_topic>
+    <sys_translated_text action="delete_multiple" query="documentkey=71d710ba47c896105afe9889316d430b"/>
+</record_update>

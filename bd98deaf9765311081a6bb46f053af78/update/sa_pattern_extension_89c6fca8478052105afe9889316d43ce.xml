@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sa_pattern_extension">
+    <sa_pattern_extension action="INSERT_OR_UPDATE">
+        <extension display_value="Add More Attributes">89c630e4478052105afe9889316d43b3</extension>
+        <order>1</order>
+        <pattern display_value="Windows OS - Desktops">bfaf65f7db75a200868a7c841f96199d</pattern>
+        <sys_class_name>sa_pattern_extension</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-08-12 17:55:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>89c6fca8478052105afe9889316d43ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sa_pattern_extension_89c6fca8478052105afe9889316d43ce</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-08-12 17:55:05</sys_updated_on>
+    </sa_pattern_extension>
+</record_update>

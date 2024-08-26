@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sa_pattern">
+    <sa_pattern action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ci_type>cmdb_ci_appl_generic</ci_type>
+        <cpattern_type>2</cpattern_type>
+        <description/>
+        <directory>false</directory>
+        <enforce_proc_classy>false</enforce_proc_classy>
+        <invoke_per_account>false</invoke_per_account>
+        <metadata_id>89c630e4478052105afe9889316d43b3</metadata_id>
+        <name>Add More Attributes</name>
+        <ndl>library {&#13;
+	name = "Add More Attributes"&#13;
+	id = "89c630e4478052105afe9889316d43b3"&#13;
+	description = "Add More Attributes"&#13;
+	step {&#13;
+		name = "Populate Additional Attributes for Hardware"&#13;
+		transform {&#13;
+			src_table_name = "cmdb_ci_serial_number"&#13;
+			target_table_name = "u_special_hardware_attributes"&#13;
+			operation {&#13;
+				set_field {&#13;
+					field_name = "u_attribute_1"&#13;
+					value = get_attr {"cmdb_ci_serial_number[].SerialNumber"}&#13;
+				}&#13;
+				set_field {&#13;
+					field_name = "u_attribute_2"&#13;
+					value = get_attr {"cmdb_ci_serial_number[].serial_number_type"}&#13;
+				}&#13;
+			}&#13;
+		}&#13;
+	}&#13;
+	step {&#13;
+		name = "Related Additional Attribute and computer"&#13;
+		relation_reference {&#13;
+			table1_name = "u_special_hardware_attributes"&#13;
+			table2_name = "cmdb_ci_computer"&#13;
+			result_table_name = "relate_hardware_attributes"&#13;
+			unmatched_lines = keep&#13;
+			ref_direction = parentToChild&#13;
+			ref_field_name = "u_hardware_item"&#13;
+		}&#13;
+	}&#13;
+	step {&#13;
+		name = "Untitled Step"&#13;
+		transform {&#13;
+			src_table_name = "u_special_hardware_attributes"&#13;
+			target_table_name = "u_special_hardware_attributes"&#13;
+			operation {set_field {&#13;
+					field_name = "dummy"&#13;
+					value = "dummy"&#13;
+				}}&#13;
+		}&#13;
+	}&#13;
+}&#13;
+</ndl>
+        <parent/>
+        <serverless>false</serverless>
+        <source/>
+        <sys_class_name>sa_pattern</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-08-12 17:55:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>89c630e4478052105afe9889316d43b3</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Add More Attributes</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_replace/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sa_pattern_89c630e4478052105afe9889316d43b3</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-08-13 06:46:24</sys_updated_on>
+        <version/>
+    </sa_pattern>
+</record_update>

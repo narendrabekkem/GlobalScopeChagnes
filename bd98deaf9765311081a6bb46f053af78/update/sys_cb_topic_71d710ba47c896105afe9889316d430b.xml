@@ -308,10 +308,41 @@
                   "operator": "=",
                   "operand": "cmdb_ci",
                   "expression": "{{vaInputs.select_your_hardware}}"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "description",
+                  "expression": "{{vaVars.user_mail}}",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaVars.user_mail}}",
+                            "displayValue": "Script Variables➛user_mail"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
-            "queryString": "short_description={{vaInputs.describe_issue}}^caller_id={{vaInputs.user}}^cmdb_ci={{vaInputs.select_your_hardware}}"
+            "queryString": "short_description={{vaInputs.describe_issue}}^caller_id={{vaInputs.user}}^cmdb_ci={{vaInputs.select_your_hardware}}^description={{vaVars.user_mail}}"
           },
           "mode": "create",
           "record": "",
@@ -446,9 +477,146 @@
           },
           "inputDynamicModal": {},
           "outputDynamicModal": {}
+        },
+        "1235b69c641444c8bdf8ad6afd2768a7": {
+          "id": "1235b69c641444c8bdf8ad6afd2768a7",
+          "name": "Print all variables",
+          "script": "(function execute() {\n    /* Code your scripted action here. For example, you might update a\n       record based on conditional logic:\n\n        if (vaVars.my_flag == 'say hello') {\n            gs.info('hi there');\n        } else {\n            gs.info('bye now');\n        }\n    */\n  \n\n    gs.info('VA Variables inputs'+vaInputs.describe_issue)\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "fa829e94179e4e52a54542f5293f1a6a": {
+          "id": "fa829e94179e4e52a54542f5293f1a6a",
+          "stepType": "ReusableTopic",
+          "name": "Survey",
+          "fields": [],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "useTemplateTopic": false,
+          "reusableTopicChoice": "Survey",
+          "reusableTopicId": "26baac293b77330074bc456993efc4dd",
+          "inputs": {
+            "surveyid": {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "a259f6969f3220100d74d46d842e702a"
+                    }
+                  ]
+                }
+              ],
+              "mode": "string",
+              "type": "String"
+            },
+            "confirmationneeded": {
+              "value": "false",
+              "mode": "simple",
+              "type": "String"
+            },
+            "savequestionstocontext": {
+              "value": "false",
+              "mode": "simple",
+              "type": "String"
+            }
+          },
+          "variableIds": [],
+          "dynamicTopicBlockName": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputDynamicModal": {},
+          "outputDynamicModal": {},
+          "outputs": [],
+          "outdatedNote": false,
+          "loading": false
+        },
+        "879f419e5bb34d3dbb4df10a555561b5": {
+          "name": "Did I solve you issue",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Did I solve you issue? If not satisfied talk to our agent"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "a7d7efba81ec4b098ca43d0f47cccd4e",
+          "detailDescription": "",
+          "id": "879f419e5bb34d3dbb4df10a555561b5",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "8bca93dbdf0344d5975f31fe255f6342": {
+          "id": "8bca93dbdf0344d5975f31fe255f6342",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "ef4e0cfe29f64102bf2ded0903411f70": {
+          "id": "ef4e0cfe29f64102bf2ded0903411f70",
+          "stepType": "ScriptOutput",
+          "name": "Connect Live Agent",
+          "output_type": "single_part",
+          "script": "(function execute() {\n      // Transfer to a live agent\n      vaSystem.connectToAgent()\n})()\n\n",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
         }
       },
       "edges": [
+        {
+          "id": "2550a93fdc714990be617320aac13ae5",
+          "edgeType": "Edge",
+          "source": "87e331e6d26b439fbef6a2ccd22b39c5",
+          "target": "1235b69c641444c8bdf8ad6afd2768a7",
+          "sourcePort": "",
+          "targetPort": ""
+        },
         {
           "id": "88457871d9c04975b1ca616da0957ce9",
           "edgeType": "Edge",
@@ -498,9 +666,9 @@
           "targetPort": ""
         },
         {
-          "id": "2550a93fdc714990be617320aac13ae5",
+          "id": "94354d84a9be4cc48c5f8b11e79286b1",
           "edgeType": "Edge",
-          "source": "87e331e6d26b439fbef6a2ccd22b39c5",
+          "source": "1235b69c641444c8bdf8ad6afd2768a7",
           "target": "65cef709aad0407bb3f55d65b1c71f07",
           "sourcePort": "",
           "targetPort": ""
@@ -509,6 +677,56 @@
           "id": "156738e7761044cab4cc964c5b686ef9",
           "edgeType": "Edge",
           "source": "65cef709aad0407bb3f55d65b1c71f07",
+          "target": "fa829e94179e4e52a54542f5293f1a6a",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "43add57465d845fabe16f44735040839",
+          "edgeType": "Edge",
+          "source": "fa829e94179e4e52a54542f5293f1a6a",
+          "target": "879f419e5bb34d3dbb4df10a555561b5",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "04eb385b8a8e4f5aa0a4aeefc5ba45b0",
+          "edgeType": "Edge",
+          "source": "879f419e5bb34d3dbb4df10a555561b5",
+          "target": "8bca93dbdf0344d5975f31fe255f6342",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "7353ef34e8fd4785a849ebb33328bb8a",
+          "edgeType": "Branch",
+          "source": "8bca93dbdf0344d5975f31fe255f6342",
+          "target": "ad6365e1c8d04fb7be2f4527a6b9c1cc",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.did_i_solve_you_issue=Yes",
+            "mode": "query"
+          },
+          "label": "Close"
+        },
+        {
+          "id": "41a447e342cb42ed827835abd9e3f4b2",
+          "edgeType": "Branch",
+          "source": "8bca93dbdf0344d5975f31fe255f6342",
+          "target": "ef4e0cfe29f64102bf2ded0903411f70",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.did_i_solve_you_issue=No",
+            "mode": "query"
+          },
+          "label": "Live Agent"
+        },
+        {
+          "id": "85411bfa5341451a9b9d05c0f2626a7b",
+          "edgeType": "Edge",
+          "source": "ef4e0cfe29f64102bf2ded0903411f70",
           "target": "ad6365e1c8d04fb7be2f4527a6b9c1cc",
           "sourcePort": "",
           "targetPort": ""
@@ -621,6 +839,36 @@
       },
       "nodeId": "65cef709aad0407bb3f55d65b1c71f07",
       "isHidden": false
+    },
+    "eb24822a7c08467fac77e9a27e455d97": {
+      "id": "eb24822a7c08467fac77e9a27e455d97",
+      "value": {
+        "mode": "script",
+        "value": "(function execute() {\n    \n    return gs.getUser().getEmail();\n})()\n"
+      },
+      "name": "user_mail",
+      "label": "user_mail",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "a7d7efba81ec4b098ca43d0f47cccd4e": {
+      "id": "a7d7efba81ec4b098ca43d0f47cccd4e",
+      "name": "did_i_solve_you_issue",
+      "label": "Did I Solve You Issue",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Yes",
+          "value": "Yes"
+        },
+        {
+          "label": "No",
+          "value": "No"
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "879f419e5bb34d3dbb4df10a555561b5",
+      "isHidden": false
     }
   }
 }</graph>
@@ -645,14 +893,14 @@
         <sys_created_on>2024-08-19 15:26:18</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>71d710ba47c896105afe9889316d430b</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Hardware Incident</sys_name>
         <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
         <sys_policy/>
         <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
         <sys_update_name>sys_cb_topic_71d710ba47c896105afe9889316d430b</sys_update_name>
         <sys_updated_by>narendrabekkem</sys_updated_by>
-        <sys_updated_on>2024-08-19 16:34:47</sys_updated_on>
+        <sys_updated_on>2024-09-05 13:15:43</sys_updated_on>
         <title>Hardware Incident</title>
         <triggerable_by_notification>false</triggerable_by_notification>
         <type>STANDARD</type>

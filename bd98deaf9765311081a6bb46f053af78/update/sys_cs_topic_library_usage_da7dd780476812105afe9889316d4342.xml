@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_library_usage">
+    <sys_cs_topic_library_usage action="INSERT_OR_UPDATE">
+        <calling_cs_topic_id display_value="Hardware Incident">ad432cf6470c96105afe9889316d4366</calling_cs_topic_id>
+        <library_cs_topic_id display_value="Request Catalog Item Inline-seismic">689a151977b00210c5c6b2a07b5a99ea</library_cs_topic_id>
+        <library_usage>{"type":"LibraryCall","library_topic_name":"Request Catalog Item Inline-seismic","library_topic_id":"689a151977b00210c5c6b2a07b5a99ea","library_topic_is_template":false,"parameter-mappings":[{"parameter-name":"catalogitemid","value":{"type":"String","mode":"string","value":"7198552237b1300054b6a3549dbe5dea"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"requestedforid","value":{"type":"String","mode":"string","value":"{{vaInputs.user}}"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}}],"return-value-mappings":[{"main_topic_variable_namespace":"vaInputs","library_topic_return_parameter_name":"record_id","main_topic_mapped_variable_name":"record_id"},{"main_topic_variable_namespace":"vaInputs","library_topic_return_parameter_name":"record_table","main_topic_mapped_variable_name":"record_table"},{"main_topic_variable_namespace":"vaInputs","library_topic_return_parameter_name":"message","main_topic_mapped_variable_name":"message"},{"main_topic_variable_namespace":"vaInputs","library_topic_return_parameter_name":"status","main_topic_mapped_variable_name":"status"}],"header_card_fields":[],"id":"65cef709aad0407bb3f55d65b1c71f07","name":"Request Catalog Item Inline-seismic","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false}</library_usage>
+        <node_id>65cef709aad0407bb3f55d65b1c71f07</node_id>
+        <sys_class_name>sys_cs_topic_library_usage</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-09-05 13:17:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>da7dd780476812105afe9889316d4342</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_cs_topic_library_usage_da7dd780476812105afe9889316d4342</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-09-05 13:17:51</sys_updated_on>
+    </sys_cs_topic_library_usage>
+</record_update>

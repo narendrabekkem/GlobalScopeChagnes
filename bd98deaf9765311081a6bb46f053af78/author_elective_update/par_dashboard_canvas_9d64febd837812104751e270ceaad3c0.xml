@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_canvas">
+    <par_dashboard_canvas action="DELETE">
+        <dashboard display_value="Incident Management - Copy">9164febd837812104751e270ceaad3b0</dashboard>
+        <dashboard_tab display_value="New Tab 10">1164febd837812104751e270ceaad3be</dashboard_tab>
+        <layout>[]</layout>
+        <sys_class_name>par_dashboard_canvas</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-09-23 07:03:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>9d64febd837812104751e270ceaad3c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>par_dashboard_canvas_9d64febd837812104751e270ceaad3c0</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-09-23 07:03:27</sys_updated_on>
+    </par_dashboard_canvas>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>par_dashboard_canvas_9d64febd837812104751e270ceaad3c0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_canvas"><par_dashboard_canvas action="INSERT_OR_UPDATE"><dashboard display_value="Incident Management - Copy">9164febd837812104751e270ceaad3b0</dashboard><dashboard_tab display_value="New Tab 10">1164febd837812104751e270ceaad3be</dashboard_tab><layout>[]</layout><sys_class_name>par_dashboard_canvas</sys_class_name><sys_created_by>narendrabekkem</sys_created_by><sys_created_on>2024-09-23 07:03:27</sys_created_on><sys_domain>global</sys_domain><sys_id>9d64febd837812104751e270ceaad3c0</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package><sys_policy/><sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope><sys_update_name>par_dashboard_canvas_9d64febd837812104751e270ceaad3c0</sys_update_name><sys_updated_by>narendrabekkem</sys_updated_by><sys_updated_on>2024-09-23 07:03:27</sys_updated_on></par_dashboard_canvas></record_update>]]></payload>
+        <payload_hash>-510442970</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>8d63c860472fc2105afe9889316d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-09-23 07:03:27</sys_created_on>
+        <sys_id>9964febd837812104751e270ceaad3c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1921db13d7c0000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-09-23 07:03:27</sys_updated_on>
+        <type>PAR Dashboard Page Canvas</type>
+        <update_guid>9d64febda978121017cfb2b2d6f8bdc1</update_guid>
+        <update_guid_history>9d64febda978121017cfb2b2d6f8bdc1:-510442970</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">f56432fd837812104751e270ceaad316</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-09-23 07:03:29</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_canvas">par_dashboard_canvas</sys_db_object>
+        <sys_id>16ecb07621c747da822e509bb3e36839</sys_id>
+        <sys_metadata>9d64febd837812104751e270ceaad3c0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>par_dashboard_canvas_9d64febd837812104751e270ceaad3c0</sys_update_name>
+        <sys_update_version display_value="par_dashboard_canvas_9d64febd837812104751e270ceaad3c0">9964febd837812104751e270ceaad3c2</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-09-23 07:03:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

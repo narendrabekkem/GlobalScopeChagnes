@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="INSERT_OR_UPDATE">
+        <group_id/>
+        <report_id display_value="Duration spent on Incident By Assignment group">e2baa574838512104751e270ceaad3ac</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-02 09:23:22</sys_created_on>
+        <sys_id>e2baa574838512104751e270ceaad3ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>e2baa574838512104751e270ceaad3ac</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_report_users_groups_e2baa574838512104751e270ceaad3ad</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-02 09:23:22</sys_updated_on>
+        <user_id display_value="Narendranath Reddy">5868f1a2476702105afe9889316d43d9</user_id>
+    </sys_report_users_groups>
+</record_update>

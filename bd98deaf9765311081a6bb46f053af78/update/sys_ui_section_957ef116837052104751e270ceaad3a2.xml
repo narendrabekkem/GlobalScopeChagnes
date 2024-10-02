@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="957ef116837052104751e270ceaad3a2" sys_domain="global" table="u_alm_hardware" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>narendrabekkem</sys_created_by>
+            <sys_created_on>2024-09-24 16:24:45</sys_created_on>
+            <sys_id>197e71d6837052104751e270ceaad386</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_alm_hardware" sys_domain="global" view="Default view">957ef116837052104751e270ceaad3a2</sys_ui_section>
+            <sys_updated_by>narendrabekkem</sys_updated_by>
+            <sys_updated_on>2024-09-24 16:24:45</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_substate</element>
+            <position>1</position>
+            <sys_created_by>narendrabekkem</sys_created_by>
+            <sys_created_on>2024-09-24 16:24:45</sys_created_on>
+            <sys_id>d17e71d6837052104751e270ceaad387</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_alm_hardware" sys_domain="global" view="Default view">957ef116837052104751e270ceaad3a2</sys_ui_section>
+            <sys_updated_by>narendrabekkem</sys_updated_by>
+            <sys_updated_on>2024-09-24 16:24:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_cost</element>
+            <position>2</position>
+            <sys_created_by>narendrabekkem</sys_created_by>
+            <sys_created_on>2024-09-24 16:24:45</sys_created_on>
+            <sys_id>597e71d6837052104751e270ceaad387</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_alm_hardware" sys_domain="global" view="Default view">957ef116837052104751e270ceaad3a2</sys_ui_section>
+            <sys_updated_by>narendrabekkem</sys_updated_by>
+            <sys_updated_on>2024-09-24 16:24:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_model</element>
+            <position>3</position>
+            <sys_created_by>narendrabekkem</sys_created_by>
+            <sys_created_on>2024-09-24 16:24:45</sys_created_on>
+            <sys_id>dd7e71d6837052104751e270ceaad387</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_alm_hardware" sys_domain="global" view="Default view">957ef116837052104751e270ceaad3a2</sys_ui_section>
+            <sys_updated_by>narendrabekkem</sys_updated_by>
+            <sys_updated_on>2024-09-24 16:24:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_model_category</element>
+            <position>4</position>
+            <sys_created_by>narendrabekkem</sys_created_by>
+            <sys_created_on>2024-09-24 16:24:45</sys_created_on>
+            <sys_id>557e71d6837052104751e270ceaad388</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_alm_hardware" sys_domain="global" view="Default view">957ef116837052104751e270ceaad3a2</sys_ui_section>
+            <sys_updated_by>narendrabekkem</sys_updated_by>
+            <sys_updated_on>2024-09-24 16:24:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>narendrabekkem</sys_created_by>
+            <sys_created_on>2024-09-24 16:24:45</sys_created_on>
+            <sys_id>d97e71d6837052104751e270ceaad388</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_alm_hardware" sys_domain="global" view="Default view">957ef116837052104751e270ceaad3a2</sys_ui_section>
+            <sys_updated_by>narendrabekkem</sys_updated_by>
+            <sys_updated_on>2024-09-24 16:24:45</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_assigned_to</element>
+            <position>6</position>
+            <sys_created_by>narendrabekkem</sys_created_by>
+            <sys_created_on>2024-09-24 16:24:45</sys_created_on>
+            <sys_id>517e71d6837052104751e270ceaad389</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_alm_hardware" sys_domain="global" view="Default view">957ef116837052104751e270ceaad3a2</sys_ui_section>
+            <sys_updated_by>narendrabekkem</sys_updated_by>
+            <sys_updated_on>2024-09-24 16:24:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_state</element>
+            <position>7</position>
+            <sys_created_by>narendrabekkem</sys_created_by>
+            <sys_created_on>2024-09-24 16:24:45</sys_created_on>
+            <sys_id>d57e71d6837052104751e270ceaad389</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_alm_hardware" sys_domain="global" view="Default view">957ef116837052104751e270ceaad3a2</sys_ui_section>
+            <sys_updated_by>narendrabekkem</sys_updated_by>
+            <sys_updated_on>2024-09-24 16:24:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_company</element>
+            <position>8</position>
+            <sys_created_by>narendrabekkem</sys_created_by>
+            <sys_created_on>2024-09-24 16:24:45</sys_created_on>
+            <sys_id>5d7e71d6837052104751e270ceaad389</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_alm_hardware" sys_domain="global" view="Default view">957ef116837052104751e270ceaad3a2</sys_ui_section>
+            <sys_updated_by>narendrabekkem</sys_updated_by>
+            <sys_updated_on>2024-09-24 16:24:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_asset_tag</element>
+            <position>9</position>
+            <sys_created_by>narendrabekkem</sys_created_by>
+            <sys_created_on>2024-09-24 16:24:45</sys_created_on>
+            <sys_id>d17e71d6837052104751e270ceaad38a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_alm_hardware" sys_domain="global" view="Default view">957ef116837052104751e270ceaad3a2</sys_ui_section>
+            <sys_updated_by>narendrabekkem</sys_updated_by>
+            <sys_updated_on>2024-09-24 16:24:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>10</position>
+            <sys_created_by>narendrabekkem</sys_created_by>
+            <sys_created_on>2024-09-24 16:24:45</sys_created_on>
+            <sys_id>597e71d6837052104751e270ceaad38a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_alm_hardware" sys_domain="global" view="Default view">957ef116837052104751e270ceaad3a2</sys_ui_section>
+            <sys_updated_by>narendrabekkem</sys_updated_by>
+            <sys_updated_on>2024-09-24 16:24:45</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>u_alm_hardware</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>narendrabekkem</sys_created_by>
+            <sys_created_on>2024-09-24 16:24:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>957ef116837052104751e270ceaad3a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_alm_hardware</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+            <sys_update_name>sys_ui_section_957ef116837052104751e270ceaad3a2</sys_update_name>
+            <sys_updated_by>narendrabekkem</sys_updated_by>
+            <sys_updated_on>2024-09-24 16:24:45</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

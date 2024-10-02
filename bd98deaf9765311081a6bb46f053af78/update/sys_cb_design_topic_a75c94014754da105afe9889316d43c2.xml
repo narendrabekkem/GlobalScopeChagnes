@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="Test Topic Block">ef5c5cc94714da105afe9889316d4378</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"db740278525547cea90c601b459e2267","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"db740278525547cea90c601b459e2267"}],"goals":[{"name":"primary","trigger_id":"db740278525547cea90c601b459e2267","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"fe37aac87d6143128c978750e77c98cf","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"29048d5f637b4426a46219192c1faeb1","name":"End","expert_mode":false}],"edges":[{"type":"Edge","source_node_id":"fe37aac87d6143128c978750e77c98cf","target_node_id":"29048d5f637b4426a46219192c1faeb1","id":"e9f287076d2748ad9656359e67c95da6"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"String","name":"var1","list":false,"id":"55dc48f693604f2293e6fa63ff4d6fa0","formatType":"text","metadata":{"libraryMappingType":"input"},"secure":false,"sensitive":false,"aiInput":false},{"type":"True/False","id":"50d5d99544104086b8a4ebf1cd32fbef","name":"var2","formatType":"text","metadata":{"libraryMappingType":"input"},"secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"Reference","table":"sys_user","id":"87928be3dfda4b13a85cf6fb873cdc06","name":"var3","formatType":"text","metadata":{"libraryMappingType":"input"},"secure":false,"sensitive":false,"aiInput":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"bd98deaf9765311081a6bb46f053af78","library-usage":{"type":"Library","input-parameters":[{"name":"var1","label":"Var1","default-value":"\"\"","required":false,"metadata":{"type":"String","list":false,"items":[],"use_items":false},"id":"55dc48f693604f2293e6fa63ff4d6fa0","type":"String"},{"name":"var2","label":"var2","default-value":"true","required":false,"metadata":{"type":"True/False","list":false,"items":[],"use_items":false},"id":"50d5d99544104086b8a4ebf1cd32fbef","type":"True/False"},{"name":"var3","label":"var3","default-value":"\"\"","required":false,"metadata":{"type":"Reference","list":false,"items":[],"use_items":false,"table":"sys_user","query":""},"id":"87928be3dfda4b13a85cf6fb873cdc06","type":"Reference"}],"return-values-mapping":[]},"domain":"global","topic_type":"TOPIC_BLOCK","channels":[],"dialog_acts_enabled":false,"id":"6cfb9cc94714da105afe9889316d4356","name":"Test Topic Block","key_phrases":[],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":true,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"Test Topic Block","library":true,"readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>6cfb9cc94714da105afe9889316d4356</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.68",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "fe37aac87d6143128c978750e77c98cf": {
+          "id": "fe37aac87d6143128c978750e77c98cf",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          },
+          "parameters": [
+            {
+              "type": "String",
+              "value": "",
+              "id": "55dc48f693604f2293e6fa63ff4d6fa0",
+              "name": "Var1",
+              "referenced": false
+            },
+            {
+              "type": "True/False",
+              "value": "true",
+              "id": "50d5d99544104086b8a4ebf1cd32fbef",
+              "name": "var2",
+              "referenced": false
+            },
+            {
+              "type": "Reference",
+              "value": "",
+              "id": "87928be3dfda4b13a85cf6fb873cdc06",
+              "name": "var3",
+              "table": "sys_user",
+              "query": "",
+              "referenced": false
+            }
+          ],
+          "variableIds": [
+            "55dc48f693604f2293e6fa63ff4d6fa0",
+            "50d5d99544104086b8a4ebf1cd32fbef",
+            "87928be3dfda4b13a85cf6fb873cdc06"
+          ]
+        },
+        "29048d5f637b4426a46219192c1faeb1": {
+          "id": "29048d5f637b4426a46219192c1faeb1",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "e9f287076d2748ad9656359e67c95da6",
+          "edgeType": "Edge",
+          "source": "fe37aac87d6143128c978750e77c98cf",
+          "target": "29048d5f637b4426a46219192c1faeb1",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "55dc48f693604f2293e6fa63ff4d6fa0": {
+      "id": "55dc48f693604f2293e6fa63ff4d6fa0",
+      "name": "var1",
+      "label": "Var1",
+      "defaultValue": "",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "input"
+      },
+      "nodeId": "fe37aac87d6143128c978750e77c98cf",
+      "isHidden": false
+    },
+    "50d5d99544104086b8a4ebf1cd32fbef": {
+      "id": "50d5d99544104086b8a4ebf1cd32fbef",
+      "name": "var2",
+      "label": "Var2",
+      "defaultValue": "true",
+      "varType": "boolean",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "input"
+      },
+      "nodeId": "fe37aac87d6143128c978750e77c98cf",
+      "isHidden": false
+    },
+    "87928be3dfda4b13a85cf6fb873cdc06": {
+      "id": "87928be3dfda4b13a85cf6fb873cdc06",
+      "name": "var3",
+      "label": "Var3",
+      "defaultValue": "",
+      "varType": "reference",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "input"
+      },
+      "table": "sys_user",
+      "nodeId": "fe37aac87d6143128c978750e77c98cf",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <name>Test Topic Block</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-08-26 15:32:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a75c94014754da105afe9889316d43c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_cb_design_topic_a75c94014754da105afe9889316d43c2</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-08-26 15:32:24</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

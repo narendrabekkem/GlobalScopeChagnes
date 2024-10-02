@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile">
+    <oauth_entity_profile action="DELETE">
+        <default>true</default>
+        <grant_type>client_credentials</grant_type>
+        <jwt_provider/>
+        <name>Microsoft Graph default_profile</name>
+        <oauth_entity display_value="Microsoft Graph">077a4ee8834952104751e270ceaad3d6</oauth_entity>
+        <saml2_assertion_producer/>
+        <sys_class_name>oauth_entity_profile</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-01 17:06:11</sys_created_on>
+        <sys_id>a41b42e0830952104751e270ceaad3d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Microsoft Graph default_profile</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>oauth_entity_profile_a41b42e0830952104751e270ceaad3d1</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-01 17:06:11</sys_updated_on>
+    </oauth_entity_profile>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>oauth_entity_profile_a41b42e0830952104751e270ceaad3d1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile"><oauth_entity_profile action="INSERT_OR_UPDATE"><default>true</default><grant_type>client_credentials</grant_type><jwt_provider/><name>Microsoft Graph default_profile</name><oauth_entity display_value="Microsoft Graph">077a4ee8834952104751e270ceaad3d6</oauth_entity><saml2_assertion_producer/><sys_class_name>oauth_entity_profile</sys_class_name><sys_created_by>narendrabekkem</sys_created_by><sys_created_on>2024-10-01 17:06:11</sys_created_on><sys_id>a41b42e0830952104751e270ceaad3d1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Microsoft Graph default_profile</sys_name><sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package><sys_policy/><sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope><sys_update_name>oauth_entity_profile_a41b42e0830952104751e270ceaad3d1</sys_update_name><sys_updated_by>narendrabekkem</sys_updated_by><sys_updated_on>2024-10-01 17:06:11</sys_updated_on></oauth_entity_profile></record_update>]]></payload>
+        <payload_hash>1809130244</payload_hash>
+        <record_name>Microsoft Graph default_profile</record_name>
+        <reverted_from/>
+        <source>8d63c860472fc2105afe9889316d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-01 17:06:11</sys_created_on>
+        <sys_id>2c1b866c834952104751e270ceaad391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192490bee8b0000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-01 17:06:11</sys_updated_on>
+        <type>OAuth Entity Profile</type>
+        <update_guid>201b866c0f495210d0919ed5a1b2a991</update_guid>
+        <update_guid_history>201b866c0f495210d0919ed5a1b2a991:1809130244</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Microsoft Graph default_profile">9e1c4220838952104751e270ceaad395</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-01 17:10:40</sys_created_on>
+        <sys_db_object display_value="" name="oauth_entity_profile">oauth_entity_profile</sys_db_object>
+        <sys_id>271819ae41f94444bad219f2c6495864</sys_id>
+        <sys_metadata>a41b42e0830952104751e270ceaad3d1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Microsoft Graph default_profile</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>oauth_entity_profile_a41b42e0830952104751e270ceaad3d1</sys_update_name>
+        <sys_update_version display_value="oauth_entity_profile_a41b42e0830952104751e270ceaad3d1">2c1b866c834952104751e270ceaad391</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-01 17:10:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

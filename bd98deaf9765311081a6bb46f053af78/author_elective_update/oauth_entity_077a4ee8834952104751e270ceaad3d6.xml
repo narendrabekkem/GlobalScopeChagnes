@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity">
+    <oauth_entity action="DELETE">
+        <access>public</access>
+        <access_token_lifespan>1800</access_token_lifespan>
+        <active>true</active>
+        <auth_code_lifespan>0</auth_code_lifespan>
+        <auth_url/>
+        <certificate_url/>
+        <client_id>f79870a7-4264-4177-a339-a021de331680</client_id>
+        <client_secret>﷞﷟﷒9d0987f2477602105afe9889316d43b9﷬﷔1﷬﷭857lQJNs_7_v6GcA87PEZQ==0wPzxyCDt1tzrC78IPIkhOeXij7MJJXlPZ909XbQIsj3egVUZeDD1W-kY-okLfGp9m8HGQ==﷮﷯</client_secret>
+        <client_type/>
+        <client_uuid>c37a4ee8834952104751e270ceaad3d6</client_uuid>
+        <code_challenge_method>S256</code_challenge_method>
+        <comments/>
+        <default_grant_type>client_credentials</default_grant_type>
+        <id_token_lifespan>0</id_token_lifespan>
+        <jwt_provider/>
+        <login_url/>
+        <logo_url/>
+        <message_signature_lifespan>0</message_signature_lifespan>
+        <mobile_client>false</mobile_client>
+        <name>Microsoft Graph</name>
+        <oauth_api_script/>
+        <protocol_name/>
+        <public_client>false</public_client>
+        <redirect_url>https://dev216183.service-now.com/oauth_redirect.do</redirect_url>
+        <refresh_token_lifespan>8640000</refresh_token_lifespan>
+        <refresh_token_url/>
+        <restricted_binding>false</restricted_binding>
+        <revoke_token_url/>
+        <salt>0</salt>
+        <send_client_credentials_as>request_body_parameter</send_client_credentials_as>
+        <skip_authorize>false</skip_authorize>
+        <sys_class_name>oauth_entity</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-01 17:06:11</sys_created_on>
+        <sys_id>077a4ee8834952104751e270ceaad3d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Microsoft Graph</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>oauth_entity_077a4ee8834952104751e270ceaad3d6</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-01 17:06:11</sys_updated_on>
+        <token_url>https://login.microsoftonline.com/1c4c3adb-bd42-4b45-92b7-08792b4d5202/oauth2/v2.0/token</token_url>
+        <type>oauth_provider</type>
+        <use_mutual_auth>false</use_mutual_auth>
+        <user/>
+    </oauth_entity>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>oauth_entity_077a4ee8834952104751e270ceaad3d6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity"><oauth_entity action="INSERT_OR_UPDATE"><access>public</access><access_token_lifespan>1800</access_token_lifespan><active>true</active><auth_code_lifespan>0</auth_code_lifespan><auth_url/><certificate_url/><client_id>f79870a7-4264-4177-a339-a021de331680</client_id><client_secret>﷞﷟﷒9d0987f2477602105afe9889316d43b9﷬﷔1﷬﷭857lQJNs_7_v6GcA87PEZQ==0wPzxyCDt1tzrC78IPIkhOeXij7MJJXlPZ909XbQIsj3egVUZeDD1W-kY-okLfGp9m8HGQ==﷮﷯</client_secret><client_type/><client_uuid>c37a4ee8834952104751e270ceaad3d6</client_uuid><code_challenge_method>S256</code_challenge_method><comments/><default_grant_type>client_credentials</default_grant_type><id_token_lifespan>0</id_token_lifespan><jwt_provider/><login_url/><logo_url/><message_signature_lifespan>0</message_signature_lifespan><mobile_client>false</mobile_client><name>Microsoft Graph</name><oauth_api_script/><protocol_name/><public_client>false</public_client><redirect_url>https://dev216183.service-now.com/oauth_redirect.do</redirect_url><refresh_token_lifespan>8640000</refresh_token_lifespan><refresh_token_url/><restricted_binding>false</restricted_binding><revoke_token_url/><salt>0</salt><send_client_credentials_as>request_body_parameter</send_client_credentials_as><skip_authorize>false</skip_authorize><sys_class_name>oauth_entity</sys_class_name><sys_created_by>narendrabekkem</sys_created_by><sys_created_on>2024-10-01 17:06:11</sys_created_on><sys_id>077a4ee8834952104751e270ceaad3d6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Microsoft Graph</sys_name><sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package><sys_policy/><sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope><sys_update_name>oauth_entity_077a4ee8834952104751e270ceaad3d6</sys_update_name><sys_updated_by>narendrabekkem</sys_updated_by><sys_updated_on>2024-10-01 17:06:11</sys_updated_on><token_url>https://login.microsoftonline.com/1c4c3adb-bd42-4b45-92b7-08792b4d5202/oauth2/v2.0/token</token_url><type>oauth_provider</type><use_mutual_auth>false</use_mutual_auth><user/></oauth_entity></record_update>]]></payload>
+        <payload_hash>-1960890227</payload_hash>
+        <record_name>Microsoft Graph</record_name>
+        <reverted_from/>
+        <source>8d63c860472fc2105afe9889316d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-01 17:06:11</sys_created_on>
+        <sys_id>2c1b866c834952104751e270ceaad393</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192490bef700000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-01 17:06:11</sys_updated_on>
+        <type>Application Registries</type>
+        <update_guid>201b866cb849521074abf49491afc493</update_guid>
+        <update_guid_history>201b866cb849521074abf49491afc493:-1960890227</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Microsoft Graph">161c4220838952104751e270ceaad391</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-01 17:10:40</sys_created_on>
+        <sys_db_object display_value="" name="oauth_entity">oauth_entity</sys_db_object>
+        <sys_id>08acbbf85c2f452086313a7245b71040</sys_id>
+        <sys_metadata>077a4ee8834952104751e270ceaad3d6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Microsoft Graph</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>oauth_entity_077a4ee8834952104751e270ceaad3d6</sys_update_name>
+        <sys_update_version display_value="oauth_entity_077a4ee8834952104751e270ceaad3d6">2c1b866c834952104751e270ceaad393</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-01 17:10:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

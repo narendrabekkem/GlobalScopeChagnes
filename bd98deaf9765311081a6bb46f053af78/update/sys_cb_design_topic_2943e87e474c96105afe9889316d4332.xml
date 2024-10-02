@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
     <sys_cb_design_topic action="INSERT_OR_UPDATE">
         <compiled_topic display_value="Hardware Incident">ad432cf6470c96105afe9889316d4366</compiled_topic>
-        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"9cc86df91a744af996c8a3140bf3796d","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"9cc86df91a744af996c8a3140bf3796d"}],"goals":[{"name":"primary","trigger_id":"9cc86df91a744af996c8a3140bf3796d","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"a52dde32e791457193644d88ce8d7a10","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"ad6365e1c8d04fb7be2f4527a6b9c1cc","name":"End","expert_mode":false},{"type":"InputPrompt","variable_id":"dd41896d9d2240d49a03bf525bda6105","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Please tell us briefly about your issue\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":true,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"0faf2bf754ad4bf7b20f3e29c6072137","name":"Describe Issue","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"formatType":"Text","validationScript":"","description":""},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"Thanks for providing you input. Few more questions to help us assist you better\", vaContext.getRequesterLang())"}],"request_feedback":true,"id":"35780fd5a292475791693905fa7048ec","name":"Thank for providing input","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"ReferenceChoiceInputPrompt","mode":"glide_record","id":"baf7a8485c59468aa514b9073ad5398b","name":"Select your hardware","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"675657b2b18e4c0298ea96e5bb277d27","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Select your hardware\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"no_options_found_message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"No Hardware found assigned to you\", vaContext.getRequesterLang())"},"condition":{"type":"Condition","mode":"glide_query","value":"assigned_to={{vaInputs.user}}"},"description":""},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"Hardware Selected","expression":{"type":"Applicability","mode":"query","value":"select_your_hardwareISNOTEMPTY"},"id":"baed43360466485aaee1db8deb1d3fc9","name":"Hardware Selected","expert_mode":false},{"type":"Branch","label":"Hardware Not Selected","expression":{"type":"Applicability","mode":"query","value":"select_your_hardwareISEMPTY"},"id":"2f9dc764a892485090302c8e620f0426","name":"Hardware Not Selected","expert_mode":false},{"type":"Branch","label":"Hardware Seleected","expression":{"type":"Applicability","mode":"query","value":"select_your_hardwareISNOTEMPTY"},"id":"fbd6ca250f4541b0b7af9e6a3d80d819","name":"Hardware Seleected","expert_mode":false}],"id":"efa25787cc5d4275b789d3cc424bcd78","goal_id":"primary","expert_mode":false},{"type":"InputPrompt","variable_id":"f76bebcb66bc4ad0a24c02ae9a3d33a6","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Set by NLU\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":false},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"ef57cc6b5e0e497ea29809d664861147","name":"Selected_Hardware","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"(function() { return false; })()"},"expert_mode":false,"formatType":"Text","validationScript":"","description":""},{"type":"InputPrompt","variable_id":"0e222d75a0ac493788f44cb1d47b53f0","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Enter your Hardware Asset Tag\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":true,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"770f1be0e5c046759a4120f0451a368d","name":"Typed Hardware","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"formatType":"Text","validationScript":"","description":""},{"type":"ScriptedAction","script":"(function execute() {\n    /* Code your scripted action here. For example, you might update a\n       record based on conditional logic:\n\n        if (vaVars.my_flag == 'say hello') {\n            gs.info('hi there');\n        } else {\n            gs.info('bye now');\n        }\n    */\n    if(vaInputs.select_your_hardware=='')\n    {\n        vaInputs.selected_hardware=vaInputs.typed_hardware;\n    }\n    else{\n        vaInputs.selected_hardware=vaInputs.select_your_hardware;\n    }\n})()\n","id":"f441992e9e5a42df84ef090c85719815","name":"Merge Hardware Input","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","id":"ca0cbab57802427db5047c4282c6157c","name":"ImplicitEnd__2b4cb0905cfc49739da28c65028da4f5","expert_mode":false},{"type":"CRUDAction","mode":"create","query":"short_description={{vaInputs.describe_issue}}^caller_id={{vaInputs.user}}^cmdb_ci={{vaInputs.selected_hardware}}","variable_id":"585daefedb21414faff74db6754ccf3f","id":"1eeb9071f74b418db98150a364992836","name":"Create Incident","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"attachments":[{"type":"String","mode":"string","value":""}]},{"type":"CardOutputPrompt","templateName":"Small image with text","fields":[{"name":"title","value":{"type":"String","mode":"string","value":"{{vaInputs.create_incident.number}}"},"required":true},{"name":"description","value":{"type":"String","mode":"string","value":"{{vaInputs.create_incident.short_description}}"},"required":false},{"name":"image","value":{"type":"String","mode":"script","value":"(function execute() { var url = gs.getProperty(\"glide.servlet.uri\"); return url + \"Picxel logo_1724084110052.png\";})()"},"required":true},{"name":"imageAlt","value":{"type":"String","mode":"string","value":""},"required":false}],"id":"081970a74d5f4247b68125a86f702421","name":"Incident Created","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"request_feedback":true}],"edges":[{"type":"Edge","source_node_id":"efa25787cc5d4275b789d3cc424bcd78","target_node_id":"ad6365e1c8d04fb7be2f4527a6b9c1cc","branch_id":"baed43360466485aaee1db8deb1d3fc9","id":"def4a1506bf04a4498c2e394cb547075","name":"baed43360466485aaee1db8deb1d3fc9"},{"type":"Edge","source_node_id":"35780fd5a292475791693905fa7048ec","target_node_id":"0faf2bf754ad4bf7b20f3e29c6072137","id":"88457871d9c04975b1ca616da0957ce9"},{"type":"Edge","source_node_id":"0faf2bf754ad4bf7b20f3e29c6072137","target_node_id":"baf7a8485c59468aa514b9073ad5398b","id":"aed749cec4a74a66a904a584e6b900cc"},{"type":"Edge","source_node_id":"baf7a8485c59468aa514b9073ad5398b","target_node_id":"efa25787cc5d4275b789d3cc424bcd78","id":"57eced0665a24071a66c2c0bcea720d2"},{"type":"Edge","source_node_id":"a52dde32e791457193644d88ce8d7a10","target_node_id":"ef57cc6b5e0e497ea29809d664861147","id":"8c67a47728d54961a6b33a3f56e3a6ab"},{"type":"Edge","source_node_id":"ef57cc6b5e0e497ea29809d664861147","target_node_id":"35780fd5a292475791693905fa7048ec","id":"77f510227e5a49eda003cbb01d385fb5"},{"type":"Edge","source_node_id":"efa25787cc5d4275b789d3cc424bcd78","target_node_id":"770f1be0e5c046759a4120f0451a368d","branch_id":"2f9dc764a892485090302c8e620f0426","id":"70177de58e684079b0ad4d55a605edae","name":"2f9dc764a892485090302c8e620f0426"},{"type":"Edge","source_node_id":"770f1be0e5c046759a4120f0451a368d","target_node_id":"f441992e9e5a42df84ef090c85719815","id":"59c0963b3c2a4375af6e69550f84a0da"},{"type":"Edge","source_node_id":"f441992e9e5a42df84ef090c85719815","target_node_id":"1eeb9071f74b418db98150a364992836","id":"2730cc4064ab4f3bbf9e52a8df695538"},{"type":"Edge","source_node_id":"efa25787cc5d4275b789d3cc424bcd78","target_node_id":"f441992e9e5a42df84ef090c85719815","branch_id":"fbd6ca250f4541b0b7af9e6a3d80d819","id":"bb51c135fe574a6d97497532a21e5a39","name":"fbd6ca250f4541b0b7af9e6a3d80d819"},{"type":"Edge","source_node_id":"1eeb9071f74b418db98150a364992836","target_node_id":"081970a74d5f4247b68125a86f702421","id":"d02289c1c2c74911b2e8af48a43e44e5"},{"type":"Edge","source_node_id":"081970a74d5f4247b68125a86f702421","target_node_id":"ca0cbab57802427db5047c4282c6157c","id":"5a2d81f82fbd483b87248c832af5b61a"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"String","name":"describe_issue","list":false,"id":"dd41896d9d2240d49a03bf525bda6105","formatType":"Text","validationScript":"","secure":false,"sensitive":false,"aiInput":false},{"type":"Reference","table":"cmdb_ci","reference_qualifier_condition":"assigned_to={{vaInputs.user}}","id":"675657b2b18e4c0298ea96e5bb277d27","name":"select_your_hardware","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"String","name":"typed_hardware","list":false,"id":"0e222d75a0ac493788f44cb1d47b53f0","formatType":"Text","validationScript":"","secure":false,"sensitive":false,"aiInput":false},{"type":"String","name":"selected_hardware","list":false,"id":"f76bebcb66bc4ad0a24c02ae9a3d33a6","formatType":"text","secure":false,"sensitive":false,"aiInput":false},{"type":"Reference","table":"incident","id":"585daefedb21414faff74db6754ccf3f","name":"create_incident","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"bd98deaf9765311081a6bb46f053af78","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"71d710ba47c896105afe9889316d430b","name":"Hardware Incident","key_phrases":["Hardware Incident","Having a generic issue"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"description":"","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"Hardware Incident","library":false,"readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"905baf4065d84b76ae2c6165ad52de5d","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"905baf4065d84b76ae2c6165ad52de5d"}],"goals":[{"name":"primary","trigger_id":"905baf4065d84b76ae2c6165ad52de5d","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"a52dde32e791457193644d88ce8d7a10","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"ad6365e1c8d04fb7be2f4527a6b9c1cc","name":"End","expert_mode":false},{"type":"InputPrompt","variable_id":"dd41896d9d2240d49a03bf525bda6105","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Please tell us briefly about your issue\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":true,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"0faf2bf754ad4bf7b20f3e29c6072137","name":"Describe Issue","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"formatType":"Text","validationScript":"","description":""},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"Thanks for providing you input. Few more questions to help us assist you better\", vaContext.getRequesterLang())"}],"request_feedback":true,"id":"35780fd5a292475791693905fa7048ec","name":"Thank for providing input","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"ReferenceChoiceInputPrompt","mode":"glide_record","id":"baf7a8485c59468aa514b9073ad5398b","name":"Select your hardware","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"675657b2b18e4c0298ea96e5bb277d27","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Select your hardware\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"no_options_found_message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"No Hardware found assigned to you\", vaContext.getRequesterLang())"},"condition":{"type":"Condition","mode":"glide_query","value":"assigned_to={{vaInputs.user}}"},"description":""},{"type":"InputPrompt","variable_id":"f76bebcb66bc4ad0a24c02ae9a3d33a6","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Set by NLU\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":false},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"ef57cc6b5e0e497ea29809d664861147","name":"Selected_Hardware","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"(function() { return false; })()"},"expert_mode":false,"formatType":"Text","validationScript":"","description":""},{"type":"CRUDAction","mode":"create","query":"short_description={{vaInputs.describe_issue}}^caller_id={{vaInputs.user}}^cmdb_ci={{vaInputs.select_your_hardware}}^description={{vaVars.user_mail}}","variable_id":"4be2f5708cb54964b23e33f804445f27","id":"dda7212ac57b478c8d065bb4229da2e3","name":"Create Incident","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"attachments":[{"type":"String","mode":"string","value":""}]},{"type":"RecordOutputPrompt","mode":"variable","table":"incident","variable_id":"4be2f5708cb54964b23e33f804445f27","fields":["number","cmdb_ci","short_description"],"request_feedback":true,"id":"87e331e6d26b439fbef6a2ccd22b39c5","name":"Show Created Incidents","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"condition":{"type":"Condition","mode":"glide_query","value":""}},{"type":"LibraryCall","library_topic_name":"Request Catalog Item Inline-seismic","library_topic_id":"689a151977b00210c5c6b2a07b5a99ea","library_topic_is_template":false,"parameter-mappings":[{"parameter-name":"catalogitemid","value":{"type":"String","mode":"string","value":"7198552237b1300054b6a3549dbe5dea"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"requestedforid","value":{"type":"String","mode":"string","value":"{{vaInputs.user}}"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}}],"return-value-mappings":[{"main_topic_variable_namespace":"vaInputs","library_topic_return_parameter_name":"record_id","main_topic_mapped_variable_name":"record_id"},{"main_topic_variable_namespace":"vaInputs","library_topic_return_parameter_name":"record_table","main_topic_mapped_variable_name":"record_table"},{"main_topic_variable_namespace":"vaInputs","library_topic_return_parameter_name":"message","main_topic_mapped_variable_name":"message"},{"main_topic_variable_namespace":"vaInputs","library_topic_return_parameter_name":"status","main_topic_mapped_variable_name":"status"}],"header_card_fields":[],"id":"65cef709aad0407bb3f55d65b1c71f07","name":"Request Catalog Item Inline-seismic","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"ScriptedAction","script":"(function execute() {\n    /* Code your scripted action here. For example, you might update a\n       record based on conditional logic:\n\n        if (vaVars.my_flag == 'say hello') {\n            gs.info('hi there');\n        } else {\n            gs.info('bye now');\n        }\n    */\n  \n\n    gs.info('VA Variables inputs'+vaInputs.describe_issue)\n})()\n","id":"1235b69c641444c8bdf8ad6afd2768a7","name":"Print all variables","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"LibraryCall","library_topic_name":"Survey","library_topic_id":"26baac293b77330074bc456993efc4dd","library_topic_is_template":false,"parameter-mappings":[{"parameter-name":"surveyid","value":{"type":"String","mode":"string","value":"a259f6969f3220100d74d46d842e702a"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"confirmationneeded","value":{"type":"String","mode":"string","value":"false"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"savequestionstocontext","value":{"type":"String","mode":"string","value":"false"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}}],"return-value-mappings":[],"header_card_fields":[],"id":"fa829e94179e4e52a54542f5293f1a6a","name":"Survey","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"id":"879f419e5bb34d3dbb4df10a555561b5","name":"Did I solve you issue","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"a7d7efba81ec4b098ca43d0f47cccd4e","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Did I solve you issue? If not satisfied talk to our agent\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"Close","expression":{"type":"Applicability","mode":"query","value":"did_i_solve_you_issue=Yes"},"id":"360a32865f5c4b52a2e9cc7136982372","name":"Close","expert_mode":false},{"type":"Branch","label":"Live Agent","expression":{"type":"Applicability","mode":"query","value":"did_i_solve_you_issue=No"},"id":"c3b5b38cf8354468a85ced105bb8d544","name":"Live Agent","expert_mode":false}],"id":"8bca93dbdf0344d5975f31fe255f6342","goal_id":"primary","expert_mode":false},{"type":"ScriptOutputPrompt","output_type":"single_part","id":"ef4e0cfe29f64102bf2ded0903411f70","name":"Connect Live Agent","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"value":{"type":"String","mode":"string","value":"(function execute() {\n      // Transfer to a live agent\n      vaSystem.connectToAgent()\n})()\n\n"},"secure":false}],"edges":[{"type":"Edge","source_node_id":"87e331e6d26b439fbef6a2ccd22b39c5","target_node_id":"1235b69c641444c8bdf8ad6afd2768a7","id":"2550a93fdc714990be617320aac13ae5"},{"type":"Edge","source_node_id":"35780fd5a292475791693905fa7048ec","target_node_id":"0faf2bf754ad4bf7b20f3e29c6072137","id":"88457871d9c04975b1ca616da0957ce9"},{"type":"Edge","source_node_id":"0faf2bf754ad4bf7b20f3e29c6072137","target_node_id":"baf7a8485c59468aa514b9073ad5398b","id":"aed749cec4a74a66a904a584e6b900cc"},{"type":"Edge","source_node_id":"a52dde32e791457193644d88ce8d7a10","target_node_id":"ef57cc6b5e0e497ea29809d664861147","id":"8c67a47728d54961a6b33a3f56e3a6ab"},{"type":"Edge","source_node_id":"ef57cc6b5e0e497ea29809d664861147","target_node_id":"35780fd5a292475791693905fa7048ec","id":"77f510227e5a49eda003cbb01d385fb5"},{"type":"Edge","source_node_id":"baf7a8485c59468aa514b9073ad5398b","target_node_id":"dda7212ac57b478c8d065bb4229da2e3","id":"57eced0665a24071a66c2c0bcea720d2"},{"type":"Edge","source_node_id":"dda7212ac57b478c8d065bb4229da2e3","target_node_id":"87e331e6d26b439fbef6a2ccd22b39c5","id":"065b8d641170453fa17d81e8c45b1f63"},{"type":"Edge","source_node_id":"1235b69c641444c8bdf8ad6afd2768a7","target_node_id":"65cef709aad0407bb3f55d65b1c71f07","id":"94354d84a9be4cc48c5f8b11e79286b1"},{"type":"Edge","source_node_id":"65cef709aad0407bb3f55d65b1c71f07","target_node_id":"fa829e94179e4e52a54542f5293f1a6a","id":"156738e7761044cab4cc964c5b686ef9"},{"type":"Edge","source_node_id":"fa829e94179e4e52a54542f5293f1a6a","target_node_id":"879f419e5bb34d3dbb4df10a555561b5","id":"43add57465d845fabe16f44735040839"},{"type":"Edge","source_node_id":"879f419e5bb34d3dbb4df10a555561b5","target_node_id":"8bca93dbdf0344d5975f31fe255f6342","id":"04eb385b8a8e4f5aa0a4aeefc5ba45b0"},{"type":"Edge","source_node_id":"8bca93dbdf0344d5975f31fe255f6342","target_node_id":"ad6365e1c8d04fb7be2f4527a6b9c1cc","branch_id":"360a32865f5c4b52a2e9cc7136982372","id":"7353ef34e8fd4785a849ebb33328bb8a","name":"360a32865f5c4b52a2e9cc7136982372"},{"type":"Edge","source_node_id":"8bca93dbdf0344d5975f31fe255f6342","target_node_id":"ef4e0cfe29f64102bf2ded0903411f70","branch_id":"c3b5b38cf8354468a85ced105bb8d544","id":"41a447e342cb42ed827835abd9e3f4b2","name":"c3b5b38cf8354468a85ced105bb8d544"},{"type":"Edge","source_node_id":"ef4e0cfe29f64102bf2ded0903411f70","target_node_id":"ad6365e1c8d04fb7be2f4527a6b9c1cc","id":"85411bfa5341451a9b9d05c0f2626a7b"}],"id":"primary"}],"script_variables":[{"type":"String","name":"user_mail","value":{"type":"String","mode":"script","value":"(function execute() {\n    \n    return gs.getUser().getEmail();\n})()\n"},"list":false,"id":"eb24822a7c08467fac77e9a27e455d97","formatType":"text","secure":false,"sensitive":false,"aiInput":false}],"glide_variables":[{"type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"String","name":"describe_issue","list":false,"id":"dd41896d9d2240d49a03bf525bda6105","formatType":"Text","validationScript":"","secure":false,"sensitive":false,"aiInput":false},{"type":"Reference","table":"cmdb_ci","reference_qualifier_condition":"assigned_to={{vaInputs.user}}","id":"675657b2b18e4c0298ea96e5bb277d27","name":"select_your_hardware","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"String","name":"selected_hardware","list":false,"id":"f76bebcb66bc4ad0a24c02ae9a3d33a6","formatType":"text","secure":false,"sensitive":false,"aiInput":false},{"type":"Reference","table":"incident","id":"4be2f5708cb54964b23e33f804445f27","name":"create_incident","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"String","name":"record_id","list":false,"id":"48230c1044cb465ba71e27f875d06f17","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false},{"type":"String","name":"record_table","list":false,"id":"c5b511f35c9a4c9e865b0940e232362c","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false},{"type":"String","name":"message","list":false,"id":"e5d8d78b8b8349cead6d3475363cb6f8","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false},{"type":"String","name":"status","list":false,"id":"7ff52a89fd7e43e7ba1a4b24d7dc1bc4","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false},{"type":"Choice","choices":[{"name":"Yes","element":"Yes"},{"name":"No","element":"No"}],"id":"a7d7efba81ec4b098ca43d0f47cccd4e","name":"did_i_solve_you_issue","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false,"label":"Did I Solve You Issue"}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"bd98deaf9765311081a6bb46f053af78","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"71d710ba47c896105afe9889316d430b","name":"Hardware Incident","key_phrases":["having a specific hardware issue"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"Hardware Incident","library":false,"csTopicId":"ad432cf6470c96105afe9889316d4366","readOnly":false,"nluMapping":"[]"}</design_definition>
         <design_topic_id>71d710ba47c896105afe9889316d430b</design_topic_id>
         <graph>{
   "graph_api_version": "1.0.68",
@@ -187,11 +187,6 @@
           "withNluUserInput": false,
           "skipIfFulfilled": false
         },
-        "efa25787cc5d4275b789d3cc424bcd78": {
-          "id": "efa25787cc5d4275b789d3cc424bcd78",
-          "stepType": "Decision",
-          "name": "Decision"
-        },
         "ef57cc6b5e0e497ea29809d664861147": {
           "id": "ef57cc6b5e0e497ea29809d664861147",
           "stepType": "SlotFillPrompt",
@@ -255,73 +250,8 @@
           "hidden": true,
           "detailDescription": ""
         },
-        "770f1be0e5c046759a4120f0451a368d": {
-          "id": "770f1be0e5c046759a4120f0451a368d",
-          "stepType": "TextPrompt",
-          "name": "Typed Hardware",
-          "prompt": {
-            "value": [
-              {
-                "type": "paragraph",
-                "children": [
-                  {
-                    "text": "Enter your Hardware Asset Tag"
-                  }
-                ]
-              }
-            ],
-            "mode": "simple"
-          },
-          "confirmMessage": {
-            "value": "",
-            "mode": "simple"
-          },
-          "acknowledgeMsg": {
-            "value": "",
-            "mode": "simple"
-          },
-          "applicability": {
-            "value": "",
-            "mode": "query"
-          },
-          "skippable": {
-            "value": "",
-            "mode": "query"
-          },
-          "skipReprompt": {
-            "value": "",
-            "mode": "query"
-          },
-          "defaultValue": {
-            "value": "",
-            "mode": "simple"
-          },
-          "withNluUserInput": false,
-          "skipIfFulfilled": false,
-          "variableId": "0e222d75a0ac493788f44cb1d47b53f0",
-          "detailDescription": "",
-          "inputType": {
-            "format": "Text",
-            "script": ""
-          },
-          "requestFeedback": true
-        },
-        "f441992e9e5a42df84ef090c85719815": {
-          "id": "f441992e9e5a42df84ef090c85719815",
-          "name": "Merge Hardware Input",
-          "script": "(function execute() {\n    /* Code your scripted action here. For example, you might update a\n       record based on conditional logic:\n\n        if (vaVars.my_flag == 'say hello') {\n            gs.info('hi there');\n        } else {\n            gs.info('bye now');\n        }\n    */\n    if(vaInputs.select_your_hardware=='')\n    {\n        vaInputs.selected_hardware=vaInputs.typed_hardware;\n    }\n    else{\n        vaInputs.selected_hardware=vaInputs.select_your_hardware;\n    }\n})()\n",
-          "stepType": "ScriptAction",
-          "applicability": {
-            "value": "",
-            "mode": "query"
-          }
-        },
-        "ca0cbab57802427db5047c4282c6157c": {
-          "id": "ca0cbab57802427db5047c4282c6157c",
-          "stepType": "ImplicitEnd"
-        },
-        "1eeb9071f74b418db98150a364992836": {
-          "id": "1eeb9071f74b418db98150a364992836",
+        "dda7212ac57b478c8d065bb4229da2e3": {
+          "id": "dda7212ac57b478c8d065bb4229da2e3",
           "stepType": "CrudAction",
           "name": "Create Incident",
           "template": {
@@ -368,11 +298,42 @@
                   "prefix": "",
                   "operator": "=",
                   "operand": "cmdb_ci",
-                  "expression": "{{vaInputs.selected_hardware}}"
+                  "expression": "{{vaInputs.select_your_hardware}}"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "description",
+                  "expression": "{{vaVars.user_mail}}",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaVars.user_mail}}",
+                            "displayValue": "Script Variables➛user_mail"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
-            "queryString": "short_description={{vaInputs.describe_issue}}^caller_id={{vaInputs.user}}^cmdb_ci={{vaInputs.selected_hardware}}"
+            "queryString": "short_description={{vaInputs.describe_issue}}^caller_id={{vaInputs.user}}^cmdb_ci={{vaInputs.select_your_hardware}}^description={{vaVars.user_mail}}"
           },
           "mode": "create",
           "record": "",
@@ -386,117 +347,25 @@
               "mode": "simple"
             }
           ],
-          "variableId": "585daefedb21414faff74db6754ccf3f"
+          "variableId": "4be2f5708cb54964b23e33f804445f27"
         },
-        "081970a74d5f4247b68125a86f702421": {
-          "id": "081970a74d5f4247b68125a86f702421",
+        "87e331e6d26b439fbef6a2ccd22b39c5": {
+          "id": "87e331e6d26b439fbef6a2ccd22b39c5",
           "stepType": "RecordOutput",
-          "name": "Incident Created",
-          "variableId": "",
-          "cardTemplate": "Small image with text",
-          "cardFields": {
-            "1cf75c317313101081e06502edf6a738_title": {
-              "value": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    },
-                    {
-                      "type": "datapill",
-                      "dataPill": {
-                        "value": "{{vaInputs.create_incident.number}}",
-                        "displayValue": "Input Variables➛Create Incident➛Number"
-                      },
-                      "children": [
-                        {
-                          "text": ""
-                        }
-                      ]
-                    },
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ],
-              "mode": "simple"
-            },
-            "1cf75c317313101081e06502edf6a738_description": {
-              "value": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    },
-                    {
-                      "type": "datapill",
-                      "dataPill": {
-                        "value": "{{vaInputs.create_incident.short_description}}",
-                        "displayValue": "Input Variables➛Create Incident➛Short description"
-                      },
-                      "children": [
-                        {
-                          "text": ""
-                        }
-                      ]
-                    },
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ],
-              "mode": "simple"
-            },
-            "1cf75c317313101081e06502edf6a738_image": {
-              "value": "Picxel logo_1724084110052.png",
-              "mode": "db_image"
-            }
-          },
+          "name": "Show Created Incidents",
+          "variableId": "4be2f5708cb54964b23e33f804445f27",
+          "cardTemplate": "General",
+          "cardFields": {},
           "mode": "variable",
-          "tableName": "",
-          "fields": [],
+          "tableName": "incident",
+          "fields": [
+            "number",
+            "cmdb_ci",
+            "short_description"
+          ],
           "cardDefinition": {
-            "sys_id": "1cf75c317313101081e06502edf6a738",
-            "name": "Small image with text",
-            "sys_name": "Small image with text",
-            "thumbnail.name": "Small image with text.svg",
-            "fields": [
-              {
-                "label": "Title",
-                "position": "1",
-                "mandatory": true,
-                "name": "title",
-                "id": "1cf75c317313101081e06502edf6a738_title"
-              },
-              {
-                "label": "Description",
-                "position": "2",
-                "mandatory": false,
-                "name": "description",
-                "id": "1cf75c317313101081e06502edf6a738_description"
-              },
-              {
-                "label": "Image URL link",
-                "position": "3",
-                "mandatory": true,
-                "type": "image",
-                "name": "image",
-                "id": "1cf75c317313101081e06502edf6a738_image"
-              },
-              {
-                "label": "Image alt text",
-                "position": "4",
-                "mandatory": false,
-                "name": "imageAlt",
-                "id": "1cf75c317313101081e06502edf6a738_imageAlt"
-              }
-            ],
-            "value": "Small image with text",
-            "hasTemplateError": false
+            "name": "Record",
+            "value": "General"
           },
           "requestFeedback": true,
           "applicability": {
@@ -507,21 +376,237 @@
             "mode": "glide_query",
             "value": ""
           }
+        },
+        "65cef709aad0407bb3f55d65b1c71f07": {
+          "id": "65cef709aad0407bb3f55d65b1c71f07",
+          "stepType": "ReusableTopic",
+          "name": "Request Catalog Item Inline-seismic",
+          "fields": [],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "useTemplateTopic": false,
+          "reusableTopicChoice": "Request Catalog Item Inline-seismic",
+          "reusableTopicId": "689a151977b00210c5c6b2a07b5a99ea",
+          "inputs": {
+            "catalogitemid": {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "7198552237b1300054b6a3549dbe5dea"
+                    }
+                  ]
+                }
+              ],
+              "mode": "string",
+              "type": "String"
+            },
+            "requestedforid": {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.user}}",
+                        "displayValue": "Input Variables➛User"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "string",
+              "type": "String"
+            }
+          },
+          "outputs": [
+            {
+              "id": "48230c1044cb465ba71e27f875d06f17",
+              "value": "record_id",
+              "mapping": "record_id"
+            },
+            {
+              "id": "c5b511f35c9a4c9e865b0940e232362c",
+              "value": "record_table",
+              "mapping": "record_table"
+            },
+            {
+              "id": "e5d8d78b8b8349cead6d3475363cb6f8",
+              "value": "message",
+              "mapping": "message"
+            },
+            {
+              "id": "7ff52a89fd7e43e7ba1a4b24d7dc1bc4",
+              "value": "status",
+              "mapping": "status"
+            }
+          ],
+          "variableIds": [
+            "48230c1044cb465ba71e27f875d06f17",
+            "c5b511f35c9a4c9e865b0940e232362c",
+            "e5d8d78b8b8349cead6d3475363cb6f8",
+            "7ff52a89fd7e43e7ba1a4b24d7dc1bc4"
+          ],
+          "dynamicTopicBlockName": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputDynamicModal": {},
+          "outputDynamicModal": {}
+        },
+        "1235b69c641444c8bdf8ad6afd2768a7": {
+          "id": "1235b69c641444c8bdf8ad6afd2768a7",
+          "name": "Print all variables",
+          "script": "(function execute() {\n    /* Code your scripted action here. For example, you might update a\n       record based on conditional logic:\n\n        if (vaVars.my_flag == 'say hello') {\n            gs.info('hi there');\n        } else {\n            gs.info('bye now');\n        }\n    */\n  \n\n    gs.info('VA Variables inputs'+vaInputs.describe_issue)\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "fa829e94179e4e52a54542f5293f1a6a": {
+          "id": "fa829e94179e4e52a54542f5293f1a6a",
+          "stepType": "ReusableTopic",
+          "name": "Survey",
+          "fields": [],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "useTemplateTopic": false,
+          "reusableTopicChoice": "Survey",
+          "reusableTopicId": "26baac293b77330074bc456993efc4dd",
+          "inputs": {
+            "surveyid": {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "a259f6969f3220100d74d46d842e702a"
+                    }
+                  ]
+                }
+              ],
+              "mode": "string",
+              "type": "String"
+            },
+            "confirmationneeded": {
+              "value": "false",
+              "mode": "simple",
+              "type": "String"
+            },
+            "savequestionstocontext": {
+              "value": "false",
+              "mode": "simple",
+              "type": "String"
+            }
+          },
+          "variableIds": [],
+          "dynamicTopicBlockName": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputDynamicModal": {},
+          "outputDynamicModal": {},
+          "outputs": [],
+          "outdatedNote": false,
+          "loading": false
+        },
+        "879f419e5bb34d3dbb4df10a555561b5": {
+          "name": "Did I solve you issue",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Did I solve you issue? If not satisfied talk to our agent"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "a7d7efba81ec4b098ca43d0f47cccd4e",
+          "detailDescription": "",
+          "id": "879f419e5bb34d3dbb4df10a555561b5",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "8bca93dbdf0344d5975f31fe255f6342": {
+          "id": "8bca93dbdf0344d5975f31fe255f6342",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "ef4e0cfe29f64102bf2ded0903411f70": {
+          "id": "ef4e0cfe29f64102bf2ded0903411f70",
+          "stepType": "ScriptOutput",
+          "name": "Connect Live Agent",
+          "output_type": "single_part",
+          "script": "(function execute() {\n      // Transfer to a live agent\n      vaSystem.connectToAgent()\n})()\n\n",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
         }
       },
       "edges": [
         {
-          "id": "def4a1506bf04a4498c2e394cb547075",
-          "edgeType": "Branch",
-          "source": "efa25787cc5d4275b789d3cc424bcd78",
-          "target": "ad6365e1c8d04fb7be2f4527a6b9c1cc",
+          "id": "2550a93fdc714990be617320aac13ae5",
+          "edgeType": "Edge",
+          "source": "87e331e6d26b439fbef6a2ccd22b39c5",
+          "target": "1235b69c641444c8bdf8ad6afd2768a7",
           "sourcePort": "",
-          "targetPort": "",
-          "expression": {
-            "value": "vaInputs.select_your_hardwareISNOTEMPTY",
-            "mode": "query"
-          },
-          "label": "Hardware Selected"
+          "targetPort": ""
         },
         {
           "id": "88457871d9c04975b1ca616da0957ce9",
@@ -536,14 +621,6 @@
           "edgeType": "Edge",
           "source": "0faf2bf754ad4bf7b20f3e29c6072137",
           "target": "baf7a8485c59468aa514b9073ad5398b",
-          "sourcePort": "",
-          "targetPort": ""
-        },
-        {
-          "id": "57eced0665a24071a66c2c0bcea720d2",
-          "edgeType": "Edge",
-          "source": "baf7a8485c59468aa514b9073ad5398b",
-          "target": "efa25787cc5d4275b789d3cc424bcd78",
           "sourcePort": "",
           "targetPort": ""
         },
@@ -564,60 +641,84 @@
           "targetPort": ""
         },
         {
-          "id": "70177de58e684079b0ad4d55a605edae",
+          "id": "57eced0665a24071a66c2c0bcea720d2",
+          "edgeType": "Edge",
+          "source": "baf7a8485c59468aa514b9073ad5398b",
+          "target": "dda7212ac57b478c8d065bb4229da2e3",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "065b8d641170453fa17d81e8c45b1f63",
+          "edgeType": "Edge",
+          "source": "dda7212ac57b478c8d065bb4229da2e3",
+          "target": "87e331e6d26b439fbef6a2ccd22b39c5",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "94354d84a9be4cc48c5f8b11e79286b1",
+          "edgeType": "Edge",
+          "source": "1235b69c641444c8bdf8ad6afd2768a7",
+          "target": "65cef709aad0407bb3f55d65b1c71f07",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "156738e7761044cab4cc964c5b686ef9",
+          "edgeType": "Edge",
+          "source": "65cef709aad0407bb3f55d65b1c71f07",
+          "target": "fa829e94179e4e52a54542f5293f1a6a",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "43add57465d845fabe16f44735040839",
+          "edgeType": "Edge",
+          "source": "fa829e94179e4e52a54542f5293f1a6a",
+          "target": "879f419e5bb34d3dbb4df10a555561b5",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "04eb385b8a8e4f5aa0a4aeefc5ba45b0",
+          "edgeType": "Edge",
+          "source": "879f419e5bb34d3dbb4df10a555561b5",
+          "target": "8bca93dbdf0344d5975f31fe255f6342",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "7353ef34e8fd4785a849ebb33328bb8a",
           "edgeType": "Branch",
-          "source": "efa25787cc5d4275b789d3cc424bcd78",
-          "target": "770f1be0e5c046759a4120f0451a368d",
+          "source": "8bca93dbdf0344d5975f31fe255f6342",
+          "target": "ad6365e1c8d04fb7be2f4527a6b9c1cc",
           "sourcePort": "",
           "targetPort": "",
           "expression": {
-            "value": "vaInputs.select_your_hardwareISEMPTY",
+            "value": "vaInputs.did_i_solve_you_issue=Yes",
             "mode": "query"
           },
-          "label": "Hardware Not Selected"
+          "label": "Close"
         },
         {
-          "id": "59c0963b3c2a4375af6e69550f84a0da",
-          "edgeType": "Edge",
-          "source": "770f1be0e5c046759a4120f0451a368d",
-          "target": "f441992e9e5a42df84ef090c85719815",
-          "sourcePort": "",
-          "targetPort": ""
-        },
-        {
-          "id": "2730cc4064ab4f3bbf9e52a8df695538",
-          "edgeType": "Edge",
-          "source": "f441992e9e5a42df84ef090c85719815",
-          "target": "1eeb9071f74b418db98150a364992836",
-          "sourcePort": "",
-          "targetPort": ""
-        },
-        {
-          "id": "bb51c135fe574a6d97497532a21e5a39",
+          "id": "41a447e342cb42ed827835abd9e3f4b2",
           "edgeType": "Branch",
-          "source": "efa25787cc5d4275b789d3cc424bcd78",
-          "target": "f441992e9e5a42df84ef090c85719815",
+          "source": "8bca93dbdf0344d5975f31fe255f6342",
+          "target": "ef4e0cfe29f64102bf2ded0903411f70",
           "sourcePort": "",
           "targetPort": "",
           "expression": {
-            "value": "vaInputs.select_your_hardwareISNOTEMPTY",
+            "value": "vaInputs.did_i_solve_you_issue=No",
             "mode": "query"
           },
-          "label": "Hardware Seleected"
+          "label": "Live Agent"
         },
         {
-          "id": "d02289c1c2c74911b2e8af48a43e44e5",
+          "id": "85411bfa5341451a9b9d05c0f2626a7b",
           "edgeType": "Edge",
-          "source": "1eeb9071f74b418db98150a364992836",
-          "target": "081970a74d5f4247b68125a86f702421",
-          "sourcePort": "",
-          "targetPort": ""
-        },
-        {
-          "id": "5a2d81f82fbd483b87248c832af5b61a",
-          "edgeType": "Edge",
-          "source": "081970a74d5f4247b68125a86f702421",
-          "target": "ca0cbab57802427db5047c4282c6157c",
+          "source": "ef4e0cfe29f64102bf2ded0903411f70",
+          "target": "ad6365e1c8d04fb7be2f4527a6b9c1cc",
           "sourcePort": "",
           "targetPort": ""
         }
@@ -658,21 +759,6 @@
       "nodeId": "baf7a8485c59468aa514b9073ad5398b",
       "isHidden": false
     },
-    "0e222d75a0ac493788f44cb1d47b53f0": {
-      "id": "0e222d75a0ac493788f44cb1d47b53f0",
-      "name": "typed_hardware",
-      "label": "Typed Hardware",
-      "varType": "string",
-      "secure": false,
-      "category": "vaInputs",
-      "encryptionHashFunction": "SHA-256",
-      "encryptionSalt": {
-        "value": "MTcyNDA4MTU1Nzk2OSBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
-        "mode": "simple"
-      },
-      "nodeId": "770f1be0e5c046759a4120f0451a368d",
-      "isHidden": false
-    },
     "f76bebcb66bc4ad0a24c02ae9a3d33a6": {
       "id": "f76bebcb66bc4ad0a24c02ae9a3d33a6",
       "name": "selected_hardware",
@@ -682,15 +768,97 @@
       "nodeId": "ef57cc6b5e0e497ea29809d664861147",
       "isHidden": true
     },
-    "585daefedb21414faff74db6754ccf3f": {
-      "id": "585daefedb21414faff74db6754ccf3f",
+    "4be2f5708cb54964b23e33f804445f27": {
+      "id": "4be2f5708cb54964b23e33f804445f27",
       "name": "create_incident",
       "label": "Create Incident",
       "varType": "reference",
       "table": "incident",
       "inactive": false,
       "category": "vaInputs",
-      "nodeId": "1eeb9071f74b418db98150a364992836",
+      "nodeId": "87e331e6d26b439fbef6a2ccd22b39c5",
+      "isHidden": false
+    },
+    "48230c1044cb465ba71e27f875d06f17": {
+      "id": "48230c1044cb465ba71e27f875d06f17",
+      "name": "record_id",
+      "label": "Record_id",
+      "defaultValue": "record_id",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "nodeId": "65cef709aad0407bb3f55d65b1c71f07",
+      "isHidden": false
+    },
+    "c5b511f35c9a4c9e865b0940e232362c": {
+      "id": "c5b511f35c9a4c9e865b0940e232362c",
+      "name": "record_table",
+      "label": "Record_table",
+      "defaultValue": "record_table",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "nodeId": "65cef709aad0407bb3f55d65b1c71f07",
+      "isHidden": false
+    },
+    "e5d8d78b8b8349cead6d3475363cb6f8": {
+      "id": "e5d8d78b8b8349cead6d3475363cb6f8",
+      "name": "message",
+      "label": "Message",
+      "defaultValue": "message",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "nodeId": "65cef709aad0407bb3f55d65b1c71f07",
+      "isHidden": false
+    },
+    "7ff52a89fd7e43e7ba1a4b24d7dc1bc4": {
+      "id": "7ff52a89fd7e43e7ba1a4b24d7dc1bc4",
+      "name": "status",
+      "label": "Status",
+      "defaultValue": "status",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "nodeId": "65cef709aad0407bb3f55d65b1c71f07",
+      "isHidden": false
+    },
+    "eb24822a7c08467fac77e9a27e455d97": {
+      "id": "eb24822a7c08467fac77e9a27e455d97",
+      "value": {
+        "mode": "script",
+        "value": "(function execute() {\n    \n    return gs.getUser().getEmail();\n})()\n"
+      },
+      "name": "user_mail",
+      "label": "user_mail",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "a7d7efba81ec4b098ca43d0f47cccd4e": {
+      "id": "a7d7efba81ec4b098ca43d0f47cccd4e",
+      "name": "did_i_solve_you_issue",
+      "label": "Did I Solve You Issue",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Yes",
+          "value": "Yes"
+        },
+        {
+          "label": "No",
+          "value": "No"
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "879f419e5bb34d3dbb4df10a555561b5",
       "isHidden": false
     }
   }
@@ -701,14 +869,14 @@
         <sys_created_on>2024-08-19 16:16:15</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>2943e87e474c96105afe9889316d4332</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>FlowTopic</sys_name>
         <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
         <sys_policy/>
         <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
         <sys_update_name>sys_cb_design_topic_2943e87e474c96105afe9889316d4332</sys_update_name>
         <sys_updated_by>narendrabekkem</sys_updated_by>
-        <sys_updated_on>2024-08-19 16:16:15</sys_updated_on>
+        <sys_updated_on>2024-09-05 13:17:51</sys_updated_on>
         <type>FlowTopic</type>
     </sys_cb_design_topic>
 </record_update>

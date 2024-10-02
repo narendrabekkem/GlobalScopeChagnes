@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cmdb_datasource_staleness">
+    <cmdb_datasource_staleness action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_to>cmdb_ci_win_server</applies_to>
+        <discovery_source>ServiceNow</discovery_source>
+        <duration>1970-01-01 00:01:00</duration>
+        <name>Windows Server staleness rule by ServiceNow</name>
+        <sys_class_name>cmdb_datasource_staleness</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-09-18 12:19:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>86cc82d447f492105afe9889316d43e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Windows Server staleness rule by ServiceNow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>cmdb_datasource_staleness_86cc82d447f492105afe9889316d43e2</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-09-18 12:19:29</sys_updated_on>
+    </cmdb_datasource_staleness>
+</record_update>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">2964febd837812104751e270ceaad3c8</canvas>
+        <component display_value="Column">2bd5dc19a7ad083941b7c992a966dd78</component>
+        <component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","showDataLabels":false,"disableTooltip":false,"showXGrid":false,"showYGrid":true,"hideYAxis0":false,"yAxis0Position":"left","hideYAxis1":false,"yAxis1Position":"right","hideYAxis2":false,"yAxis2Position":"right","hideYAxis3":false,"yAxis3Position":"right","hideYAxis4":false,"yAxis4Position":"right","showLegend":true,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"yAxisStyle":"default","lineStrokeWidth":"2","colorConfig":{"type":"default"},"chartVariation":"stacked","extensionType":"bar","newReporting":false,"additionalGroupByConfig":[],"dataSources":[{"allowRealTime":false,"allowTotalValue":false,"indicatorType":"2","isScriptedIndicator":false,"label":"% Incidents with associated Problem","sourceType":"indicator","uuid":{"indicator":"2169b553531431104bdeddeeff7b121d","breakdowns":[]},"preferredVisualizations":["18ac962264404bcc0039359d184b15f3"],"id":"aW5kaWNhdG9yMjE2OWI1NTM1MzE0MzExMDRiZGVkZGVlZmY3YjEyMWQxNjk4NjQ4NzI2MjM1","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showHeaderSeparator":true,"headerTitle":"% Incidents associated with problem","showBorder":true,"bareBorder":false,"dataCategory":"group","telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"dataPassthrough":null,"metrics":[{"dataSource":"aW5kaWNhdG9yMjE2OWI1NTM1MzE0MzExMDRiZGVkZGVlZmY3YjEyMWQxNjk4NjQ4NzI2MjM1","id":"YVc1a2FXTmhkRzl5TWpFMk9XSTFOVE0xTXpFME16RXhNRFJpWkdWa1pHVmxabVkzWWpFeU1XUXhOams0TmpRNE56STJNak0xMTY5ODY0ODcyNzQ1OQ==","aggregateIndicator":"587fad00eb31020065deac6aa206fea5","frequency":40,"numberFormat":{"customFormat":false},"axisId":"primary","frequencyInterval":"MONTH_PLUS"}],"sortBy":"value","sortByOrder":"desc","trendBy":{"trendByFrequency":"date","trendByFields":[{"field":"anything","metric":"YVc1a2FXTmhkRzl5TWpFMk9XSTFOVE0xTXpFME16RXhNRFJpWkdWa1pHVmxabVkzWWpFeU1XUXhOams0TmpRNE56STJNak0xMTY5ODY0ODcyNzQ1OQ=="}]},"showChange":null,"showChangePercentage":null,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":null,"showSparkline":null,"showMetricLabel":null,"showThreshold":false,"showComment":false,"showTotalValue":null,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":null,"enableDrilldown":true,"enableCustomEmptyState":false,"emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":false,"filterConfigurations":[],"contextMenuActions":[],"showMaximumRange":false,"applyDateRange":false,"numberOfPeriods":12,"showAbsolutePeriod":false,"scoreType":"latest","showChangeFrom":null,"startTime":null,"endTime":null,"period":"M","dateFormat":"default","componentId":"65ivm9sh","description":"Percentage of the incidents that are associated with problem."}</component_props>
+        <h>14</h>
+        <name>% Incidents associated with problem</name>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-09-23 07:03:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a564febd837812104751e270ceaad3f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>% Incidents associated with problem</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>par_dashboard_widget_a564febd837812104751e270ceaad3f9</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-09-23 07:03:28</sys_updated_on>
+        <visualization/>
+        <w>24</w>
+        <widget_props/>
+        <x>24</x>
+        <y>66</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>par_dashboard_widget_a564febd837812104751e270ceaad3f9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">2964febd837812104751e270ceaad3c8</canvas><component display_value="Column">2bd5dc19a7ad083941b7c992a966dd78</component><component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","showDataLabels":false,"disableTooltip":false,"showXGrid":false,"showYGrid":true,"hideYAxis0":false,"yAxis0Position":"left","hideYAxis1":false,"yAxis1Position":"right","hideYAxis2":false,"yAxis2Position":"right","hideYAxis3":false,"yAxis3Position":"right","hideYAxis4":false,"yAxis4Position":"right","showLegend":true,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"yAxisStyle":"default","lineStrokeWidth":"2","colorConfig":{"type":"default"},"chartVariation":"stacked","extensionType":"bar","newReporting":false,"additionalGroupByConfig":[],"dataSources":[{"allowRealTime":false,"allowTotalValue":false,"indicatorType":"2","isScriptedIndicator":false,"label":"% Incidents with associated Problem","sourceType":"indicator","uuid":{"indicator":"2169b553531431104bdeddeeff7b121d","breakdowns":[]},"preferredVisualizations":["18ac962264404bcc0039359d184b15f3"],"id":"aW5kaWNhdG9yMjE2OWI1NTM1MzE0MzExMDRiZGVkZGVlZmY3YjEyMWQxNjk4NjQ4NzI2MjM1","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showHeaderSeparator":true,"headerTitle":"% Incidents associated with problem","showBorder":true,"bareBorder":false,"dataCategory":"group","telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"dataPassthrough":null,"metrics":[{"dataSource":"aW5kaWNhdG9yMjE2OWI1NTM1MzE0MzExMDRiZGVkZGVlZmY3YjEyMWQxNjk4NjQ4NzI2MjM1","id":"YVc1a2FXTmhkRzl5TWpFMk9XSTFOVE0xTXpFME16RXhNRFJpWkdWa1pHVmxabVkzWWpFeU1XUXhOams0TmpRNE56STJNak0xMTY5ODY0ODcyNzQ1OQ==","aggregateIndicator":"587fad00eb31020065deac6aa206fea5","frequency":40,"numberFormat":{"customFormat":false},"axisId":"primary","frequencyInterval":"MONTH_PLUS"}],"sortBy":"value","sortByOrder":"desc","trendBy":{"trendByFrequency":"date","trendByFields":[{"field":"anything","metric":"YVc1a2FXTmhkRzl5TWpFMk9XSTFOVE0xTXpFME16RXhNRFJpWkdWa1pHVmxabVkzWWpFeU1XUXhOams0TmpRNE56STJNak0xMTY5ODY0ODcyNzQ1OQ=="}]},"showChange":null,"showChangePercentage":null,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":null,"showSparkline":null,"showMetricLabel":null,"showThreshold":false,"showComment":false,"showTotalValue":null,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":null,"enableDrilldown":true,"enableCustomEmptyState":false,"emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":false,"filterConfigurations":[],"contextMenuActions":[],"showMaximumRange":false,"applyDateRange":false,"numberOfPeriods":12,"showAbsolutePeriod":false,"scoreType":"latest","showChangeFrom":null,"startTime":null,"endTime":null,"period":"M","dateFormat":"default","componentId":"65ivm9sh","description":"Percentage of the incidents that are associated with problem."}</component_props><h>14</h><name>% Incidents associated with problem</name><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>narendrabekkem</sys_created_by><sys_created_on>2024-09-23 07:03:28</sys_created_on><sys_domain>global</sys_domain><sys_id>a564febd837812104751e270ceaad3f9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>% Incidents associated with problem</sys_name><sys_overrides/><sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package><sys_policy/><sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope><sys_update_name>par_dashboard_widget_a564febd837812104751e270ceaad3f9</sys_update_name><sys_updated_by>narendrabekkem</sys_updated_by><sys_updated_on>2024-09-23 07:03:28</sys_updated_on><visualization/><w>24</w><widget_props/><x>24</x><y>66</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>1806108530</payload_hash>
+        <record_name>% Incidents associated with problem</record_name>
+        <reverted_from/>
+        <source>8d63c860472fc2105afe9889316d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-09-23 07:03:28</sys_created_on>
+        <sys_id>6164febd837812104751e270ceaad3fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1921db140660000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-09-23 07:03:28</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>6564febd657812108774e771e0eb64fa</update_guid>
+        <update_guid_history>6564febd657812108774e771e0eb64fa:1806108530</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="% Incidents associated with problem">026432fd837812104751e270ceaad3be</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-09-23 07:03:30</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>629673131b25461cab2d890b2f54d790</sys_id>
+        <sys_metadata>a564febd837812104751e270ceaad3f9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>% Incidents associated with problem</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_a564febd837812104751e270ceaad3f9</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_a564febd837812104751e270ceaad3f9">6164febd837812104751e270ceaad3fb</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-09-23 07:03:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

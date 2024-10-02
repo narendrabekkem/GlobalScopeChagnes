@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_field">
+    <sys_rte_eb_etl_field action="INSERT_OR_UPDATE">
+        <coalesce>false</coalesce>
+        <coercion_action>ignore</coercion_action>
+        <field>model_id</field>
+        <name>Model</name>
+        <sys_class_name>sys_rte_eb_etl_field</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-09-23 12:48:01</sys_created_on>
+        <sys_id>3933044283f452104751e270ceaad360</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Model</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Robust Transform CIs ETL">c2d44c64472fc2105afe9889316d431f</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="ESXi Server">7da6cc28472fc2105afe9889316d434d</sys_rte_eb_entity>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_rte_eb_etl_field_3933044283f452104751e270ceaad360</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-09-23 12:48:01</sys_updated_on>
+    </sys_rte_eb_etl_field>
+</record_update>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a85dfdd2837052104751e270ceaad386" extends="sys_import_set_row" label="ALM Hardware" max_length="40" name="u_alm_hardware" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Substate" label="Substate" max_length="40" name="u_substate" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cost" label="Cost" max_length="40" name="u_cost" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Model" label="Model" max_length="40" name="u_model" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Model category" label="Model category" max_length="40" name="u_model_category" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Assigned to" label="Assigned to" max_length="40" name="u_assigned_to" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=State" label="State" max_length="40" name="u_state" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Company" label="Company" max_length="40" name="u_company" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Asset tag" label="Asset tag" max_length="40" name="u_asset_tag" type="string"/>
+    </element>
+</database>

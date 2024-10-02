@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_language">
+    <sys_cs_topic_language action="DELETE">
+        <cs_topic_id display_value="_PRVW__bfb81d7e61af4898a529914ea024fddc">4345c0414750da105afe9889316d436e</cs_topic_id>
+        <language_code>en</language_code>
+        <nlu_entities>[]</nlu_entities>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider>
+        <sys_class_name>sys_cs_topic_language</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-08-26 13:51:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5f4588c14750da105afe9889316d4308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_cs_topic_language_5f4588c14750da105afe9889316d4308</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-08-26 13:51:37</sys_updated_on>
+    </sys_cs_topic_language>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>sys_cs_topic_language_5f4588c14750da105afe9889316d4308</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_language"><sys_cs_topic_language action="INSERT_OR_UPDATE"><cs_topic_id display_value="_PRVW__bfb81d7e61af4898a529914ea024fddc">4345c0414750da105afe9889316d436e</cs_topic_id><language_code>en</language_code><nlu_entities>[]</nlu_entities><nlu_intent/><nlu_intent_label/><nlu_model/><nlu_model_label/><nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider><sys_class_name>sys_cs_topic_language</sys_class_name><sys_created_by>narendrabekkem</sys_created_by><sys_created_on>2024-08-26 13:51:37</sys_created_on><sys_domain>global</sys_domain><sys_id>5f4588c14750da105afe9889316d4308</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package><sys_policy/><sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope><sys_update_name>sys_cs_topic_language_5f4588c14750da105afe9889316d4308</sys_update_name><sys_updated_by>narendrabekkem</sys_updated_by><sys_updated_on>2024-08-26 13:51:37</sys_updated_on></sys_cs_topic_language></record_update>]]></payload>
+        <payload_hash>-503561408</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>8d63c860472fc2105afe9889316d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-08-26 13:51:37</sys_created_on>
+        <sys_id>174588c14750da105afe9889316d430b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1918ef4dc370000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-08-26 13:51:37</sys_updated_on>
+        <type>CS Topic Language</type>
+        <update_guid>1b4588c13850da10d89306831af2a20a</update_guid>
+        <update_guid_history>1b4588c13850da10d89306831af2a20a:-503561408</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-08-27 02:33:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_cs_topic_language">sys_cs_topic_language</sys_db_object>
+        <sys_id>d0ecbca330dc45a6a98b667a2b15b184</sys_id>
+        <sys_metadata>5f4588c14750da105afe9889316d4308</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>sys_cs_topic_language_5f4588c14750da105afe9889316d4308</sys_update_name>
+        <sys_update_version display_value="sys_cs_topic_language_5f4588c14750da105afe9889316d4308">174588c14750da105afe9889316d430b</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-08-27 02:33:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

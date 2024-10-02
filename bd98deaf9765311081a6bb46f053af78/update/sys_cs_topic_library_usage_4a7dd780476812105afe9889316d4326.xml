@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_library_usage">
+    <sys_cs_topic_library_usage action="INSERT_OR_UPDATE">
+        <calling_cs_topic_id display_value="Hardware Incident">ad432cf6470c96105afe9889316d4366</calling_cs_topic_id>
+        <library_cs_topic_id display_value="Survey">26baac293b77330074bc456993efc4dd</library_cs_topic_id>
+        <library_usage>{"type":"LibraryCall","library_topic_name":"Survey","library_topic_id":"26baac293b77330074bc456993efc4dd","library_topic_is_template":false,"parameter-mappings":[{"parameter-name":"surveyid","value":{"type":"String","mode":"string","value":"a259f6969f3220100d74d46d842e702a"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"confirmationneeded","value":{"type":"String","mode":"string","value":"false"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"savequestionstocontext","value":{"type":"String","mode":"string","value":"false"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}}],"return-value-mappings":[],"header_card_fields":[],"id":"fa829e94179e4e52a54542f5293f1a6a","name":"Survey","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false}</library_usage>
+        <node_id>fa829e94179e4e52a54542f5293f1a6a</node_id>
+        <sys_class_name>sys_cs_topic_library_usage</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-09-05 13:17:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4a7dd780476812105afe9889316d4326</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_cs_topic_library_usage_4a7dd780476812105afe9889316d4326</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-09-05 13:17:51</sys_updated_on>
+    </sys_cs_topic_library_usage>
+</record_update>

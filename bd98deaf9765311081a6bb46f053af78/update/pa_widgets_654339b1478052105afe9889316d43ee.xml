@@ -36,7 +36,7 @@
         <field/>
         <filter/>
         <flip_axes>false</flip_axes>
-        <follow_element>false</follow_element>
+        <follow_element>true</follow_element>
         <follow_managed_element>false</follow_managed_element>
         <followed_breakdown/>
         <followed_breakdown_relation/>
@@ -58,7 +58,7 @@
         <lookup_name/>
         <manual_elements>false</manual_elements>
         <max_color/>
-        <multiple_elements_view/>
+        <multiple_elements_view>aggregate</multiple_elements_view>
         <name>Alerts Closed on Same Day Opened</name>
         <no_bulk_migration>false</no_bulk_migration>
         <number_of_records>5</number_of_records>
@@ -71,7 +71,7 @@
         <score_font_size>responsive</score_font_size>
         <scorecard_options>all</scorecard_options>
         <show_bar>false</show_bar>
-        <show_breakdown_selector>true</show_breakdown_selector>
+        <show_breakdown_selector>false</show_breakdown_selector>
         <show_change>true</show_change>
         <show_change_perc>true</show_change_perc>
         <show_comparison_date>true</show_comparison_date>
@@ -86,7 +86,7 @@
         <show_top_x>10</show_top_x>
         <show_total>false</show_total>
         <show_trend>true</show_trend>
-        <show_visualization_selector>true</show_visualization_selector>
+        <show_visualization_selector>false</show_visualization_selector>
         <sort_direction>asc</sort_direction>
         <sort_on>value</sort_on>
         <subtitle/>
@@ -96,7 +96,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>654339b1478052105afe9889316d43ee</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Alerts Closed on Same Day Opened</sys_name>
         <sys_overrides/>
         <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
@@ -104,7 +104,7 @@
         <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
         <sys_update_name>pa_widgets_654339b1478052105afe9889316d43ee</sys_update_name>
         <sys_updated_by>narendrabekkem</sys_updated_by>
-        <sys_updated_on>2024-08-16 19:34:49</sys_updated_on>
+        <sys_updated_on>2024-09-23 08:10:00</sys_updated_on>
         <tag/>
         <template>template1</template>
         <treemap_max_color display_value="Green">65b302aea9fe3dba00a530d65ecc2106</treemap_max_color>

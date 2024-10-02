@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">2964febd837812104751e270ceaad3c8</canvas>
+        <component display_value="Filter">226449101138d0dff1abe0e1566c8b2a</component>
+        <component_props>{"filterId":"1hentb6qoenfq9poa4v8","filterName":"Assignment Group","filterComponentType":"multiselect","datasource":{"type":"pa","breakdown":{"sysId":"baec0752bf130100b96dac808c0739ed","breakdownSourceName":"Groups","isOfChoiceType":false,"type":"AUTOMATED","factsTable":"sys_user_group","field":"sys_id","targetTable":"sys_user_group"}},"targets":[{"type":"table","field":{"id":"assignment_group","type":"reference"},"table":{"id":"incident"}},{"type":"table","field":{"id":"assignment_group","type":"reference"},"table":{"id":"change_request"}},{"type":"table","field":{"id":"task.assignment_group","type":"reference"},"table":{"id":"task_sla"}},{"type":"table","field":{"id":"assignment_group","type":"reference"},"table":{"id":"problem"}},{"type":"table","field":{"id":"assignment_group","type":"reference"},"table":{"id":"sc_req_item"}},{"type":"table","field":{"id":"scr_assignment_group","type":"reference"},"table":{"id":"sc_request_metric"}},{"type":"table","field":{"id":"inc_assignment_group","type":"reference"},"table":{"id":"incident_spotlight"}},{"type":"table","field":{"id":"instance.task_id.assignment_group","type":"reference"},"table":{"id":"asmt_metric_result"}},{"type":"table","field":{"id":"assignment_group","type":"reference"},"table":{"id":"sc_req_item"}},{"type":"table","field":{"id":"assignment_group","type":"reference"},"table":{"id":"sc_request"}},{"type":"table","field":{"id":"scr_assignment_group","type":"reference"},"table":{"id":"sc_request_sla"}},{"type":"table","field":{"id":"inc_assignment_group","type":"reference"},"table":{"id":"incident_metric"}},{"type":"table","field":{"id":"assignment_group","type":"reference"},"table":{"id":"sla_breakdown_by_assignment"}},{"type":"table","field":{"id":"inc_assignment_group","type":"reference"},"table":{"id":"incident_sla"}},{"type":"pa","breakdown":{"sysId":"baec0752bf130100b96dac808c0739ed","breakdownSourceName":"Groups","isOfChoiceType":false,"type":"AUTOMATED","factsTable":"sys_user_group","field":"sys_id","targetTable":"sys_user_group"}}],"defaultSelectedItems":[],"dateFilterView":"calendar-reldates","sort":"ASC","filterElementType":"pill","isShowSelectedValueInPill":true,"filterElementLayout":"vertical","enableClearFilter":true,"maxElements":500,"cascadeScope":"ea4ed848c31e3110458f1fec5440dda5","host":"dashboard","noDebounce":""}</component_props>
+        <h>4</h>
+        <name>Assignment Group</name>
+        <stored_component display_value="Incident - Assignment Group">19743127c3523110458f1fec5440dd7d</stored_component>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-09-23 07:03:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>716432fd837812104751e270ceaad37c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Assignment Group</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>par_dashboard_widget_716432fd837812104751e270ceaad37c</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-09-23 07:03:29</sys_updated_on>
+        <visualization/>
+        <w>7</w>
+        <widget_props/>
+        <x>0</x>
+        <y>0</y>
+    </par_dashboard_widget>
+</record_update>

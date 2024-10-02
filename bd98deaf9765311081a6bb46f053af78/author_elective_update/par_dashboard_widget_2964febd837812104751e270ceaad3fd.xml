@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">2964febd837812104751e270ceaad3c8</canvas>
+        <component display_value="Filter">226449101138d0dff1abe0e1566c8b2a</component>
+        <component_props>{"filterId":"1hentcnvtclh6n2ti2lg","filterName":"Category","filterComponentType":"multiselect","datasource":{"type":"pa","breakdown":{"sysId":"1f918835d7231100b96d45a3ce6103fe","breakdownSourceName":"Incident.Category","isOfChoiceType":true,"type":"AUTOMATED","factsTable":"sys_choice","field":"sys_id","targetTable":"sys_choice"}},"targets":[{"type":"table","field":{"id":"inc_category","type":"choice"},"table":{"id":"incident_spotlight"}},{"type":"table","field":{"id":"category","type":"choice"},"table":{"id":"incident"}},{"type":"table","field":{"id":"inc_category","type":"choice"},"table":{"id":"incident_sla"}},{"type":"pa","breakdown":{"sysId":"1f918835d7231100b96d45a3ce6103fe","breakdownSourceName":"Incident.Category","isOfChoiceType":true,"type":"AUTOMATED","factsTable":"sys_choice","field":"sys_id","targetTable":"sys_choice"}}],"defaultSelectedItems":[],"dateFilterView":"calendar-reldates","sort":"ASC","filterElementType":"pill","isShowSelectedValueInPill":true,"filterElementLayout":"vertical","enableClearFilter":true,"maxElements":500,"cascadeScope":"ea4ed848c31e3110458f1fec5440dda5","host":"dashboard","noDebounce":""}</component_props>
+        <h>4</h>
+        <name>Category</name>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-09-23 07:03:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>2964febd837812104751e270ceaad3fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Category</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>par_dashboard_widget_2964febd837812104751e270ceaad3fd</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-09-23 07:03:28</sys_updated_on>
+        <visualization/>
+        <w>34</w>
+        <widget_props/>
+        <x>14</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>par_dashboard_widget_2964febd837812104751e270ceaad3fd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">2964febd837812104751e270ceaad3c8</canvas><component display_value="Filter">226449101138d0dff1abe0e1566c8b2a</component><component_props>{"filterId":"1hentcnvtclh6n2ti2lg","filterName":"Category","filterComponentType":"multiselect","datasource":{"type":"pa","breakdown":{"sysId":"1f918835d7231100b96d45a3ce6103fe","breakdownSourceName":"Incident.Category","isOfChoiceType":true,"type":"AUTOMATED","factsTable":"sys_choice","field":"sys_id","targetTable":"sys_choice"}},"targets":[{"type":"table","field":{"id":"inc_category","type":"choice"},"table":{"id":"incident_spotlight"}},{"type":"table","field":{"id":"category","type":"choice"},"table":{"id":"incident"}},{"type":"table","field":{"id":"inc_category","type":"choice"},"table":{"id":"incident_sla"}},{"type":"pa","breakdown":{"sysId":"1f918835d7231100b96d45a3ce6103fe","breakdownSourceName":"Incident.Category","isOfChoiceType":true,"type":"AUTOMATED","factsTable":"sys_choice","field":"sys_id","targetTable":"sys_choice"}}],"defaultSelectedItems":[],"dateFilterView":"calendar-reldates","sort":"ASC","filterElementType":"pill","isShowSelectedValueInPill":true,"filterElementLayout":"vertical","enableClearFilter":true,"maxElements":500,"cascadeScope":"ea4ed848c31e3110458f1fec5440dda5","host":"dashboard","noDebounce":""}</component_props><h>4</h><name>Category</name><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>narendrabekkem</sys_created_by><sys_created_on>2024-09-23 07:03:28</sys_created_on><sys_domain>global</sys_domain><sys_id>2964febd837812104751e270ceaad3fd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Category</sys_name><sys_overrides/><sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package><sys_policy/><sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope><sys_update_name>par_dashboard_widget_2964febd837812104751e270ceaad3fd</sys_update_name><sys_updated_by>narendrabekkem</sys_updated_by><sys_updated_on>2024-09-23 07:03:28</sys_updated_on><visualization/><w>34</w><widget_props/><x>14</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>-1157922021</payload_hash>
+        <record_name>Category</record_name>
+        <reverted_from/>
+        <source>8d63c860472fc2105afe9889316d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-09-23 07:03:28</sys_created_on>
+        <sys_id>2564febd837812104751e270ceaad3ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1921db140960000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-09-23 07:03:28</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>2964febd2c7812107405eda02c7cdcfe</update_guid>
+        <update_guid_history>2964febd2c7812107405eda02c7cdcfe:-1157922021</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Category">bd6432fd837812104751e270ceaad38a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-09-23 07:03:30</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>3b2117c4363144e8a114594f04b38490</sys_id>
+        <sys_metadata>2964febd837812104751e270ceaad3fd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Category</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_2964febd837812104751e270ceaad3fd</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_2964febd837812104751e270ceaad3fd">2564febd837812104751e270ceaad3ff</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-09-23 07:03:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

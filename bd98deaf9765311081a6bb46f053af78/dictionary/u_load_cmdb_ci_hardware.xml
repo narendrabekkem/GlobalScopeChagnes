@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="da644824472fc2105afe9889316d4338" extends="sys_import_set_row" label="Load CMDB with Robust Transform" max_length="40" name="u_cmdb_load_robusttransform" type="collection">
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Install Date" label="Install Date" max_length="40" name="u_install_date" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=IP Address" label="IP Address" max_length="40" name="u_ip_address" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Server" label="Server" max_length="40" name="u_server" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Model" label="Model" max_length="40" name="u_model" type="string"/>
+    <element db_object_id="7a3076f8838152104751e270ceaad32a" extends="sys_import_set_row" label="Load Hardware CIs and Related tables" max_length="40" name="u_load_cmdb_ci_hardware" type="collection">
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Business Service" label="Business Service" max_length="40" name="u_business_service" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Type" label="Type" max_length="40" name="u_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=IP Address" label="IP Address" max_length="40" name="u_ip_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Install Date" label="Install Date" max_length="40" name="u_install_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Server" label="Server" max_length="40" name="u_server" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Model" label="Model" max_length="40" name="u_model" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Serial Number" label="Serial Number" max_length="40" name="u_serial_number" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Mac Address" label="Mac Address" max_length="40" name="u_mac_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Net Mask" label="Net Mask" max_length="40" name="u_net_mask" type="string"/>
     </element>
 </database>

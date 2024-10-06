@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5494ec2d83cdd2104751e270ceaad304" label="Incident and Problem Relate" max_length="40" name="u_incident_and_problem_relate" type="collection">
+        <element label="Problem" max_length="32" name="u_problem" reference="problem" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
+        <element label="Incident" max_length="32" name="u_incident" reference="incident" type="reference"/>
+        <index name="index">
+            <element name="u_incident"/>
+        </index>
+        <index name="index2">
+            <element name="u_problem"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field_mapping">
+    <sys_rte_eb_field_mapping action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <referenced_sys_rte_eb_entity/>
+        <source_sys_rte_eb_field display_value="Serial Number">1ca7e7b0830d52104751e270ceaad3fd</source_sys_rte_eb_field>
+        <sys_class_name>sys_rte_eb_field_mapping</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-02 18:30:03</sys_created_on>
+        <sys_id>3dc7a3b0830d52104751e270ceaad385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Robust Transform CIs ETL">c2d44c64472fc2105afe9889316d431f</sys_rte_eb_definition>
+        <sys_rte_eb_entity_mapping display_value="Intermediate to Serial Number">6e472f70830d52104751e270ceaad380</sys_rte_eb_entity_mapping>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_rte_eb_field_mapping_3dc7a3b0830d52104751e270ceaad385</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-02 18:30:03</sys_updated_on>
+        <target_sys_rte_eb_field display_value="Serial Number">93766bfc83c952104751e270ceaad392</target_sys_rte_eb_field>
+    </sys_rte_eb_field_mapping>
+</record_update>

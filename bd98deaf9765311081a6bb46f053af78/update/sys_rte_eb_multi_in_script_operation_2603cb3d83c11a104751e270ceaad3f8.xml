@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_multi_in_script_operation">
+    <sys_rte_eb_multi_in_script_operation action="INSERT_OR_UPDATE">
+        <conditional_fields/>
+        <conditional_script><![CDATA[/* Example Script
+(function(batch, output) {
+    for (var i = 0; i < batch.length; i++) {
+        
+        // step1: access the input variables
+        var a = batch[i].input;
+
+        // step2: your script code goes here
+        // based on the input variables assign variable 'b' to true or false.
+        var b = true; // or false;
+
+        // step3: set the output for each element
+        output[i] = b;
+    }
+})(batch, output);
+*/
+(function(batch, output) {
+    // add your code here
+    
+})(batch, output);]]></conditional_script>
+        <is_conditional>false</is_conditional>
+        <name>Set Ntw Adapter Name</name>
+        <operation_group/>
+        <order>100</order>
+        <script><![CDATA[/* Example Script 
+ // In this example the script input fields are 'input_field_1', 'input_field_2' - replace these with the fields used as script inputs // There is a static field 'input' that has all the input field values concatenated with a '|' (function(batch, output) {
+     for (var i = 0; i < batch.length; i++) {
+ 
+         //step1: access the input variables
+         var a = batch[i].input_field_1; //Value of the first source field. 
+         var b = batch[i].input_field_2; //Value of the second source field. 
+ 
+         //step2: Your script/code goes here.
+         var c = a + b;
+ 
+         //step3: set the output for each elements
+         output[i] = b;
+     }
+ 
+ })(batch, output);
+ */
+ 
+ (function(batch, output) {
+  for (var item in batch){
+	output[item]=batch[item].u_ip_address+'_'+batch[item].u_mac_address;
+  }
+ })(batch, output);]]></script>
+        <source_sys_rte_eb_field/>
+        <source_sys_rte_eb_fields>cef57a3883c152104751e270ceaad3c4,0f1672f883c152104751e270ceaad334</source_sys_rte_eb_fields>
+        <sys_class_name>sys_rte_eb_multi_in_script_operation</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-05 18:24:55</sys_created_on>
+        <sys_id>2603cb3d83c11a104751e270ceaad3f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Ntw Adapter Name</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Load Hardware and Related Entries">bffe2af4834152104751e270ceaad325</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="Temp">f8c07af8838152104751e270ceaad37a</sys_rte_eb_entity>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_rte_eb_multi_in_script_operation_2603cb3d83c11a104751e270ceaad3f8</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-05 18:24:55</sys_updated_on>
+        <target_sys_rte_eb_field display_value="Network Adapter Name">7652cbb983c11a104751e270ceaad3bb</target_sys_rte_eb_field>
+        <target_sys_rte_eb_fields/>
+        <type display_value="Multiple Input Script">a5584ee4739000102b6265a751ab9eae</type>
+        <use_unique_input_sets>true</use_unique_input_sets>
+    </sys_rte_eb_multi_in_script_operation>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>2603cb3d83c11a104751e270ceaad3f8</id>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-05 18:24:54</sys_created_on>
+        <sys_id>e4730f3d83c11a104751e270ceaad32f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-05 18:24:54</sys_updated_on>
+        <table>sys_rte_eb_multi_in_script_operation</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

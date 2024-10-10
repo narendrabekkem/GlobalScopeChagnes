@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field_mapping">
+    <sys_rte_eb_field_mapping action="DELETE">
+        <order>10000</order>
+        <referenced_sys_rte_eb_entity display_value="Business Service">d028d8ef830552104751e270ceaad354</referenced_sys_rte_eb_entity>
+        <source_sys_rte_eb_field/>
+        <sys_class_name>sys_rte_eb_field_mapping</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 16:29:02</sys_created_on>
+        <sys_id>fbd85ca3834552104751e270ceaad379</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Load Win Linux ESX Computer and Relationships">f54980a7838152104751e270ceaad36c</sys_rte_eb_definition>
+        <sys_rte_eb_entity_mapping display_value="TempTocmdb_rel_ci_1728577741918_0">f3d85ca3834552104751e270ceaad377</sys_rte_eb_entity_mapping>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_rte_eb_field_mapping_fbd85ca3834552104751e270ceaad379</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 16:29:02</sys_updated_on>
+        <target_sys_rte_eb_field display_value="cmdb_rel_ci_1728577741918_0.parent">3bd85ca3834552104751e270ceaad372</target_sys_rte_eb_field>
+    </sys_rte_eb_field_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>sys_rte_eb_field_mapping_fbd85ca3834552104751e270ceaad379</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field_mapping"><sys_rte_eb_field_mapping action="INSERT_OR_UPDATE"><order>10000</order><referenced_sys_rte_eb_entity display_value="Business Service">d028d8ef830552104751e270ceaad354</referenced_sys_rte_eb_entity><source_sys_rte_eb_field/><sys_class_name>sys_rte_eb_field_mapping</sys_class_name><sys_created_by>narendrabekkem</sys_created_by><sys_created_on>2024-10-10 16:29:02</sys_created_on><sys_id>fbd85ca3834552104751e270ceaad379</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package><sys_policy/><sys_rte_eb_definition display_value="Load Win Linux ESX Computer and Relationships">f54980a7838152104751e270ceaad36c</sys_rte_eb_definition><sys_rte_eb_entity_mapping display_value="TempTocmdb_rel_ci_1728577741918_0">f3d85ca3834552104751e270ceaad377</sys_rte_eb_entity_mapping><sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope><sys_update_name>sys_rte_eb_field_mapping_fbd85ca3834552104751e270ceaad379</sys_update_name><sys_updated_by>narendrabekkem</sys_updated_by><sys_updated_on>2024-10-10 16:29:02</sys_updated_on><target_sys_rte_eb_field display_value="cmdb_rel_ci_1728577741918_0.parent">3bd85ca3834552104751e270ceaad372</target_sys_rte_eb_field></sys_rte_eb_field_mapping></record_update>]]></payload>
+        <payload_hash>-1269228839</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>8d63c860472fc2105afe9889316d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 16:29:02</sys_created_on>
+        <sys_id>3fd85ca3834552104751e270ceaad37b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1927743253b0000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 16:29:02</sys_updated_on>
+        <type>RTE Field Mapping</type>
+        <update_guid>33d85ca335455210a69ea4ef97a28c7b</update_guid>
+        <update_guid_history>33d85ca335455210a69ea4ef97a28c7b:-1269228839</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 17:48:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_field_mapping">sys_rte_eb_field_mapping</sys_db_object>
+        <sys_id>69d14665b0cc4ae8a952480b2a7cec40</sys_id>
+        <sys_metadata>fbd85ca3834552104751e270ceaad379</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_field_mapping_fbd85ca3834552104751e270ceaad379</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_field_mapping_fbd85ca3834552104751e270ceaad379">3fd85ca3834552104751e270ceaad37b</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 17:48:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

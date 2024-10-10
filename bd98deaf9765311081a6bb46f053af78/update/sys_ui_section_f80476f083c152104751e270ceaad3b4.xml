@@ -4,13 +4,13 @@
             <element>.begin_split</element>
             <position>0</position>
             <sys_created_by>narendrabekkem</sys_created_by>
-            <sys_created_on>2024-10-02 14:43:33</sys_created_on>
-            <sys_id>f804ba7483c152104751e270ceaad38e</sys_id>
+            <sys_created_on>2024-10-10 14:09:51</sys_created_on>
+            <sys_id>0509b79f83cd12104751e270ceaad30f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_load_cmdb_ci_hardware" sys_domain="global" view="Default view">f80476f083c152104751e270ceaad3b4</sys_ui_section>
             <sys_updated_by>narendrabekkem</sys_updated_by>
-            <sys_updated_on>2024-10-02 14:43:33</sys_updated_on>
+            <sys_updated_on>2024-10-10 14:09:51</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>u_business_service</element>
             <position>1</position>
             <sys_created_by>narendrabekkem</sys_created_by>
-            <sys_created_on>2024-10-02 14:43:33</sys_created_on>
-            <sys_id>b804ba7483c152104751e270ceaad38f</sys_id>
+            <sys_created_on>2024-10-10 14:09:51</sys_created_on>
+            <sys_id>4109b79f83cd12104751e270ceaad310</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_load_cmdb_ci_hardware" sys_domain="global" view="Default view">f80476f083c152104751e270ceaad3b4</sys_ui_section>
             <sys_updated_by>narendrabekkem</sys_updated_by>
-            <sys_updated_on>2024-10-02 14:43:33</sys_updated_on>
+            <sys_updated_on>2024-10-10 14:09:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>u_type</element>
             <position>2</position>
             <sys_created_by>narendrabekkem</sys_created_by>
-            <sys_created_on>2024-10-02 14:43:33</sys_created_on>
-            <sys_id>3004ba7483c152104751e270ceaad390</sys_id>
+            <sys_created_on>2024-10-10 14:09:51</sys_created_on>
+            <sys_id>c509b79f83cd12104751e270ceaad310</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_load_cmdb_ci_hardware" sys_domain="global" view="Default view">f80476f083c152104751e270ceaad3b4</sys_ui_section>
             <sys_updated_by>narendrabekkem</sys_updated_by>
-            <sys_updated_on>2024-10-02 14:43:33</sys_updated_on>
+            <sys_updated_on>2024-10-10 14:09:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>u_ip_address</element>
             <position>3</position>
             <sys_created_by>narendrabekkem</sys_created_by>
-            <sys_created_on>2024-10-02 14:43:33</sys_created_on>
-            <sys_id>b404ba7483c152104751e270ceaad390</sys_id>
+            <sys_created_on>2024-10-10 14:09:51</sys_created_on>
+            <sys_id>4d09b79f83cd12104751e270ceaad310</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_load_cmdb_ci_hardware" sys_domain="global" view="Default view">f80476f083c152104751e270ceaad3b4</sys_ui_section>
             <sys_updated_by>narendrabekkem</sys_updated_by>
-            <sys_updated_on>2024-10-02 14:43:33</sys_updated_on>
+            <sys_updated_on>2024-10-10 14:09:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,97 +60,153 @@
             <element>u_install_date</element>
             <position>4</position>
             <sys_created_by>narendrabekkem</sys_created_by>
-            <sys_created_on>2024-10-02 14:43:33</sys_created_on>
-            <sys_id>3c04ba7483c152104751e270ceaad390</sys_id>
+            <sys_created_on>2024-10-10 14:09:51</sys_created_on>
+            <sys_id>c109b79f83cd12104751e270ceaad311</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_load_cmdb_ci_hardware" sys_domain="global" view="Default view">f80476f083c152104751e270ceaad3b4</sys_ui_section>
             <sys_updated_by>narendrabekkem</sys_updated_by>
-            <sys_updated_on>2024-10-02 14:43:33</sys_updated_on>
+            <sys_updated_on>2024-10-10 14:09:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_cpu_manufacturer</element>
+            <position>5</position>
+            <sys_created_by>narendrabekkem</sys_created_by>
+            <sys_created_on>2024-10-10 14:09:51</sys_created_on>
+            <sys_id>4909b79f83cd12104751e270ceaad311</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_load_cmdb_ci_hardware" sys_domain="global" view="Default view">f80476f083c152104751e270ceaad3b4</sys_ui_section>
+            <sys_updated_by>narendrabekkem</sys_updated_by>
+            <sys_updated_on>2024-10-10 14:09:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_ram</element>
+            <position>6</position>
+            <sys_created_by>narendrabekkem</sys_created_by>
+            <sys_created_on>2024-10-10 14:09:51</sys_created_on>
+            <sys_id>cd09b79f83cd12104751e270ceaad311</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_load_cmdb_ci_hardware" sys_domain="global" view="Default view">f80476f083c152104751e270ceaad3b4</sys_ui_section>
+            <sys_updated_by>narendrabekkem</sys_updated_by>
+            <sys_updated_on>2024-10-10 14:09:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>5</position>
+            <position>7</position>
             <sys_created_by>narendrabekkem</sys_created_by>
-            <sys_created_on>2024-10-02 14:43:33</sys_created_on>
-            <sys_id>b004ba7483c152104751e270ceaad391</sys_id>
+            <sys_created_on>2024-10-10 14:09:51</sys_created_on>
+            <sys_id>4509b79f83cd12104751e270ceaad312</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_load_cmdb_ci_hardware" sys_domain="global" view="Default view">f80476f083c152104751e270ceaad3b4</sys_ui_section>
             <sys_updated_by>narendrabekkem</sys_updated_by>
-            <sys_updated_on>2024-10-02 14:43:33</sys_updated_on>
+            <sys_updated_on>2024-10-10 14:09:51</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_server</element>
-            <position>6</position>
+            <position>8</position>
             <sys_created_by>narendrabekkem</sys_created_by>
-            <sys_created_on>2024-10-02 14:43:33</sys_created_on>
-            <sys_id>3804ba7483c152104751e270ceaad391</sys_id>
+            <sys_created_on>2024-10-10 14:09:51</sys_created_on>
+            <sys_id>c909b79f83cd12104751e270ceaad312</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_load_cmdb_ci_hardware" sys_domain="global" view="Default view">f80476f083c152104751e270ceaad3b4</sys_ui_section>
             <sys_updated_by>narendrabekkem</sys_updated_by>
-            <sys_updated_on>2024-10-02 14:43:33</sys_updated_on>
+            <sys_updated_on>2024-10-10 14:09:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_model</element>
-            <position>7</position>
+            <position>9</position>
             <sys_created_by>narendrabekkem</sys_created_by>
-            <sys_created_on>2024-10-02 14:43:33</sys_created_on>
-            <sys_id>bc04ba7483c152104751e270ceaad391</sys_id>
+            <sys_created_on>2024-10-10 14:09:51</sys_created_on>
+            <sys_id>4109b79f83cd12104751e270ceaad313</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_load_cmdb_ci_hardware" sys_domain="global" view="Default view">f80476f083c152104751e270ceaad3b4</sys_ui_section>
             <sys_updated_by>narendrabekkem</sys_updated_by>
-            <sys_updated_on>2024-10-02 14:43:33</sys_updated_on>
+            <sys_updated_on>2024-10-10 14:09:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_serial_number</element>
-            <position>8</position>
+            <position>10</position>
             <sys_created_by>narendrabekkem</sys_created_by>
-            <sys_created_on>2024-10-02 14:43:33</sys_created_on>
-            <sys_id>3404ba7483c152104751e270ceaad392</sys_id>
+            <sys_created_on>2024-10-10 14:09:51</sys_created_on>
+            <sys_id>4509b79f83cd12104751e270ceaad32c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_load_cmdb_ci_hardware" sys_domain="global" view="Default view">f80476f083c152104751e270ceaad3b4</sys_ui_section>
             <sys_updated_by>narendrabekkem</sys_updated_by>
-            <sys_updated_on>2024-10-02 14:43:33</sys_updated_on>
+            <sys_updated_on>2024-10-10 14:09:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_mac_address</element>
-            <position>9</position>
+            <position>11</position>
             <sys_created_by>narendrabekkem</sys_created_by>
-            <sys_created_on>2024-10-02 14:43:33</sys_created_on>
-            <sys_id>b804ba7483c152104751e270ceaad392</sys_id>
+            <sys_created_on>2024-10-10 14:09:51</sys_created_on>
+            <sys_id>c909b79f83cd12104751e270ceaad32c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_load_cmdb_ci_hardware" sys_domain="global" view="Default view">f80476f083c152104751e270ceaad3b4</sys_ui_section>
             <sys_updated_by>narendrabekkem</sys_updated_by>
-            <sys_updated_on>2024-10-02 14:43:33</sys_updated_on>
+            <sys_updated_on>2024-10-10 14:09:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_operating_system</element>
+            <position>12</position>
+            <sys_created_by>narendrabekkem</sys_created_by>
+            <sys_created_on>2024-10-10 14:09:51</sys_created_on>
+            <sys_id>4109b79f83cd12104751e270ceaad32d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_load_cmdb_ci_hardware" sys_domain="global" view="Default view">f80476f083c152104751e270ceaad3b4</sys_ui_section>
+            <sys_updated_by>narendrabekkem</sys_updated_by>
+            <sys_updated_on>2024-10-10 14:09:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_net_mask</element>
+            <position>13</position>
+            <sys_created_by>narendrabekkem</sys_created_by>
+            <sys_created_on>2024-10-10 14:09:51</sys_created_on>
+            <sys_id>c509b79f83cd12104751e270ceaad32d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_load_cmdb_ci_hardware" sys_domain="global" view="Default view">f80476f083c152104751e270ceaad3b4</sys_ui_section>
+            <sys_updated_by>narendrabekkem</sys_updated_by>
+            <sys_updated_on>2024-10-10 14:09:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>10</position>
+            <position>14</position>
             <sys_created_by>narendrabekkem</sys_created_by>
-            <sys_created_on>2024-10-02 14:43:33</sys_created_on>
-            <sys_id>3004ba7483c152104751e270ceaad393</sys_id>
+            <sys_created_on>2024-10-10 14:09:51</sys_created_on>
+            <sys_id>4d09b79f83cd12104751e270ceaad32d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_load_cmdb_ci_hardware" sys_domain="global" view="Default view">f80476f083c152104751e270ceaad3b4</sys_ui_section>
             <sys_updated_by>narendrabekkem</sys_updated_by>
-            <sys_updated_on>2024-10-02 14:43:33</sys_updated_on>
+            <sys_updated_on>2024-10-10 14:09:51</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>

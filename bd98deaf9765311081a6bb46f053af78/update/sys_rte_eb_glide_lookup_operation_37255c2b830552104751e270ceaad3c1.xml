@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_glide_lookup_operation">
+    <sys_rte_eb_glide_lookup_operation action="INSERT_OR_UPDATE">
+        <conditional_fields/>
+        <conditional_script><![CDATA[/* Example Script
+(function(batch, output) {
+    for (var i = 0; i < batch.length; i++) {
+        
+        // step1: access the input variables
+        var a = batch[i].input;
+
+        // step2: your script code goes here
+        // based on the input variables assign variable 'b' to true or false.
+        var b = true; // or false;
+
+        // step3: set the output for each element
+        output[i] = b;
+    }
+})(batch, output);
+*/
+(function(batch, output) {
+    // add your code here
+    
+})(batch, output);]]></conditional_script>
+        <glide_matching_fields>model_number</glide_matching_fields>
+        <glide_target_fields>sys_id</glide_target_fields>
+        <is_conditional>false</is_conditional>
+        <name>Lookup Model Sys ID</name>
+        <operation_group/>
+        <order>201</order>
+        <source_sys_rte_eb_field/>
+        <source_sys_rte_eb_fields>b9598c6b838152104751e270ceaad34d</source_sys_rte_eb_fields>
+        <sys_class_name>sys_rte_eb_glide_lookup_operation</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 16:12:55</sys_created_on>
+        <sys_id>37255c2b830552104751e270ceaad3c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Lookup Model Sys ID</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Load Win Linux ESX Computer and Relationships">f54980a7838152104751e270ceaad36c</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="temp">a9594c6b838152104751e270ceaad3c4</sys_rte_eb_entity>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_rte_eb_glide_lookup_operation_37255c2b830552104751e270ceaad3c1</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 16:12:55</sys_updated_on>
+        <target_sys_rte_eb_field/>
+        <target_sys_rte_eb_fields>fb255c2b830552104751e270ceaad3be</target_sys_rte_eb_fields>
+        <target_table>cmdb_model</target_table>
+        <type display_value="Glide Lookup Operation">a068e629730000102b6265a751ab9e77</type>
+    </sys_rte_eb_glide_lookup_operation>
+</record_update>

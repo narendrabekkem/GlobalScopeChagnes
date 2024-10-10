@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field">
+    <sys_rte_eb_field action="DELETE">
+        <field>model_id.model_number</field>
+        <name>Model</name>
+        <sys_class_name>sys_rte_eb_field</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-02 14:58:25</sys_created_on>
+        <sys_id>21473e7883c152104751e270ceaad36c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Model</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Load Hardware and Related Entries">bffe2af4834152104751e270ceaad325</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="Windows Server">17d0727c838152104751e270ceaad359</sys_rte_eb_entity>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_rte_eb_field_21473e7883c152104751e270ceaad36c</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-05 18:10:08</sys_updated_on>
+    </sys_rte_eb_field>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>sys_rte_eb_field_21473e7883c152104751e270ceaad36c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field"><sys_rte_eb_field action="INSERT_OR_UPDATE"><field>model_id.model_number</field><name>Model</name><sys_class_name>sys_rte_eb_field</sys_class_name><sys_created_by>narendrabekkem</sys_created_by><sys_created_on>2024-10-02 14:58:25</sys_created_on><sys_id>21473e7883c152104751e270ceaad36c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Model</sys_name><sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package><sys_policy/><sys_rte_eb_definition display_value="Load Hardware and Related Entries">bffe2af4834152104751e270ceaad325</sys_rte_eb_definition><sys_rte_eb_entity display_value="Windows Server">17d0727c838152104751e270ceaad359</sys_rte_eb_entity><sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope><sys_update_name>sys_rte_eb_field_21473e7883c152104751e270ceaad36c</sys_update_name><sys_updated_by>narendrabekkem</sys_updated_by><sys_updated_on>2024-10-05 18:10:08</sys_updated_on></sys_rte_eb_field></record_update>]]></payload>
+        <payload_hash>110286260</payload_hash>
+        <record_name>Model</record_name>
+        <reverted_from/>
+        <source>8d63c860472fc2105afe9889316d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-05 18:10:08</sys_created_on>
+        <sys_id>8c100b3583c11a104751e270ceaad33b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1925ddfeaf90000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-05 18:10:08</sys_updated_on>
+        <type>RTE Entity Field</type>
+        <update_guid>40100b3505c11a1085ec6b50a8f68a3b</update_guid>
+        <update_guid_history>40100b3505c11a1085ec6b50a8f68a3b:110286260,62677a3c7cc15210703f6f4cd15b0fd5:-750618261</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 12:50:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_field">sys_rte_eb_field</sys_db_object>
+        <sys_id>935877b4a165405891cb05a071766f10</sys_id>
+        <sys_metadata>21473e7883c152104751e270ceaad36c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Model</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_field_21473e7883c152104751e270ceaad36c</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_field_21473e7883c152104751e270ceaad36c">8c100b3583c11a104751e270ceaad33b</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 12:50:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

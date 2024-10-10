@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field_mapping">
+    <sys_rte_eb_field_mapping action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <referenced_sys_rte_eb_entity/>
+        <source_sys_rte_eb_field display_value="OS Domain">8550efb8838952104751e270ceaad3ac</source_sys_rte_eb_field>
+        <sys_class_name>sys_rte_eb_field_mapping</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 14:28:40</sys_created_on>
+        <sys_id>285db71b830152104751e270ceaad39f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Load Hardware and Related Entries">bffe2af4834152104751e270ceaad325</sys_rte_eb_definition>
+        <sys_rte_eb_entity_mapping display_value="tempToComputer">c1176bdb830d12104751e270ceaad31e</sys_rte_eb_entity_mapping>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_rte_eb_field_mapping_285db71b830152104751e270ceaad39f</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 14:28:40</sys_updated_on>
+        <target_sys_rte_eb_field display_value="OS Domain Field Computer">787677d783cd12104751e270ceaad39c</target_sys_rte_eb_field>
+    </sys_rte_eb_field_mapping>
+</record_update>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field">
+    <sys_rte_eb_field action="DELETE">
+        <field>nic</field>
+        <name>nic</name>
+        <sys_class_name>sys_rte_eb_field</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 16:32:38</sys_created_on>
+        <sys_id>20b99427834552104751e270ceaad3db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>nic</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Load Win Linux ESX Computer and Relationships">f54980a7838152104751e270ceaad36c</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="IP Address Windows">362c846383c152104751e270ceaad33d</sys_rte_eb_entity>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_rte_eb_field_20b99427834552104751e270ceaad3db</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 16:32:38</sys_updated_on>
+    </sys_rte_eb_field>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>sys_rte_eb_field_20b99427834552104751e270ceaad3db</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field"><sys_rte_eb_field action="INSERT_OR_UPDATE"><field>nic</field><name>nic</name><sys_class_name>sys_rte_eb_field</sys_class_name><sys_created_by>narendrabekkem</sys_created_by><sys_created_on>2024-10-10 16:32:38</sys_created_on><sys_id>20b99427834552104751e270ceaad3db</sys_id><sys_mod_count>0</sys_mod_count><sys_name>nic</sys_name><sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package><sys_policy/><sys_rte_eb_definition display_value="Load Win Linux ESX Computer and Relationships">f54980a7838152104751e270ceaad36c</sys_rte_eb_definition><sys_rte_eb_entity display_value="IP Address Windows">362c846383c152104751e270ceaad33d</sys_rte_eb_entity><sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope><sys_update_name>sys_rte_eb_field_20b99427834552104751e270ceaad3db</sys_update_name><sys_updated_by>narendrabekkem</sys_updated_by><sys_updated_on>2024-10-10 16:32:38</sys_updated_on></sys_rte_eb_field></record_update>]]></payload>
+        <payload_hash>1161299787</payload_hash>
+        <record_name>nic</record_name>
+        <reverted_from/>
+        <source>8d63c860472fc2105afe9889316d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 16:32:38</sys_created_on>
+        <sys_id>a0b99427834552104751e270ceaad3dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192774671150000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 16:32:38</sys_updated_on>
+        <type>RTE Entity Field</type>
+        <update_guid>a4b994277d455210dde4b750f9925adc</update_guid>
+        <update_guid_history>a4b994277d455210dde4b750f9925adc:1161299787</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 17:24:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_field">sys_rte_eb_field</sys_db_object>
+        <sys_id>425201b065f14c2cb66b3c5d6c6acd90</sys_id>
+        <sys_metadata>20b99427834552104751e270ceaad3db</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>nic</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_field_20b99427834552104751e270ceaad3db</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_field_20b99427834552104751e270ceaad3db">a0b99427834552104751e270ceaad3dd</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 17:24:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

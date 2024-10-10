@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="DELETE">
+        <active>true</active>
+        <answer>Nowhere</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>dummy</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Entity Base Operation" name="Entity Base Operation">c19da6e49f1000105cf3ffa4677fcffb</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 18:12:37</sys_created_on>
+        <sys_id>6280b0e3834952104751e270ceaad3bd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>dummy</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_wizard_answer_6280b0e3834952104751e270ceaad3bd</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 18:13:20</sys_updated_on>
+        <table/>
+        <target_url>nowhere.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>sys_wizard_answer_6280b0e3834952104751e270ceaad3bd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>Nowhere</answer><button_label/><dependent_value/><element/><name>dummy</name><next_question/><order>100</order><payload_name/><question display_value="Entity Base Operation" name="Entity Base Operation">c19da6e49f1000105cf3ffa4677fcffb</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>narendrabekkem</sys_created_by><sys_created_on>2024-10-10 18:12:37</sys_created_on><sys_id>6280b0e3834952104751e270ceaad3bd</sys_id><sys_mod_count>2</sys_mod_count><sys_name>dummy</sys_name><sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package><sys_policy/><sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope><sys_update_name>sys_wizard_answer_6280b0e3834952104751e270ceaad3bd</sys_update_name><sys_updated_by>narendrabekkem</sys_updated_by><sys_updated_on>2024-10-10 18:13:20</sys_updated_on><table/><target_url>nowhere.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+        <payload_hash>-100646130</payload_hash>
+        <record_name>dummy</record_name>
+        <reverted_from/>
+        <source>8d63c860472fc2105afe9889316d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 18:13:20</sys_created_on>
+        <sys_id>f3b0f8e3834952104751e270ceaad340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19277a2a3bc0000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 18:13:20</sys_updated_on>
+        <type>Answer</type>
+        <update_guid>7bb0f8e30a495210f97685918a58e53f</update_guid>
+        <update_guid_history>7bb0f8e30a495210f97685918a58e53f:-100646130,b1a0fca33f495210c82dbe993d292bcb:-1361374448,51903ca31b495210167e053fc9a4b05d:1304050694</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 18:13:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_wizard_answer">sys_wizard_answer</sys_db_object>
+        <sys_id>0a0b8f1c706c43599a01cd06b20d6181</sys_id>
+        <sys_metadata>6280b0e3834952104751e270ceaad3bd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dummy</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent display_value="Entity Base Operation">c19da6e49f1000105cf3ffa4677fcffb</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>sys_wizard_answer_6280b0e3834952104751e270ceaad3bd</sys_update_name>
+        <sys_update_version display_value="sys_wizard_answer_6280b0e3834952104751e270ceaad3bd">f3b0f8e3834952104751e270ceaad340</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 18:13:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

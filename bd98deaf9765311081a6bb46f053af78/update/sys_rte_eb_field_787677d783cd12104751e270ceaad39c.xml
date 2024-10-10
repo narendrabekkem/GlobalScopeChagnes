@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field">
+    <sys_rte_eb_field action="INSERT_OR_UPDATE">
+        <field>os_domain</field>
+        <name>OS Domain Field Computer</name>
+        <sys_class_name>sys_rte_eb_field</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 13:59:32</sys_created_on>
+        <sys_id>787677d783cd12104751e270ceaad39c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OS Domain Field Computer</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Load Hardware and Related Entries">bffe2af4834152104751e270ceaad325</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="Computer">c9176bdb830d12104751e270ceaad31b</sys_rte_eb_entity>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_rte_eb_field_787677d783cd12104751e270ceaad39c</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 13:59:32</sys_updated_on>
+    </sys_rte_eb_field>
+</record_update>

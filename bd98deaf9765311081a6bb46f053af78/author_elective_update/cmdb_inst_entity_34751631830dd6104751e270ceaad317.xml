@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_inst_entity">
+    <cmdb_inst_entity action="DELETE">
+        <child_id_field/>
+        <lookup_for_entity/>
+        <name>IP to Hardware Relationship</name>
+        <parent_entity/>
+        <parent_id_field/>
+        <path>hw_to_ip_rel</path>
+        <related_for_entity/>
+        <relationship_type display_value="Owns::Owned by">25242fb2377a9200738d021a54990e88</relationship_type>
+        <sys_class_name>cmdb_inst_entity</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-05 15:04:54</sys_created_on>
+        <sys_id>34751631830dd6104751e270ceaad317</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>IP to Hardware Relationship</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Load Hardware and Related Entries">bffe2af4834152104751e270ceaad325</sys_rte_eb_definition>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>cmdb_inst_entity_34751631830dd6104751e270ceaad317</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-05 15:13:45</sys_updated_on>
+        <table>cmdb_rel_ci</table>
+    </cmdb_inst_entity>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>cmdb_inst_entity_34751631830dd6104751e270ceaad317</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_inst_entity"><cmdb_inst_entity action="INSERT_OR_UPDATE"><child_id_field/><lookup_for_entity/><name>IP to Hardware Relationship</name><parent_entity/><parent_id_field/><path>hw_to_ip_rel</path><related_for_entity/><relationship_type display_value="Owns::Owned by">25242fb2377a9200738d021a54990e88</relationship_type><sys_class_name>cmdb_inst_entity</sys_class_name><sys_created_by>narendrabekkem</sys_created_by><sys_created_on>2024-10-05 15:04:54</sys_created_on><sys_id>34751631830dd6104751e270ceaad317</sys_id><sys_mod_count>2</sys_mod_count><sys_name>IP to Hardware Relationship</sys_name><sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package><sys_policy/><sys_rte_eb_definition display_value="Load Hardware and Related Entries">bffe2af4834152104751e270ceaad325</sys_rte_eb_definition><sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope><sys_update_name>cmdb_inst_entity_34751631830dd6104751e270ceaad317</sys_update_name><sys_updated_by>narendrabekkem</sys_updated_by><sys_updated_on>2024-10-05 15:13:45</sys_updated_on><table>cmdb_rel_ci</table></cmdb_inst_entity></record_update>]]></payload>
+        <payload_hash>177616455</payload_hash>
+        <record_name>IP to Hardware Relationship</record_name>
+        <reverted_from/>
+        <source>8d63c860472fc2105afe9889316d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-05 15:13:45</sys_created_on>
+        <sys_id>e0b79e79830dd6104751e270ceaad303</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1925d3e6f070000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-05 15:13:45</sys_updated_on>
+        <type>CMDB Integration Studio Entity</type>
+        <update_guid>e4b79e79740dd610642e84fe5747b702</update_guid>
+        <update_guid_history>e4b79e79740dd610642e84fe5747b702:177616455,fec51af1980dd6101d1d016f8de428d0:130744916,baa512f1b40dd6109ffcb822b692a7e6:-1123044132</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="IP to Hardware Relationship">87e6e31f830d12104751e270ceaad340</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 12:50:48</sys_created_on>
+        <sys_db_object display_value="" name="cmdb_inst_entity">cmdb_inst_entity</sys_db_object>
+        <sys_id>463a9c97ae854f4896c9698f3abb6724</sys_id>
+        <sys_metadata>34751631830dd6104751e270ceaad317</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IP to Hardware Relationship</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>cmdb_inst_entity_34751631830dd6104751e270ceaad317</sys_update_name>
+        <sys_update_version display_value="cmdb_inst_entity_34751631830dd6104751e270ceaad317">e0b79e79830dd6104751e270ceaad303</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 12:50:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

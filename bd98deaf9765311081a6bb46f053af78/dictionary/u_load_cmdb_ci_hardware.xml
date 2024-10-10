@@ -3,8 +3,11 @@
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Business Service" label="Business Service" max_length="40" name="u_business_service" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Type" label="Type" max_length="40" name="u_type" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=IP Address" label="IP Address" max_length="40" name="u_ip_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=CPU Manufacturer" label="CPU Manufacturer" max_length="40" name="u_cpu_manufacturer" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Install Date" label="Install Date" max_length="40" name="u_install_date" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Server" label="Server" max_length="40" name="u_server" type="string"/>
+        <element attributes="import_attribute_name=Ram" label="Ram" max_length="40" name="u_ram" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Operating System" label="Operating System" max_length="40" name="u_operating_system" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Model" label="Model" max_length="40" name="u_model" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Serial Number" label="Serial Number" max_length="40" name="u_serial_number" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Mac Address" label="Mac Address" max_length="40" name="u_mac_address" type="string"/>

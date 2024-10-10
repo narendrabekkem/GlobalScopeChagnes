@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_inst_entity">
+    <cmdb_inst_entity action="INSERT_OR_UPDATE">
+        <child_id_field/>
+        <lookup_for_entity/>
+        <name>Linux Server</name>
+        <parent_entity/>
+        <parent_id_field/>
+        <path>cmdb_ci_linux_server</path>
+        <related_for_entity/>
+        <relationship_type/>
+        <sys_class_name>cmdb_inst_entity</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 12:49:46</sys_created_on>
+        <sys_id>88b6eb9b830d12104751e270ceaad367</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Linux Server</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Load Hardware and Related Entries">bffe2af4834152104751e270ceaad325</sys_rte_eb_definition>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>cmdb_inst_entity_88b6eb9b830d12104751e270ceaad367</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 13:15:40</sys_updated_on>
+        <table>cmdb_ci_linux_server</table>
+    </cmdb_inst_entity>
+</record_update>

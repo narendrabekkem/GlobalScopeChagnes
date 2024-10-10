@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_entity_mapping">
+    <sys_rte_eb_entity_mapping action="DELETE">
+        <condition_script><![CDATA[/* Example Script 
+ (function() {
+ 
+         //step1: access the input variables
+         if (input && input.temp.u_type == 'Disk') {
+         //step2: return true/false 
+            return true;
+         }
+         return false;
+ 
+ })();
+ */
+ 
+ (function(input) {
+     // Add your code here.
+	 
+ })(input);]]></condition_script>
+        <encoded_query/>
+        <entity_mapping_group/>
+        <ignore>false</ignore>
+        <is_conditional>false</is_conditional>
+        <name>TempToComputer</name>
+        <order>100</order>
+        <source_sys_rte_eb_entity display_value="Temp">f8c07af8838152104751e270ceaad37a</source_sys_rte_eb_entity>
+        <sys_class_name>sys_rte_eb_entity_mapping</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-02 15:35:51</sys_created_on>
+        <sys_id>e89f7ab0834552104751e270ceaad325</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>TempToComputer</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Load Hardware and Related Entries">bffe2af4834152104751e270ceaad325</sys_rte_eb_definition>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_rte_eb_entity_mapping_e89f7ab0834552104751e270ceaad325</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 07:58:28</sys_updated_on>
+        <target_sys_rte_eb_entity display_value="Computer">17d0727c838152104751e270ceaad359</target_sys_rte_eb_entity>
+    </sys_rte_eb_entity_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>sys_rte_eb_entity_mapping_e89f7ab0834552104751e270ceaad325</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_rte_eb_entity_mapping"&gt;&lt;sys_rte_eb_entity_mapping action="INSERT_OR_UPDATE"&gt;&lt;condition_script&gt;&lt;![CDATA[/* Example Script 
+ (function() {
+ 
+         //step1: access the input variables
+         if (input &amp;&amp; input.temp.u_type == 'Disk') {
+         //step2: return true/false 
+            return true;
+         }
+         return false;
+ 
+ })();
+ */
+ 
+ (function(input) {
+     // Add your code here.
+	 
+ })(input);]]&gt;&lt;/condition_script&gt;&lt;encoded_query/&gt;&lt;entity_mapping_group/&gt;&lt;ignore&gt;false&lt;/ignore&gt;&lt;is_conditional&gt;false&lt;/is_conditional&gt;&lt;name&gt;TempToComputer&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;source_sys_rte_eb_entity display_value="Temp"&gt;f8c07af8838152104751e270ceaad37a&lt;/source_sys_rte_eb_entity&gt;&lt;sys_class_name&gt;sys_rte_eb_entity_mapping&lt;/sys_class_name&gt;&lt;sys_created_by&gt;narendrabekkem&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 15:35:51&lt;/sys_created_on&gt;&lt;sys_id&gt;e89f7ab0834552104751e270ceaad325&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;TempToComputer&lt;/sys_name&gt;&lt;sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78"&gt;bd98deaf9765311081a6bb46f053af78&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_rte_eb_definition display_value="Load Hardware and Related Entries"&gt;bffe2af4834152104751e270ceaad325&lt;/sys_rte_eb_definition&gt;&lt;sys_scope display_value="GlobalScopeChagnes"&gt;bd98deaf9765311081a6bb46f053af78&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_rte_eb_entity_mapping_e89f7ab0834552104751e270ceaad325&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;narendrabekkem&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-10 07:58:28&lt;/sys_updated_on&gt;&lt;target_sys_rte_eb_entity display_value="Computer"&gt;17d0727c838152104751e270ceaad359&lt;/target_sys_rte_eb_entity&gt;&lt;/sys_rte_eb_entity_mapping&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1885914099</payload_hash>
+        <record_name>TempToComputer</record_name>
+        <reverted_from/>
+        <source>322834b97db1311076daf29f52070d4e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 07:58:28</sys_created_on>
+        <sys_id>bc0466d3834112104751e270ceaad32a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192756fb66a0000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 07:58:28</sys_updated_on>
+        <type>RTE Entity Mapping</type>
+        <update_guid>340466d352411210cdfded2db9b4272a</update_guid>
+        <update_guid_history>340466d352411210cdfded2db9b4272a:-1885914099,75864b757b051a101f1089d61d325218:-1772392356,4babdfb81349521079e05fe21cff9e4d:-1030917987,731bcbf06bc552108b39c10a9e140a7b:2089299999,3affbe748a45521049870707bfb639e8:-90402368</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 12:53:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_entity_mapping">sys_rte_eb_entity_mapping</sys_db_object>
+        <sys_id>0f043b467227431caf5b9a3384bb1329</sys_id>
+        <sys_metadata>e89f7ab0834552104751e270ceaad325</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TempToComputer</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_entity_mapping_e89f7ab0834552104751e270ceaad325</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_entity_mapping_e89f7ab0834552104751e270ceaad325">bc0466d3834112104751e270ceaad32a</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 12:53:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="90dfcf9e83495e104751e270ceaad3eb" extends="sys_import_set_row" label="Load Models" max_length="40" name="u_load_cmdb_model" type="collection">
+        <element attributes="import_attribute_name=Model Number" label="Model Number" max_length="40" name="u_model_number" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Model" label="Model" max_length="40" name="u_model" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Model category" label="Model category" max_length="40" name="u_model_category" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Manufacturer" label="Manufacturer" max_length="40" name="u_manufacturer" type="string"/>
+    </element>
+</database>

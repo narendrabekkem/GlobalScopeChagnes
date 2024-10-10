@@ -5,6 +5,7 @@
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Model" label="Model" max_length="40" name="u_model" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Model category" label="Model category" max_length="40" name="u_model_category" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Assigned to" label="Assigned to" max_length="40" name="u_assigned_to" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Serial Number" label="Serial Number" max_length="40" name="u_serial_number" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=State" label="State" max_length="40" name="u_state" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Company" label="Company" max_length="40" name="u_company" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Asset tag" label="Asset tag" max_length="40" name="u_asset_tag" type="string"/>

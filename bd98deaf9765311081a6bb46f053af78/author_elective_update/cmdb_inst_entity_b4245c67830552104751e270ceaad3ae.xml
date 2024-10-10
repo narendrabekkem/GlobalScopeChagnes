@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_inst_entity">
+    <cmdb_inst_entity action="DELETE">
+        <child_id_field/>
+        <lookup_for_entity/>
+        <name>IP Address Computer</name>
+        <parent_entity/>
+        <parent_id_field/>
+        <path>cmdb_ci_ip_address_1_34245c67830552104751e270ceaad3ae</path>
+        <related_for_entity/>
+        <relationship_type/>
+        <sys_class_name>cmdb_inst_entity</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 16:08:21</sys_created_on>
+        <sys_id>b4245c67830552104751e270ceaad3ae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>IP Address Computer</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Load Win Linux ESX Computer and Relationships">f54980a7838152104751e270ceaad36c</sys_rte_eb_definition>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>cmdb_inst_entity_b4245c67830552104751e270ceaad3ae</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 16:08:28</sys_updated_on>
+        <table>cmdb_ci_ip_address</table>
+    </cmdb_inst_entity>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>cmdb_inst_entity_b4245c67830552104751e270ceaad3ae</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_inst_entity"><cmdb_inst_entity action="INSERT_OR_UPDATE"><child_id_field/><lookup_for_entity/><name>IP Address Computer</name><parent_entity/><parent_id_field/><path>cmdb_ci_ip_address_1_34245c67830552104751e270ceaad3ae</path><related_for_entity/><relationship_type/><sys_class_name>cmdb_inst_entity</sys_class_name><sys_created_by>narendrabekkem</sys_created_by><sys_created_on>2024-10-10 16:08:21</sys_created_on><sys_id>b4245c67830552104751e270ceaad3ae</sys_id><sys_mod_count>1</sys_mod_count><sys_name>IP Address Computer</sys_name><sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package><sys_policy/><sys_rte_eb_definition display_value="Load Win Linux ESX Computer and Relationships">f54980a7838152104751e270ceaad36c</sys_rte_eb_definition><sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope><sys_update_name>cmdb_inst_entity_b4245c67830552104751e270ceaad3ae</sys_update_name><sys_updated_by>narendrabekkem</sys_updated_by><sys_updated_on>2024-10-10 16:08:28</sys_updated_on><table>cmdb_ci_ip_address</table></cmdb_inst_entity></record_update>]]></payload>
+        <payload_hash>-625762094</payload_hash>
+        <record_name>IP Address Computer</record_name>
+        <reverted_from/>
+        <source>8d63c860472fc2105afe9889316d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 16:08:28</sys_created_on>
+        <sys_id>6624d0a7830552104751e270ceaad316</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1927730532b0000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 16:08:28</sys_updated_on>
+        <type>CMDB Integration Studio Entity</type>
+        <update_guid>2e2450a7c5055210b003e801d745bdde</update_guid>
+        <update_guid_history>2e2450a7c5055210b003e801d745bdde:-625762094,f8245c670e0552109e69749c21a0aaaf:-1214259794</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="IP Address Computer">80e7eceb83c552104751e270ceaad320</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 17:34:35</sys_created_on>
+        <sys_db_object display_value="" name="cmdb_inst_entity">cmdb_inst_entity</sys_db_object>
+        <sys_id>0816ee813f1f49d8820f21972914d761</sys_id>
+        <sys_metadata>b4245c67830552104751e270ceaad3ae</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IP Address Computer</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>cmdb_inst_entity_b4245c67830552104751e270ceaad3ae</sys_update_name>
+        <sys_update_version display_value="cmdb_inst_entity_b4245c67830552104751e270ceaad3ae">6624d0a7830552104751e270ceaad316</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 17:34:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

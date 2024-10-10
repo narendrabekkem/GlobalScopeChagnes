@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_inst_entity">
+    <cmdb_inst_entity action="DELETE">
+        <child_id_field/>
+        <lookup_for_entity display_value="Computer">c9176bdb830d12104751e270ceaad31b</lookup_for_entity>
+        <name>Network Adapter Computer</name>
+        <parent_entity/>
+        <parent_id_field/>
+        <path>network_adapter_computer</path>
+        <related_for_entity/>
+        <relationship_type/>
+        <sys_class_name>cmdb_inst_entity</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 13:27:05</sys_created_on>
+        <sys_id>263fabd3838d12104751e270ceaad337</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Network Adapter Computer</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Load Hardware and Related Entries">bffe2af4834152104751e270ceaad325</sys_rte_eb_definition>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>cmdb_inst_entity_263fabd3838d12104751e270ceaad337</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 13:27:05</sys_updated_on>
+        <table>cmdb_ci_network_adapter</table>
+    </cmdb_inst_entity>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>cmdb_inst_entity_263fabd3838d12104751e270ceaad337</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_inst_entity"><cmdb_inst_entity action="INSERT_OR_UPDATE"><child_id_field/><lookup_for_entity display_value="Computer">c9176bdb830d12104751e270ceaad31b</lookup_for_entity><name>Network Adapter Computer</name><parent_entity/><parent_id_field/><path>network_adapter_computer</path><related_for_entity/><relationship_type/><sys_class_name>cmdb_inst_entity</sys_class_name><sys_created_by>narendrabekkem</sys_created_by><sys_created_on>2024-10-10 13:27:05</sys_created_on><sys_id>263fabd3838d12104751e270ceaad337</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Network Adapter Computer</sys_name><sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package><sys_policy/><sys_rte_eb_definition display_value="Load Hardware and Related Entries">bffe2af4834152104751e270ceaad325</sys_rte_eb_definition><sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope><sys_update_name>cmdb_inst_entity_263fabd3838d12104751e270ceaad337</sys_update_name><sys_updated_by>narendrabekkem</sys_updated_by><sys_updated_on>2024-10-10 13:27:05</sys_updated_on><table>cmdb_ci_network_adapter</table></cmdb_inst_entity></record_update>]]></payload>
+        <payload_hash>-751358768</payload_hash>
+        <record_name>Network Adapter Computer</record_name>
+        <reverted_from/>
+        <source>8d63c860472fc2105afe9889316d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 13:27:05</sys_created_on>
+        <sys_id>e63fabd3838d12104751e270ceaad339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192769c915c0000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 13:27:05</sys_updated_on>
+        <type>CMDB Integration Studio Entity</type>
+        <update_guid>ea3fabd3de8d1210b485b0279b6b9838</update_guid>
+        <update_guid_history>ea3fabd3de8d1210b485b0279b6b9838:-751358768</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Network Adapter Computer">1c3f74eb83c952104751e270ceaad39e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 19:16:27</sys_created_on>
+        <sys_db_object display_value="" name="cmdb_inst_entity">cmdb_inst_entity</sys_db_object>
+        <sys_id>069822c34ad44237812d0bb8c418a8b9</sys_id>
+        <sys_metadata>263fabd3838d12104751e270ceaad337</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Network Adapter Computer</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>cmdb_inst_entity_263fabd3838d12104751e270ceaad337</sys_update_name>
+        <sys_update_version display_value="cmdb_inst_entity_263fabd3838d12104751e270ceaad337">e63fabd3838d12104751e270ceaad339</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 19:16:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

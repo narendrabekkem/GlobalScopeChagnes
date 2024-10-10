@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field">
+    <sys_rte_eb_field action="DELETE">
+        <field>owned_by_cmdb_ci</field>
+        <name>Owned by Ci Field Windows</name>
+        <sys_class_name>sys_rte_eb_field</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 13:41:30</sys_created_on>
+        <sys_id>b582fbdb838d12104751e270ceaad351</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Owned by Ci Field Windows</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Load Hardware and Related Entries">bffe2af4834152104751e270ceaad325</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="IP address Windows">299f6b17838d12104751e270ceaad32c</sys_rte_eb_entity>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_rte_eb_field_b582fbdb838d12104751e270ceaad351</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 13:41:30</sys_updated_on>
+    </sys_rte_eb_field>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>sys_rte_eb_field_b582fbdb838d12104751e270ceaad351</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field"><sys_rte_eb_field action="INSERT_OR_UPDATE"><field>owned_by_cmdb_ci</field><name>Owned by Ci Field Windows</name><sys_class_name>sys_rte_eb_field</sys_class_name><sys_created_by>narendrabekkem</sys_created_by><sys_created_on>2024-10-10 13:41:30</sys_created_on><sys_id>b582fbdb838d12104751e270ceaad351</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Owned by Ci Field Windows</sys_name><sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package><sys_policy/><sys_rte_eb_definition display_value="Load Hardware and Related Entries">bffe2af4834152104751e270ceaad325</sys_rte_eb_definition><sys_rte_eb_entity display_value="IP address Windows">299f6b17838d12104751e270ceaad32c</sys_rte_eb_entity><sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope><sys_update_name>sys_rte_eb_field_b582fbdb838d12104751e270ceaad351</sys_update_name><sys_updated_by>narendrabekkem</sys_updated_by><sys_updated_on>2024-10-10 13:41:30</sys_updated_on></sys_rte_eb_field></record_update>]]></payload>
+        <payload_hash>1933436130</payload_hash>
+        <record_name>Owned by Ci Field Windows</record_name>
+        <reverted_from/>
+        <source>8d63c860472fc2105afe9889316d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 13:41:30</sys_created_on>
+        <sys_id>7982fbdb838d12104751e270ceaad353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19276a9c4830000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 13:41:30</sys_updated_on>
+        <type>RTE Entity Field</type>
+        <update_guid>7d82fbdba38d12105e74a459cb87a452</update_guid>
+        <update_guid_history>7d82fbdba38d12105e74a459cb87a452:1933436130</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 18:59:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_field">sys_rte_eb_field</sys_db_object>
+        <sys_id>12687899b6d940ea98006bc1ed1cc3b1</sys_id>
+        <sys_metadata>b582fbdb838d12104751e270ceaad351</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Owned by Ci Field Windows</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_field_b582fbdb838d12104751e270ceaad351</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_field_b582fbdb838d12104751e270ceaad351">7982fbdb838d12104751e270ceaad353</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 18:59:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_entity_mapping">
+    <sys_rte_eb_entity_mapping action="DELETE">
+        <condition_script><![CDATA[/* Example Script 
+ (function() {
+ 
+         //step1: access the input variables
+         if (input && input.temp.u_type == 'Disk') {
+         //step2: return true/false 
+            return true;
+         }
+         return false;
+ 
+ })();
+ */
+ 
+ (function(input) {
+     if (input.temp.u_class === 'cmdb_ci_esx_server') {
+        return true;
+    }
+    return false;
+ })(input);]]></condition_script>
+        <encoded_query/>
+        <entity_mapping_group/>
+        <ignore>false</ignore>
+        <is_conditional>true</is_conditional>
+        <name>TemptoIPAddressESX</name>
+        <order>100</order>
+        <source_sys_rte_eb_entity display_value="Temp">f8c07af8838152104751e270ceaad37a</source_sys_rte_eb_entity>
+        <sys_class_name>sys_rte_eb_entity_mapping</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 14:53:23</sys_created_on>
+        <sys_id>19e2cca7834152104751e270ceaad3c9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>TemptoIPAddressESX</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Load Hardware and Related Entries">bffe2af4834152104751e270ceaad325</sys_rte_eb_definition>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_rte_eb_entity_mapping_19e2cca7834152104751e270ceaad3c9</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 15:04:25</sys_updated_on>
+        <target_sys_rte_eb_entity display_value="IP address ESX">d1afa717838d12104751e270ceaad3cb</target_sys_rte_eb_entity>
+    </sys_rte_eb_entity_mapping>
+    <sys_es_latest_script action="DELETE">
+        <id>19e2cca7834152104751e270ceaad3c9</id>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 15:04:24</sys_created_on>
+        <sys_id>9485c4ef834152104751e270ceaad3f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 15:04:24</sys_updated_on>
+        <table>sys_rte_eb_entity_mapping</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>sys_rte_eb_entity_mapping_19e2cca7834152104751e270ceaad3c9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_rte_eb_entity_mapping"&gt;&lt;sys_rte_eb_entity_mapping action="INSERT_OR_UPDATE"&gt;&lt;condition_script&gt;&lt;![CDATA[/* Example Script 
+ (function() {
+ 
+         //step1: access the input variables
+         if (input &amp;&amp; input.temp.u_type == 'Disk') {
+         //step2: return true/false 
+            return true;
+         }
+         return false;
+ 
+ })();
+ */
+ 
+ (function(input) {
+     if (input.temp.u_class === 'cmdb_ci_esx_server') {
+        return true;
+    }
+    return false;
+ })(input);]]&gt;&lt;/condition_script&gt;&lt;encoded_query/&gt;&lt;entity_mapping_group/&gt;&lt;ignore&gt;false&lt;/ignore&gt;&lt;is_conditional&gt;true&lt;/is_conditional&gt;&lt;name&gt;TemptoIPAddressESX&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;source_sys_rte_eb_entity display_value="Temp"&gt;f8c07af8838152104751e270ceaad37a&lt;/source_sys_rte_eb_entity&gt;&lt;sys_class_name&gt;sys_rte_eb_entity_mapping&lt;/sys_class_name&gt;&lt;sys_created_by&gt;narendrabekkem&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-10 14:53:23&lt;/sys_created_on&gt;&lt;sys_id&gt;19e2cca7834152104751e270ceaad3c9&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;TemptoIPAddressESX&lt;/sys_name&gt;&lt;sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78"&gt;bd98deaf9765311081a6bb46f053af78&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_rte_eb_definition display_value="Load Hardware and Related Entries"&gt;bffe2af4834152104751e270ceaad325&lt;/sys_rte_eb_definition&gt;&lt;sys_scope display_value="GlobalScopeChagnes"&gt;bd98deaf9765311081a6bb46f053af78&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_rte_eb_entity_mapping_19e2cca7834152104751e270ceaad3c9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;narendrabekkem&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-10 15:04:25&lt;/sys_updated_on&gt;&lt;target_sys_rte_eb_entity display_value="IP address ESX"&gt;d1afa717838d12104751e270ceaad3cb&lt;/target_sys_rte_eb_entity&gt;&lt;/sys_rte_eb_entity_mapping&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;19e2cca7834152104751e270ceaad3c9&lt;/id&gt;&lt;sys_created_by&gt;narendrabekkem&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-10 15:04:24&lt;/sys_created_on&gt;&lt;sys_id&gt;9485c4ef834152104751e270ceaad3f2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;narendrabekkem&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-10 15:04:24&lt;/sys_updated_on&gt;&lt;table&gt;sys_rte_eb_entity_mapping&lt;/table&gt;&lt;use_es_latest&gt;false&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1111097947</payload_hash>
+        <record_name>TemptoIPAddressESX</record_name>
+        <reverted_from/>
+        <source>8d63c860472fc2105afe9889316d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 15:04:25</sys_created_on>
+        <sys_id>508504af834152104751e270ceaad327</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19276f5ad250000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 15:04:25</sys_updated_on>
+        <type>RTE Entity Mapping</type>
+        <update_guid>d48504af284152107406a879ec1c1e26</update_guid>
+        <update_guid_history>d48504af284152107406a879ec1c1e26:-1111097947,36f2406b3f415210ff9a1a5d17116863:-1405814821</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 19:00:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_entity_mapping">sys_rte_eb_entity_mapping</sys_db_object>
+        <sys_id>174f260a109d402880b3aa9f42e661d1</sys_id>
+        <sys_metadata>19e2cca7834152104751e270ceaad3c9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TemptoIPAddressESX</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_entity_mapping_19e2cca7834152104751e270ceaad3c9</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_entity_mapping_19e2cca7834152104751e270ceaad3c9">508504af834152104751e270ceaad327</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 19:00:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

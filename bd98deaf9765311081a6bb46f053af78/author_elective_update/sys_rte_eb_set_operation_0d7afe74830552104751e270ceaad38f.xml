@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_operation">
+    <sys_rte_eb_set_operation action="DELETE">
+        <conditional_fields/>
+        <conditional_script><![CDATA[/* Example Script
+(function(batch, output) {
+    for (var i = 0; i < batch.length; i++) {
+        
+        // step1: access the input variables
+        var a = batch[i].input;
+
+        // step2: your script code goes here
+        // based on the input variables assign variable 'b' to true or false.
+        var b = true; // or false;
+
+        // step3: set the output for each element
+        output[i] = b;
+    }
+})(batch, output);
+*/
+(function(batch, output) {
+    // add your code here
+    
+})(batch, output);]]></conditional_script>
+        <is_conditional>false</is_conditional>
+        <name>IP Version set</name>
+        <operation_group/>
+        <order>100</order>
+        <overwrite_existing_value>true</overwrite_existing_value>
+        <set_value>IPv4</set_value>
+        <source_sys_rte_eb_field/>
+        <source_sys_rte_eb_fields/>
+        <sys_class_name>sys_rte_eb_set_operation</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-02 15:12:06</sys_created_on>
+        <sys_id>0d7afe74830552104751e270ceaad38f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IP Version set</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Load Hardware and Related Entries">bffe2af4834152104751e270ceaad325</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="IP address Linux">dc817abc838152104751e270ceaad3df</sys_rte_eb_entity>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_rte_eb_set_operation_0d7afe74830552104751e270ceaad38f</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-02 15:12:06</sys_updated_on>
+        <target_sys_rte_eb_field/>
+        <target_sys_rte_eb_fields/>
+        <type display_value="Set">c588011e730000102b6265a751ab9e4a</type>
+    </sys_rte_eb_set_operation>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>sys_rte_eb_set_operation_0d7afe74830552104751e270ceaad38f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_rte_eb_operation"&gt;&lt;sys_rte_eb_set_operation action="INSERT_OR_UPDATE"&gt;&lt;conditional_fields/&gt;&lt;conditional_script&gt;&lt;![CDATA[/* Example Script
+(function(batch, output) {
+    for (var i = 0; i &lt; batch.length; i++) {
+        
+        // step1: access the input variables
+        var a = batch[i].input;
+
+        // step2: your script code goes here
+        // based on the input variables assign variable 'b' to true or false.
+        var b = true; // or false;
+
+        // step3: set the output for each element
+        output[i] = b;
+    }
+})(batch, output);
+*/
+(function(batch, output) {
+    // add your code here
+    
+})(batch, output);]]&gt;&lt;/conditional_script&gt;&lt;is_conditional&gt;false&lt;/is_conditional&gt;&lt;name&gt;IP Version set&lt;/name&gt;&lt;operation_group/&gt;&lt;order&gt;100&lt;/order&gt;&lt;overwrite_existing_value&gt;true&lt;/overwrite_existing_value&gt;&lt;set_value&gt;IPv4&lt;/set_value&gt;&lt;source_sys_rte_eb_field/&gt;&lt;source_sys_rte_eb_fields/&gt;&lt;sys_class_name&gt;sys_rte_eb_set_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;narendrabekkem&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 15:12:06&lt;/sys_created_on&gt;&lt;sys_id&gt;0d7afe74830552104751e270ceaad38f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;IP Version set&lt;/sys_name&gt;&lt;sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78"&gt;bd98deaf9765311081a6bb46f053af78&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_rte_eb_definition display_value="Load Hardware and Related Entries"&gt;bffe2af4834152104751e270ceaad325&lt;/sys_rte_eb_definition&gt;&lt;sys_rte_eb_entity display_value="IP address Linux"&gt;dc817abc838152104751e270ceaad3df&lt;/sys_rte_eb_entity&gt;&lt;sys_scope display_value="GlobalScopeChagnes"&gt;bd98deaf9765311081a6bb46f053af78&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_rte_eb_set_operation_0d7afe74830552104751e270ceaad38f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;narendrabekkem&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 15:12:06&lt;/sys_updated_on&gt;&lt;target_sys_rte_eb_field/&gt;&lt;target_sys_rte_eb_fields/&gt;&lt;type display_value="Set"&gt;c588011e730000102b6265a751ab9e4a&lt;/type&gt;&lt;/sys_rte_eb_set_operation&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1012744766</payload_hash>
+        <record_name>IP Version set</record_name>
+        <reverted_from/>
+        <source>8d63c860472fc2105afe9889316d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 18:59:01</sys_created_on>
+        <sys_id>813b342383c952104751e270ceaad3ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19277cc77880000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 18:59:01</sys_updated_on>
+        <type>RTE Entity Set Operation</type>
+        <update_guid>413b38efb28952104fb3e0b0e762eef3</update_guid>
+        <update_guid_history>413b38efb28952104fb3e0b0e762eef3:0,8f8a32b41f055210c2c2bd236fc4f80b:1406835027</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 18:59:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_set_operation">sys_rte_eb_set_operation</sys_db_object>
+        <sys_id>026164852e1046728d3bae48b1f10d41</sys_id>
+        <sys_metadata>0d7afe74830552104751e270ceaad38f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IP Version set</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_set_operation_0d7afe74830552104751e270ceaad38f</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_set_operation_0d7afe74830552104751e270ceaad38f">813b342383c952104751e270ceaad3ce</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 18:59:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_entity_mapping">
+    <sys_rte_eb_entity_mapping action="DELETE">
+        <condition_script><![CDATA[/* Example Script 
+ (function() {
+ 
+         //step1: access the input variables
+         if (input && input.temp.u_type == 'Disk') {
+         //step2: return true/false 
+            return true;
+         }
+         return false;
+ 
+ })();
+ */
+ 
+ (function(input) {
+     if (input.temp.u_class === 'cmdb_ci_linux_server') {
+        return true;
+    }
+    return false;
+ })(input);]]></condition_script>
+        <encoded_query/>
+        <entity_mapping_group/>
+        <ignore>false</ignore>
+        <is_conditional>true</is_conditional>
+        <name>TempToIPAddressLinux</name>
+        <order>100</order>
+        <source_sys_rte_eb_entity display_value="Temp">f8c07af8838152104751e270ceaad37a</source_sys_rte_eb_entity>
+        <sys_class_name>sys_rte_eb_entity_mapping</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-02 15:38:25</sys_created_on>
+        <sys_id>3b7047f4834552104751e270ceaad319</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>TempToIPAddressLinux</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Load Hardware and Related Entries">bffe2af4834152104751e270ceaad325</sys_rte_eb_definition>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_rte_eb_entity_mapping_3b7047f4834552104751e270ceaad319</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 15:04:10</sys_updated_on>
+        <target_sys_rte_eb_entity display_value="IP address Linux">dc817abc838152104751e270ceaad3df</target_sys_rte_eb_entity>
+    </sys_rte_eb_entity_mapping>
+    <sys_es_latest_script action="DELETE">
+        <id>3b7047f4834552104751e270ceaad319</id>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 15:04:10</sys_created_on>
+        <sys_id>b47504af834152104751e270ceaad3d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 15:04:10</sys_updated_on>
+        <table>sys_rte_eb_entity_mapping</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>sys_rte_eb_entity_mapping_3b7047f4834552104751e270ceaad319</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_rte_eb_entity_mapping"&gt;&lt;sys_rte_eb_entity_mapping action="INSERT_OR_UPDATE"&gt;&lt;condition_script&gt;&lt;![CDATA[/* Example Script 
+ (function() {
+ 
+         //step1: access the input variables
+         if (input &amp;&amp; input.temp.u_type == 'Disk') {
+         //step2: return true/false 
+            return true;
+         }
+         return false;
+ 
+ })();
+ */
+ 
+ (function(input) {
+     if (input.temp.u_class === 'cmdb_ci_linux_server') {
+        return true;
+    }
+    return false;
+ })(input);]]&gt;&lt;/condition_script&gt;&lt;encoded_query/&gt;&lt;entity_mapping_group/&gt;&lt;ignore&gt;false&lt;/ignore&gt;&lt;is_conditional&gt;true&lt;/is_conditional&gt;&lt;name&gt;TempToIPAddressLinux&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;source_sys_rte_eb_entity display_value="Temp"&gt;f8c07af8838152104751e270ceaad37a&lt;/source_sys_rte_eb_entity&gt;&lt;sys_class_name&gt;sys_rte_eb_entity_mapping&lt;/sys_class_name&gt;&lt;sys_created_by&gt;narendrabekkem&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 15:38:25&lt;/sys_created_on&gt;&lt;sys_id&gt;3b7047f4834552104751e270ceaad319&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;TempToIPAddressLinux&lt;/sys_name&gt;&lt;sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78"&gt;bd98deaf9765311081a6bb46f053af78&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_rte_eb_definition display_value="Load Hardware and Related Entries"&gt;bffe2af4834152104751e270ceaad325&lt;/sys_rte_eb_definition&gt;&lt;sys_scope display_value="GlobalScopeChagnes"&gt;bd98deaf9765311081a6bb46f053af78&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_rte_eb_entity_mapping_3b7047f4834552104751e270ceaad319&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;narendrabekkem&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-10 15:04:10&lt;/sys_updated_on&gt;&lt;target_sys_rte_eb_entity display_value="IP address Linux"&gt;dc817abc838152104751e270ceaad3df&lt;/target_sys_rte_eb_entity&gt;&lt;/sys_rte_eb_entity_mapping&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;3b7047f4834552104751e270ceaad319&lt;/id&gt;&lt;sys_created_by&gt;narendrabekkem&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-10 15:04:10&lt;/sys_created_on&gt;&lt;sys_id&gt;b47504af834152104751e270ceaad3d6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;narendrabekkem&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-10 15:04:10&lt;/sys_updated_on&gt;&lt;table&gt;sys_rte_eb_entity_mapping&lt;/table&gt;&lt;use_es_latest&gt;false&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-224886296</payload_hash>
+        <record_name>TempToIPAddressLinux</record_name>
+        <reverted_from/>
+        <source>8d63c860472fc2105afe9889316d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 15:04:10</sys_created_on>
+        <sys_id>747588ef834152104751e270ceaad3e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19276f5753f0000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 15:04:10</sys_updated_on>
+        <type>RTE Entity Mapping</type>
+        <update_guid>f87588efcf415210cb889a649e9999e5</update_guid>
+        <update_guid_history>f87588efcf415210cb889a649e9999e5:-224886296,263133d7e78d12104d1623d4664fccf2:1760985072,35868f7536051a10ad94fcbcd202e2c6:-2027806390,ec6cd675c44dd610ebac7a0067ac1310:1877829198,9f2b87b01ac55210aca001d8417d6c50:1975162125,649047f404455210aa45eb47de5d651f:-2027806390</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-10 18:59:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_entity_mapping">sys_rte_eb_entity_mapping</sys_db_object>
+        <sys_id>60a856a692f44fc0b08e9871db971000</sys_id>
+        <sys_metadata>3b7047f4834552104751e270ceaad319</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TempToIPAddressLinux</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_entity_mapping_3b7047f4834552104751e270ceaad319</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_entity_mapping_3b7047f4834552104751e270ceaad319">747588ef834152104751e270ceaad3e6</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-10 18:59:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

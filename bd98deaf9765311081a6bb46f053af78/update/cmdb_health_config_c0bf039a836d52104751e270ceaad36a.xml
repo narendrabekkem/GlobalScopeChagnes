@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cmdb_health_config">
+    <cmdb_health_config action="INSERT_OR_UPDATE">
+        <active_record_condition table="cmdb_ci">sys_class_name=cmdb_ci_server<item display_value="Server" endquery="false" field="sys_class_name" goto="false" newquery="false" operator="=" or="false" value="cmdb_ci_server"/>
+        </active_record_condition>
+        <applies_to>cmdb_ci</applies_to>
+        <metric display_value="Staleness">d4772b5137130200f212cc028e41f16c</metric>
+        <sys_class_name>cmdb_health_config</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-11-01 05:06:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c0bf039a836d52104751e270ceaad36a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cmdb_ci</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>cmdb_health_config_c0bf039a836d52104751e270ceaad36a</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-11-01 05:06:45</sys_updated_on>
+    </cmdb_health_config>
+</record_update>

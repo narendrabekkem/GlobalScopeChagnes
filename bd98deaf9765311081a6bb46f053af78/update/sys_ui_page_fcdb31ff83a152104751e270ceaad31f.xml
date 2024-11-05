@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function showpop(){
+	//alert(JSON.stringify(new UIPageScripts().FetchUserInfo()));
+	
+	document.getElementById('para').innerHTML=($('number').value);
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint/>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<j:set var="jvar_user_name" value="${JS:gs.getUser().getDisplayName()}"/>
+<g:requires name="UIPageScripts.jsdbx" />
+<j:set var="jvar_polaris_enabled" value="${JS:gs.getUser().getPreference('glide.ui.polaris.use')}"/>
+<g:evaluate var="jvar_object" object="true" jelly="false">
+var obj={};
+var gr= new GlideRecord('incident');
+gr.setLimit(1);
+gr.orderByDesc('sys_created_on')
+gr.query();
+gr.next();
+obj={
+	'number':gr.getValue('number'),
+	'rec_sys_id':gr.getUniqueValue(),
+	'table':gr.getTableName()
+}
+obj;
+</g:evaluate>
+<g:evaluate>
+var userobj={};
+userobj.name=gs.getUserName();
+userobj.email=gs.getUser().getEmail();
+</g:evaluate>
+<!-- <h1>Found this incident number ${JSON.stringify(obj)} for user ${jvar_user_name}</h1> -->
+<g:ui_form>
+<p>User Object: ${JSON.stringify(userobj)} </p>
+<p id="para">This is paragraph : ${gs.getUser().getEmail()}</p>
+<p>Is Polaris Enabled?</p><input type="text" id="check_polaris" name="check_polaris" value="${jvar_polaris_enabled}"></input>
+<input type="text" id="number" name="number" value="${JSON.stringify(obj)}"></input>
+<input type="text" id="recsysid" name="recsysid" value="${jvar_object.rec_sys_id}"></input>
+<input type="text" id="table"  name="table" value="${jvar_object.table}" />
+<button type="button" onclick="showpop()">popup</button>
+<input type="submit"/>
+</g:ui_form>
+</j:jelly>
+]]></html>
+        <name>TellMeAboutUIPage</name>
+        <processing_script><![CDATA[var gr= new GlideRecord(table);
+gr.get(recsysid);
+gr.work_notes='test worklog added from UI pages';
+gr.update();]]></processing_script>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-11-05 14:51:14</sys_created_on>
+        <sys_id>fcdb31ff83a152104751e270ceaad31f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TellMeAboutUIPage</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_ui_page_fcdb31ff83a152104751e270ceaad31f</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-11-05 14:51:14</sys_updated_on>
+    </sys_ui_page>
+</record_update>

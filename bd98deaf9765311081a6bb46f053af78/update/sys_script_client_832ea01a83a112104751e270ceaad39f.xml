@@ -8,27 +8,28 @@
         <global>true</global>
         <isolate_script>true</isolate_script>
         <messages/>
-        <name>Template Applied</name>
+        <name>Replace Dynamic values on Template apply</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
     if (isLoading || newValue === '') {
         return;
     }
-	
-    if (isTemplate) {	
-		var newFieldVal=newValue;	
+
+    if (isTemplate) {
+        var newFieldVal = newValue;
         var dynfields = (g_form.getValue('comments').match(/\$\{([\w]+)\}/g));
-		//g_form.showFieldMsg('comments',dynfields);
+        //g_form.showFieldMsg('comments',dynfields);
         for (var i = 0; i < dynfields.length; i++) {
             var field = (dynfields[i].match(/\$\{([\w]+)\}/)[1]);
-			var value=g_form.getDisplayBox(field).value;
-			//g_form.showFieldMsg('comments',field+':'+value);
-			if (value)
-			newFieldVal=newFieldVal.replace(dynfields[i],value);
+			//set values separately for nativeUI and workspace.
+            var value=top.location.href.indexOf('now/sow' /*replace with now/cwf for CSM Workspace*/)>0?g_form.getDisplayValue(field): g_form.getDisplayBox(field).value;
+            //g_form.showFieldMsg('comments',field+':'+value);
+            if (value)
+                newFieldVal = newFieldVal.replace(dynfields[i], value);
         }
-	g_form.setValue('comments',newFieldVal);
+        g_form.setValue('comments', newFieldVal);
     }
-	
+
 
 
     //Type appropriate comment here, and begin script below
@@ -40,15 +41,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>832ea01a83a112104751e270ceaad39f</sys_id>
-        <sys_mod_count>20</sys_mod_count>
-        <sys_name>Template Applied</sys_name>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>Replace Dynamic values on Template apply</sys_name>
         <sys_overrides/>
         <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
         <sys_policy/>
         <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
         <sys_update_name>sys_script_client_832ea01a83a112104751e270ceaad39f</sys_update_name>
         <sys_updated_by>narendrabekkem</sys_updated_by>
-        <sys_updated_on>2024-10-31 19:09:42</sys_updated_on>
+        <sys_updated_on>2024-11-01 03:35:44</sys_updated_on>
         <table>incident</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

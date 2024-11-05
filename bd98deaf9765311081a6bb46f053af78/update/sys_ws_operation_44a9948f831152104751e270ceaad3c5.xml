@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>IdentifySource</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var source=gs.getSession().getClientIP();
+	gs.info('REST call initicated from source: '+source);
+	return 'REST call initicated from source: '+source;
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/857676/customrestapi/identify</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/identify</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-21 13:31:53</sys_created_on>
+        <sys_id>44a9948f831152104751e270ceaad3c5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>IdentifySource</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_ws_operation_44a9948f831152104751e270ceaad3c5</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-21 13:33:49</sys_updated_on>
+        <web_service_definition display_value="CustomRestAPI">4e895c4f831152104751e270ceaad30b</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>44a9948f831152104751e270ceaad3c5</id>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-21 13:31:52</sys_created_on>
+        <sys_id>ccd918c7839d12104751e270ceaad3bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-10-21 13:31:52</sys_updated_on>
+        <table>sys_ws_operation</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

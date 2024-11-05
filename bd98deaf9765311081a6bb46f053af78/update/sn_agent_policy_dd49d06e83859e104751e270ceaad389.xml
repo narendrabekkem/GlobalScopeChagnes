@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_agent_policy">
+    <sn_agent_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent_cluster_name/>
+        <auto_binding>true</auto_binding>
+        <check_group/>
+        <checks_str>5f74fe90533d45100112ddeeff7b1229</checks_str>
+        <config_file_creation_script><![CDATA[/*  
+The argument policyGr is the GlideRecord of the current policy to get the "Monitored Cis"
+The script returns a java script object containing the monitoredCIs details used to create the json config file for check execution 
+ */
+ 
+ (function createConfigFile(policyGr) {
+ 
+ var ciDetails = []; 
+ 
+ //return the list of the CIs in the json format to create the config file.
+  return ciDetails;
+ 
+ })(policyGr);]]></config_file_creation_script>
+        <cred_alias/>
+        <credential_alias/>
+        <cron_expressions/>
+        <description/>
+        <filter table="cmdb_ci_computer">name=win-v4an1ol507i^ORname=win-56q2jeng7qm<item endquery="false" field="name" goto="false" newquery="false" operator="=" or="false" value="win-v4an1ol507i"/>
+            <item endquery="false" field="name" goto="false" newquery="false" operator="=" or="true" value="win-56q2jeng7qm"/>
+        </filter>
+        <inherit_from_parent>true</inherit_from_parent>
+        <interval>60</interval>
+        <is_cron>false</is_cron>
+        <is_draft>false</is_draft>
+        <is_interval>true</is_interval>
+        <is_service_filter>false</is_service_filter>
+        <manual_calc>false</manual_calc>
+        <monitored_ci_group/>
+        <monitored_ci_script><![CDATA[/*
+      Provide a script to get monitored CI type. 
+      The script returns a GlideRecord containing the chosen table and filter. 
+      // WARNING: To prevent Out of Memory issues, please verify the number of records on the GlideRecord you return, is manageable. 
+      // Usually less than 400,000 records. This number is configured globally in the system property: in sn_agent.max_number_of_monitored_cis_per_policy 
+      Example code: 
+             var monitoredCis = new GlideRecord('cmdb_ci_computer'); 
+             monitoredCis.addQuery('name', 'test'); 
+             // Do not query here and return the GR - let the caller do the query for added efficiency 
+             answer = monitoredCis; 
+ */
+ 
+ (function getMonitoredCiType(){
+ 
+  
+ })();]]></monitored_ci_script>
+        <monitored_ci_type_filter>true</monitored_ci_type_filter>
+        <monitored_ci_type_group>false</monitored_ci_type_group>
+        <monitored_ci_type_script>false</monitored_ci_type_script>
+        <multi_ci_mode>false</multi_ci_mode>
+        <name>Run Upgrade</name>
+        <order>100</order>
+        <proxy_advanced>false</proxy_advanced>
+        <proxy_agent/>
+        <proxy_cluster>false</proxy_cluster>
+        <proxy_filter/>
+        <proxy_script><![CDATA[/*  
+The argument currentCiResult is the GlideRecord of the filter defined in the "Monitored Cis" tab
+  The script returns a comma-separated string containing the chosen proxy agent IDs
+ */
+ 
+ (function findProxyAgent(currentCiResult){
+ 
+  
+ })(currentCiResult);]]></proxy_script>
+        <proxy_script_advanced>false</proxy_script_advanced>
+        <publish_error/>
+        <publish_status>1</publish_status>
+        <published_parent/>
+        <related_policy/>
+        <relationship_state>0</relationship_state>
+        <run_checks_on_all_proxyagents>false</run_checks_on_all_proxyagents>
+        <service_filter/>
+        <single_proxy_agent>false</single_proxy_agent>
+        <sys_class_name>sn_agent_policy</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-10-07 13:56:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>dd49d06e83859e104751e270ceaad389</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Run Upgrade</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sn_agent_policy_dd49d06e83859e104751e270ceaad389</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-10-07 14:05:53</sys_updated_on>
+        <table>cmdb_ci_computer</table>
+    </sn_agent_policy>
+</record_update>

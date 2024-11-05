@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_agent_asset">
+    <sn_agent_asset action="DELETE">
+        <active>true</active>
+        <advanced>true</advanced>
+        <arch>all</arch>
+        <description>Custom AgentUpgrade - msi</description>
+        <directory>false</directory>
+        <name>custom-acc-f-upgrade-msi</name>
+        <os>all</os>
+        <os_version>all</os_version>
+        <parent display_value="all">790db402474342105afe9889316d43f3</parent>
+        <platform>all</platform>
+        <sha512/>
+        <source/>
+        <sys_class_name>sn_agent_asset</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-11-05 07:22:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f86354b3832112104751e270ceaad372</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>custom-acc-f-upgrade-msi</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sn_agent_asset_f86354b3832112104751e270ceaad372</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-11-05 07:25:34</sys_updated_on>
+        <version/>
+    </sn_agent_asset>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>sn_agent_asset_f86354b3832112104751e270ceaad372</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_agent_asset"><sn_agent_asset action="INSERT_OR_UPDATE"><active>true</active><advanced>true</advanced><arch>all</arch><description>Custom AgentUpgrade - msi</description><directory>false</directory><name>custom-acc-f-upgrade-msi</name><os>all</os><os_version>all</os_version><parent display_value="all">790db402474342105afe9889316d43f3</parent><platform>all</platform><sha512/><source/><sys_class_name>sn_agent_asset</sys_class_name><sys_created_by>narendrabekkem</sys_created_by><sys_created_on>2024-11-05 07:22:12</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f86354b3832112104751e270ceaad372</sys_id><sys_mod_count>2</sys_mod_count><sys_name>custom-acc-f-upgrade-msi</sys_name><sys_overrides/><sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package><sys_policy/><sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope><sys_update_name>sn_agent_asset_f86354b3832112104751e270ceaad372</sys_update_name><sys_updated_by>narendrabekkem</sys_updated_by><sys_updated_on>2024-11-05 07:25:34</sys_updated_on><version/></sn_agent_asset></record_update>]]></payload>
+        <payload_hash>-1229922463</payload_hash>
+        <record_name>custom-acc-f-upgrade-msi</record_name>
+        <reverted_from/>
+        <source>8d63c860472fc2105afe9889316d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-11-05 07:25:34</sys_created_on>
+        <sys_id>e8d5d833836112104751e270ceaad3bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192fb36ee590000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-11-05 07:25:34</sys_updated_on>
+        <type>Agent Client Collector Plugin</type>
+        <update_guid>a0d5d8335f6112100ba0ba30e28aa2bd</update_guid>
+        <update_guid_history>a0d5d8335f6112100ba0ba30e28aa2bd:-1229922463,1b0514ff8121121029045b34369e7295:-9790880</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="custom-acc-f-upgrade-msi">07f55473836112104751e270ceaad301</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-11-05 07:26:17</sys_created_on>
+        <sys_db_object display_value="" name="sn_agent_asset">sn_agent_asset</sys_db_object>
+        <sys_id>1140007763b74de08303c0dcbf40f840</sys_id>
+        <sys_metadata>f86354b3832112104751e270ceaad372</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>custom-acc-f-upgrade-msi</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>sn_agent_asset_f86354b3832112104751e270ceaad372</sys_update_name>
+        <sys_update_version display_value="sn_agent_asset_f86354b3832112104751e270ceaad372">e8d5d833836112104751e270ceaad3bd</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-11-05 07:26:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

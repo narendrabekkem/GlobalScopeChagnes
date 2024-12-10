@@ -2,7 +2,7 @@
     <sys_ui_page action="INSERT_OR_UPDATE">
         <category>general</category>
         <client_script><![CDATA[function showpop(){
-	//alert(JSON.stringify(new UIPageScripts().FetchUserInfo()));
+	alert(JSON.stringify(new UIPageScripts().FetchUserInfo()));
 	
 	document.getElementById('para').innerHTML=($('number').value);
 }]]></client_script>
@@ -14,8 +14,10 @@
 <j:set var="jvar_user_name" value="${JS:gs.getUser().getDisplayName()}"/>
 <g:requires name="UIPageScripts.jsdbx" />
 <j:set var="jvar_polaris_enabled" value="${JS:gs.getUser().getPreference('glide.ui.polaris.use')}"/>
+
 <g:evaluate var="jvar_object" object="true" jelly="false">
 var obj={};
+var test='testvariable'
 var gr= new GlideRecord('incident');
 gr.setLimit(1);
 gr.orderByDesc('sys_created_on')
@@ -36,7 +38,7 @@ userobj.email=gs.getUser().getEmail();
 <!-- <h1>Found this incident number ${JSON.stringify(obj)} for user ${jvar_user_name}</h1> -->
 <g:ui_form>
 <p>User Object: ${JSON.stringify(userobj)} </p>
-<p id="para">This is paragraph : ${gs.getUser().getEmail()}</p>
+<p id="para">This is paragraph : ${test}</p>
 <p>Is Polaris Enabled?</p><input type="text" id="check_polaris" name="check_polaris" value="${jvar_polaris_enabled}"></input>
 <input type="text" id="number" name="number" value="${JSON.stringify(obj)}"></input>
 <input type="text" id="recsysid" name="recsysid" value="${jvar_object.rec_sys_id}"></input>
@@ -55,13 +57,24 @@ gr.update();]]></processing_script>
         <sys_created_by>narendrabekkem</sys_created_by>
         <sys_created_on>2024-11-05 14:51:14</sys_created_on>
         <sys_id>fcdb31ff83a152104751e270ceaad31f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>TellMeAboutUIPage</sys_name>
         <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
         <sys_policy/>
         <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
         <sys_update_name>sys_ui_page_fcdb31ff83a152104751e270ceaad31f</sys_update_name>
         <sys_updated_by>narendrabekkem</sys_updated_by>
-        <sys_updated_on>2024-11-05 14:51:14</sys_updated_on>
+        <sys_updated_on>2024-11-05 14:57:36</sys_updated_on>
     </sys_ui_page>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>fcdb31ff83a152104751e270ceaad31f</id>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-11-05 14:53:14</sys_created_on>
+        <sys_id>564c75ff83a152104751e270ceaad3ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-11-05 14:53:14</sys_updated_on>
+        <table>sys_ui_page</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
 </record_update>

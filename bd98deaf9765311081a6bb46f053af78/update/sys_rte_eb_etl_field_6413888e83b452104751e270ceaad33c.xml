@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_field">
     <sys_rte_eb_etl_field action="INSERT_OR_UPDATE">
         <coalesce>false</coalesce>
-        <coercion_action>create</coercion_action>
+        <coercion_action>reject</coercion_action>
         <field>model_id.model_number</field>
         <name>Model</name>
         <sys_class_name>sys_rte_eb_etl_field</sys_class_name>
         <sys_created_by>narendrabekkem</sys_created_by>
         <sys_created_on>2024-09-23 12:47:30</sys_created_on>
         <sys_id>6413888e83b452104751e270ceaad33c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Model</sys_name>
         <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
         <sys_policy/>
@@ -17,6 +17,6 @@
         <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
         <sys_update_name>sys_rte_eb_etl_field_6413888e83b452104751e270ceaad33c</sys_update_name>
         <sys_updated_by>narendrabekkem</sys_updated_by>
-        <sys_updated_on>2024-09-23 13:06:30</sys_updated_on>
+        <sys_updated_on>2024-12-10 08:54:28</sys_updated_on>
     </sys_rte_eb_etl_field>
 </record_update>

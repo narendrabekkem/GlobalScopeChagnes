@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field_mapping">
+    <sys_rte_eb_field_mapping action="DELETE">
+        <order>100</order>
+        <referenced_sys_rte_eb_entity display_value="Windows Server">f586eb5b830d12104751e270ceaad3b7</referenced_sys_rte_eb_entity>
+        <source_sys_rte_eb_field/>
+        <sys_class_name>sys_rte_eb_field_mapping</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-11-21 12:56:34</sys_created_on>
+        <sys_id>450bffb8838256504751e270ceaad3f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Load Hardware and Related Entries">bffe2af4834152104751e270ceaad325</sys_rte_eb_definition>
+        <sys_rte_eb_entity_mapping display_value="tempToSoftware Installation 1">116a7778838256504751e270ceaad3b2</sys_rte_eb_entity_mapping>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_rte_eb_field_mapping_450bffb8838256504751e270ceaad3f6</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-11-21 12:56:34</sys_updated_on>
+        <target_sys_rte_eb_field display_value="installed_on">0d0bffb8838256504751e270ceaad3f3</target_sys_rte_eb_field>
+    </sys_rte_eb_field_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</application>
+        <file_path/>
+        <instance_id>82a1a4921b26359c9377eb9b2d4bcb78</instance_id>
+        <instance_name>dev216183</instance_name>
+        <name>sys_rte_eb_field_mapping_450bffb8838256504751e270ceaad3f6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field_mapping"><sys_rte_eb_field_mapping action="INSERT_OR_UPDATE"><order>100</order><referenced_sys_rte_eb_entity display_value="Windows Server">f586eb5b830d12104751e270ceaad3b7</referenced_sys_rte_eb_entity><source_sys_rte_eb_field/><sys_class_name>sys_rte_eb_field_mapping</sys_class_name><sys_created_by>narendrabekkem</sys_created_by><sys_created_on>2024-11-21 12:56:34</sys_created_on><sys_id>450bffb8838256504751e270ceaad3f6</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package><sys_policy/><sys_rte_eb_definition display_value="Load Hardware and Related Entries">bffe2af4834152104751e270ceaad325</sys_rte_eb_definition><sys_rte_eb_entity_mapping display_value="tempToSoftware Installation 1">116a7778838256504751e270ceaad3b2</sys_rte_eb_entity_mapping><sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope><sys_update_name>sys_rte_eb_field_mapping_450bffb8838256504751e270ceaad3f6</sys_update_name><sys_updated_by>narendrabekkem</sys_updated_by><sys_updated_on>2024-11-21 12:56:34</sys_updated_on><target_sys_rte_eb_field display_value="installed_on">0d0bffb8838256504751e270ceaad3f3</target_sys_rte_eb_field></sys_rte_eb_field_mapping></record_update>]]></payload>
+        <payload_hash>319179468</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>8b3d4e4083fdd2104751e270ceaad3f9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-11-21 12:56:34</sys_created_on>
+        <sys_id>850bffb8838256504751e270ceaad3f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1934ecbb8a10000001</sys_recorded_at>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-11-21 12:56:34</sys_updated_on>
+        <type>RTE Field Mapping</type>
+        <update_guid>890bffb8c582565052e5e7f7ff417ef7</update_guid>
+        <update_guid_history>890bffb8c582565052e5e7f7ff417ef7:319179468</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-11-21 12:56:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_field_mapping">sys_rte_eb_field_mapping</sys_db_object>
+        <sys_id>0a4505d145e748b486f4a42a8ffa5949</sys_id>
+        <sys_metadata>450bffb8838256504751e270ceaad3f6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_scope_delete display_value="">45a9256f5f0647849df15e57985e6ef9</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_field_mapping_450bffb8838256504751e270ceaad3f6</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_field_mapping_450bffb8838256504751e270ceaad3f6">850bffb8838256504751e270ceaad3f8</sys_update_version>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-11-21 12:56:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

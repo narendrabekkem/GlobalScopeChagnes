@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[//add attachment while adding comments.
+function uploadLocally() {
+	var loading=gel('loading');
+	loading.show(true);
+	var comments=gel('comments').value;
+    //var modal = GlideModal.get();
+    var fileInput = gel('fileInput');
+    // var category = gel('category').value;
+    // var sub_category = gel('sub_category').value;
+    var tablename = gel('table_name').value;
+    var record_sys_id = gel('record_sys_id').value;
+	if(tablename==''||record_sys_id=='')
+	{
+    var url = top.location;
+    var rg = new RegExp(/record\/(.*)/);
+    var parsed = (rg.exec(url)[1]);
+    tablename = parsed.split('/')[0];
+    record_sys_id = parsed.split('/')[1];
+	}
+
+    //alert('table is: ' + tablename + ' record sys is: ' + record_sys_id);
+    if (fileInput.files.length === 0) {
+        alert('Please select a file to upload');
+        return;
+    }
+    var file = fileInput.files[0];
+    var reader = new FileReader();
+
+    reader.onload = function(event) {
+        var data = event.target.result;
+        var ga = new GlideAjax('AttachmentUploader');
+        ga.addParam('sysparm_name', 'UploadLocally');
+        ga.addParam('table', tablename);
+        ga.addParam('record_sys_id', record_sys_id);
+        ga.addParam('file_content', data);
+        ga.addParam('file_name', file.name);
+        ga.addParam('file_content_type', file.type);
+        ga.addParam('comments', comments);
+        //ga.addParam('sub_category', sub_category);
+        ga.getXMLAnswer(respback);
+
+        function respback(resp) {
+            loading.innerHTML='Uploaded';
+        }
+
+    };
+    reader.readAsDataURL(file);
+	dialog.destroy();
+}
+
+function uploadRemotely() {
+    //var modal = GlideModal.get();
+    var fileInput = gel('fileInput');
+    var category = gel('category').value;
+    var sub_category = gel('sub_category').value;
+    var tablename = gel('table_name').value;
+    var record_sys_id = gel('record_sys_id').value;
+    if (fileInput.files.length === 0) {
+        alert('Please select a file to upload');
+        return;
+    }
+    var file = fileInput.files[0];
+    var reader = new FileReader();
+    var formData = new FormData();
+    formData.append("table_name", tablename);
+    formData.append("table_sys_id", record_sys_id);
+    formData.append('file_name', file, file.name);
+    sendFileToExternalAPI(formData, category, sub_category, file.name, record_sys_id, tablename);
+
+
+}
+
+function sendFileToExternalAPI(formData, category, sub_category, filename, record_sys_id, tablename) {
+    var xhr = new XMLHttpRequest();
+    var downloadlink;
+    var url = 'https://dev216183.service-now.com/api/now/attachment/upload'; // Replace with your API endpoint
+    xhr.open('POST', url, false, 'narendranath.reddy', 'N@ni2024');
+    //xhr.setRequestHeader('Authorization', 'application/json');
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && (xhr.status === 200 || xhr.status == 201)) {
+
+            downloadlink = JSON.parse(xhr.responseText).result.download_link;
+            alert('File uploaded successfully: ' + downloadlink);
+
+        } else if (xhr.readyState === 4) {
+            alert('File upload failed: ' + xhr.responseText);
+        }
+    };
+
+    xhr.send(formData);
+    var ga = new GlideAjax('AttachmentUploader');
+    ga.addParam('sysparm_name', 'UploadRemotely');
+    ga.addParam('category', category);
+    ga.addParam('sub_category', sub_category);
+    ga.addParam('downloadLink', downloadlink);
+    ga.addParam('file_name', filename);
+    ga.addParam('record_sys_id', record_sys_id);
+    ga.addParam('table_name', tablename);
+    ga.getXMLAnswer(calbck);
+
+    function calbck(response) {
+
+    }
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint/>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+<g:ui_form id="sendattachment">
+	<center>
+	<h1 id="head">Upload Attachement</h1>
+	<table>
+	<tr>
+	<td>Comments: </td>
+	<td><input type="text" name="comments" id="comments"/></td>	
+	</tr>
+	
+	<tr></tr>
+	<tr><td><input type="file" name="fileInput" id="fileInput" /></td></tr>
+	<tr></tr>	
+	<j:set var="jvar_target_table" value="${JS:RP.getWindowProperties().get('table_name')}" />	
+	<j:set var="jvar_target_sys_id" value="${JS:RP.getWindowProperties().get('record_sys_id')}"/>	
+	<tr><td><input type="text" name="table_name" id="table_name"  hidden="true" value="${jvar_target_table}"/></td></tr>
+	<tr><td><input type="text" name="record_sys_id" id="record_sys_id"  hidden="true" value="${jvar_target_sys_id}"/></td></tr>
+	<tr>
+	<tr></tr>
+	<tr><td><div id="loading" hidden="true">Uploading...</div></td></tr>	
+	<!-- <td><button type="button"  onclick="uploadRemotely()">Upload Remotely</button></td> -->
+	<td><button type="button" onclick="uploadLocally()">Upload Locally</button></td>
+	</tr>	
+	</table>
+	</center>
+</g:ui_form>
+</j:jelly>]]></html>
+        <name>UploadAttachementandSend_simplified</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-07-30 11:29:53</sys_created_on>
+        <sys_id>b3e1e410473302105afe9889316d43e7</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>UploadAttachementandSend_simplified</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_ui_page_b3e1e410473302105afe9889316d43e7</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-11-21 15:59:21</sys_updated_on>
+    </sys_ui_page>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</claim_owner_scope>
+        <claim_timestamp>1934f7311970000001</claim_timestamp>
+        <metadata_update_name>sys_ui_page_b3e1e410473302105afe9889316d43e7</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>GlobalScopeChagnes</previous_claim_name>
+        <previous_claim_scope>bd98deaf9765311081a6bb46f053af78</previous_claim_scope>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-11-21 15:59:21</sys_created_on>
+        <sys_id>e6d4e4c5834a56504751e270ceaad3a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-11-21 15:59:21</sys_updated_on>
+    </sys_claim>
+</record_update>

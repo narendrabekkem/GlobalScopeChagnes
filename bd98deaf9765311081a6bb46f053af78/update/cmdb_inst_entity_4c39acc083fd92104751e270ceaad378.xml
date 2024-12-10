@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_inst_entity">
+    <cmdb_inst_entity action="INSERT_OR_UPDATE">
+        <child_id_field/>
+        <lookup_for_entity/>
+        <name>Software Instance 2</name>
+        <parent_entity/>
+        <parent_id_field/>
+        <path>cmdb_software_instance_2</path>
+        <related_for_entity display_value="Linux Server">93a988ab838152104751e270ceaad3be</related_for_entity>
+        <relationship_type/>
+        <sys_class_name>cmdb_inst_entity</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2024-11-06 03:28:40</sys_created_on>
+        <sys_id>4c39acc083fd92104751e270ceaad378</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Software Instance 2</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Load Win Linux ESX Computer and Relationships">f54980a7838152104751e270ceaad36c</sys_rte_eb_definition>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>cmdb_inst_entity_4c39acc083fd92104751e270ceaad378</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-11-06 03:28:50</sys_updated_on>
+        <table>cmdb_software_instance</table>
+    </cmdb_inst_entity>
+</record_update>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override">
     <sys_dictionary_override action="INSERT_OR_UPDATE">
-        <attributes>tree_picker=false,ref_contributions=on_call_escalation_tracking</attributes>
+        <attributes>tree_picker=false,ref_contributions=on_call_escalation_tracking,ref_ac_columns=description;manager,ref_ac_columns_search=true,ref_auto_completer=AJAXTableCompleter</attributes>
         <attributes_override>true</attributes_override>
         <base_table>task</base_table>
         <calculation/>
@@ -22,14 +22,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-12-06 15:42:18</sys_created_on>
         <sys_id>9bf97551c3a32200b6dcdfdc64d3ae64</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>assignment_group</sys_name>
-        <sys_package display_value="Incident Management Best Practice - Jakarta" source="com.snc.best_practice.incident.jakarta">50e1d420d9353110cedf7dffddb48f15</sys_package>
+        <sys_package display_value="Incident Management Best Practice - Jakarta" source="com.snc.best_practice.incident.jakarta">f12b70fd7df1311076daf29f52070d31</sys_package>
         <sys_policy/>
         <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
         <sys_update_name>sys_dictionary_override_9bf97551c3a32200b6dcdfdc64d3ae64</sys_update_name>
-        <sys_updated_by>narendranath.reddy</sys_updated_by>
-        <sys_updated_on>2024-01-23 12:22:58</sys_updated_on>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2024-11-18 13:20:36</sys_updated_on>
     </sys_dictionary_override>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</claim_owner_scope>

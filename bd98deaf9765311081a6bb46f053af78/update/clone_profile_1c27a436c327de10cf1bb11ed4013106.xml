@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="clone_profile">
+    <clone_profile action="INSERT_OR_UPDATE">
+        <amount_of_data_copied_from_large_tables>last_90_days</amount_of_data_copied_from_large_tables>
+        <backup_type>use_recent_backup</backup_type>
+        <default_profile>false</default_profile>
+        <exclude_all_from_exclusion_list>true</exclude_all_from_exclusion_list>
+        <exclude_large_data>true</exclude_large_data>
+        <filter_attachment_data>true</filter_attachment_data>
+        <name>Custom Profile Naren</name>
+        <on_demand_backup>false</on_demand_backup>
+        <preserve_in_progress_update_sets>last_90_days</preserve_in_progress_update_sets>
+        <preserve_theme>true</preserve_theme>
+        <sys_class_name>clone_profile</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2025-02-09 16:12:50</sys_created_on>
+        <sys_id>1c27a436c327de10cf1bb11ed4013106</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Custom Profile Naren</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>clone_profile_1c27a436c327de10cf1bb11ed4013106</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2025-02-09 16:12:50</sys_updated_on>
+        <target_instance/>
+    </clone_profile>
+</record_update>

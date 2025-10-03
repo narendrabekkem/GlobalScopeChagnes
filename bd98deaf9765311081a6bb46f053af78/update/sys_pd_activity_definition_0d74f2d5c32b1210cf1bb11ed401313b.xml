@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_pd_activity_definition">
+    <sys_pd_activity_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>false</active>
+        <activity_type/>
+        <badge/>
+        <category display_value="Generic Activity">b51cee574320311089db5fb208b8f269</category>
+        <description/>
+        <experience_display_preferences/>
+        <input_display_preferences/>
+        <inputs/>
+        <label>Create or Update Record</label>
+        <name>_span_u_create_or_up_u_date_record_span_</name>
+        <outputs/>
+        <required_roles/>
+        <source>e057d2e253b3230034c6ddeeff7b1261</source>
+        <source_type>sys_hub_action_type_definition</source_type>
+        <sys_class_name>sys_pd_activity_definition</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2025-02-05 10:39:24</sys_created_on>
+        <sys_id>0d74f2d5c32b1210cf1bb11ed401313b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create or Update Record</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_pd_activity_definition_0d74f2d5c32b1210cf1bb11ed401313b</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2025-02-05 10:39:24</sys_updated_on>
+        <system_level>false</system_level>
+        <table>global</table>
+        <type_vals/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_pd_activity_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=0d74f2d5c32b1210cf1bb11ed401313b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=0d74f2d5c32b1210cf1bb11ed401313b"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_e057d2e253b3230034c6ddeeff7b1261^id=0d74f2d5c32b1210cf1bb11ed401313b"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_e057d2e253b3230034c6ddeeff7b1261^id=0d74f2d5c32b1210cf1bb11ed401313b"/>
+</record_update>

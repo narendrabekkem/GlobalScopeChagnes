@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="clone_profile_exclusions">
+    <clone_profile_exclusions action="INSERT_OR_UPDATE">
+        <clone_profile>1c27a436c327de10cf1bb11ed4013106</clone_profile>
+        <exclusion display_value="ecc_agent_ext_context_event">fda8476e5364a1502b5dddeeff7b12a6</exclusion>
+        <profile display_value="Custom Profile Naren">1c27a436c327de10cf1bb11ed4013106</profile>
+        <profile_name>Custom Profile Naren</profile_name>
+        <source_table>clone_profile</source_table>
+        <sys_class_name>clone_profile_exclusions</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2025-02-09 16:12:52</sys_created_on>
+        <sys_id>ec27a4bac327de10cf1bb11ed4013164</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>clone_profile_exclusions_ec27a4bac327de10cf1bb11ed4013164</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2025-02-09 16:12:52</sys_updated_on>
+    </clone_profile_exclusions>
+</record_update>

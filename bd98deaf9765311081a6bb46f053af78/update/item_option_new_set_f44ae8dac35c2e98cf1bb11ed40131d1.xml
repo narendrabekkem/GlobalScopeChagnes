@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set">
+    <item_option_new_set action="INSERT_OR_UPDATE">
+        <create_roles/>
+        <description/>
+        <display_title>false</display_title>
+        <internal_name>manage_groups_and_users</internal_name>
+        <layout>normal</layout>
+        <name/>
+        <order>100</order>
+        <read_roles/>
+        <set_attributes/>
+        <sys_class_name>item_option_new_set</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2025-03-17 09:56:59</sys_created_on>
+        <sys_id>f44ae8dac35c2e98cf1bb11ed40131d1</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Manage Groups and Users</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>item_option_new_set_f44ae8dac35c2e98cf1bb11ed40131d1</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-03-17 11:26:41</sys_updated_on>
+        <title>Manage Groups and Users</title>
+        <type>one_to_many</type>
+        <version>19</version>
+        <write_roles/>
+    </item_option_new_set>
+</record_update>

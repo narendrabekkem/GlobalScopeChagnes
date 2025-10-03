@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="all_tables.query_hints=true,email_client=true,hasLabels=true,hasWorkflow=true,live_feed=true" audit="true" db_object_id="de3e0c68d9b13110cedf7dffddb48fd6" extends="task" label="Incident" max_length="40" name="incident" text_index="true" type="collection">
+    <element attributes="all_tables.query_hints=true,email_client=true,hasLabels=true,hasWorkflow=true,live_feed=true" audit="true" db_object_id="7f6f7baaf8b2021008dd9cfea425acad" extends="task" label="Incident" max_length="40" name="incident" text_index="true" type="collection">
         <element function_definition="glidefunction:datediff(sys_updated_on,sys_created_on)" function_field="true" label="Incident Age" max_length="40" name="u_incident_age" read_only="true" type="glide_duration"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;var gdt = new GlideDateTime();&#13;&#10;&#9;var create= new GlideDateTime(current.sys_created_on);&#13;&#10;&#9;var dur= GlideDateTime.subtract(create, gdt);&#13;&#10;&#9;return dur;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Age" max_length="40" name="u_age" type="glide_duration" virtual="true"/>
     </element>
 </database>

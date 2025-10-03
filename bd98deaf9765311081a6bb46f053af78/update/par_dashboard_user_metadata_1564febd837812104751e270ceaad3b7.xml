@@ -3,9 +3,10 @@
         <background_color/>
         <cache_expiration_time>24</cache_expiration_time>
         <card_bg_image/>
-        <created_by_user display_value="Narendranath Reddy">5868f1a2476702105afe9889316d43d9</created_by_user>
+        <created_by_user display_value="Narendranath Reddy">f0f2932ac3831210cf1bb11ed401312f</created_by_user>
         <created_on>2024-09-23 07:03:27</created_on>
         <dashboard display_value="Incident Management - Copy">9164febd837812104751e270ceaad3b0</dashboard>
+        <edit_locked>{"sysId":"f0f2932ac3831210cf1bb11ed401312f","name":"Narendranath Reddy","lockedOn":"1748587992100"}</edit_locked>
         <enable_data_cache>false</enable_data_cache>
         <include_custom_insights>false</include_custom_insights>
         <include_key_contributors>false</include_key_contributors>
@@ -17,11 +18,11 @@
         <include_target>false</include_target>
         <include_thresholds>false</include_thresholds>
         <include_trends>false</include_trends>
-        <include_widget_notification>false</include_widget_notification>
+        <include_widget_notification>true</include_widget_notification>
         <last_updated_on>2024-10-02 08:37:02</last_updated_on>
         <po_project_id_list>[]</po_project_id_list>
         <refresh_information>false</refresh_information>
-        <refresh_interval/>
+        <refresh_interval>-1</refresh_interval>
         <requested_by_user/>
         <schedule_repetition>false</schedule_repetition>
         <show_insights_panel>false</show_insights_panel>
@@ -29,8 +30,9 @@
         <sys_created_by>narendrabekkem</sys_created_by>
         <sys_created_on>2024-09-23 07:03:27</sys_created_on>
         <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>1564febd837812104751e270ceaad3b7</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
@@ -38,8 +40,8 @@
         <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
         <sys_update_name>par_dashboard_user_metadata_1564febd837812104751e270ceaad3b7</sys_update_name>
         <sys_updated_by>narendrabekkem</sys_updated_by>
-        <sys_updated_on>2024-10-02 08:37:02</sys_updated_on>
-        <updated_by_user display_value="Narendranath Reddy">5868f1a2476702105afe9889316d43d9</updated_by_user>
+        <sys_updated_on>2025-05-30 06:53:12</sys_updated_on>
+        <updated_by_user display_value="Narendranath Reddy">f0f2932ac3831210cf1bb11ed401312f</updated_by_user>
         <use_custom_tab_colors>false</use_custom_tab_colors>
     </par_dashboard_user_metadata>
 </record_update>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <context_profiles/>
+        <description/>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>true</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{"graph_api_version":"1.0.74","variables":{"c387099e788547e7a9f2b33911eacd4f":{"category":"vaInputs","id":"c387099e788547e7a9f2b33911eacd4f","label":"User","name":"user","table":"sys_user","varType":"reference"}},"goals":{"primary":{"id":"primary","trigger":{"type":"primary"},"name":"primary","applicability":"","description":"","nodes":{"17906955d6864969808ea6b6bddcaab1":{"id":"17906955d6864969808ea6b6bddcaab1","stepType":"Start","name":"Start","greetingResponse":{"mode":"simple","value":""}},"1161670a300a48b5a20d827d9fc01ebe":{"id":"1161670a300a48b5a20d827d9fc01ebe","stepType":"TerminateGoal","name":"End","confirmationMessage":{"mode":"simple","value":""}}},"edges":[{"id":"1eccbe43d850401fa35105ea5c65167e","edgeType":"Edge","source":"17906955d6864969808ea6b6bddcaab1","target":"1161670a300a48b5a20d827d9fc01ebe","sourcePort":"","targetPort":""}]}}}</graph>
+        <key_phrases/>
+        <library>true</library>
+        <live_agent>false</live_agent>
+        <model_type>nlu_keyword</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>Dummy</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id>e5b16d8ac3d9a654cf1bb11ed40131f1</root_topic_id>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id>e5b16d8ac3d9a654cf1bb11ed40131f1</source_topic_id>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2025-05-05 12:24:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0a126586c39da654cf1bb11ed4013135</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Dummy</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_cb_topic_0a126586c39da654cf1bb11ed4013135</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2025-05-05 12:24:54</sys_updated_on>
+        <title>Dummy</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>TOPIC_BLOCK</type>
+    </sys_cb_topic>
+    <sys_translated_text action="delete_multiple" query="documentkey=0a126586c39da654cf1bb11ed4013135"/>
+</record_update>

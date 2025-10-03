@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action">
+    <sys_ux_form_action action="INSERT_OR_UPDATE">
+        <action_type>ui_action</action_type>
+        <active>true</active>
+        <declarative_action/>
+        <description/>
+        <name>TestAccessingUIPageParams</name>
+        <specificity>20</specificity>
+        <sys_class_name>sys_ux_form_action</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2025-01-26 08:34:39</sys_created_on>
+        <sys_id>cfd776c6c3175250cf1bb11ed40131f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TestAccessingUIPageParams</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_ux_form_action_cfd776c6c3175250cf1bb11ed40131f7</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2025-01-26 08:34:39</sys_updated_on>
+        <table>incident</table>
+        <ui_action display_value="TestAccessingUIPageParams">6b76e2cec35b1250cf1bb11ed401314d</ui_action>
+    </sys_ux_form_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=cfd776c6c3175250cf1bb11ed40131f7"/>
+</record_update>

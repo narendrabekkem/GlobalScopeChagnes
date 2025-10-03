@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="My Topic Block">37d16946c39da654cf1bb11ed4013109</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"98fe90fdb9d84bebb9c692c331059cce","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"98fe90fdb9d84bebb9c692c331059cce"}],"goals":[{"name":"primary","trigger_id":"98fe90fdb9d84bebb9c692c331059cce","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"4368359affb04c85b1bb6fef13f0dc20","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"ebe24b588b7c4d53a0f7795de5a06460","name":"End","expert_mode":false}],"edges":[{"type":"Edge","source_node_id":"4368359affb04c85b1bb6fef13f0dc20","target_node_id":"ebe24b588b7c4d53a0f7795de5a06460","id":"db12f9413a0c47ddb93c34e68a36ec58"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","auto_select":false,"id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"bd98deaf9765311081a6bb46f053af78","library-usage":{"type":"Library","input-parameters":[],"return-values-mapping":[]},"domain":"global","topic_type":"TOPIC_BLOCK","channels":[],"dialog_acts_enabled":false,"id":"c2d16d42c39da654cf1bb11ed4013157","name":"My Topic Block","key_phrases":[],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":true,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"description":"","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"My Topic Block","library":true,"readOnly":true,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>c2d16d42c39da654cf1bb11ed4013157</design_topic_id>
+        <graph>{"graph_api_version":"1.0.74","variables":{},"goals":{"primary":{"id":"primary","trigger":{"type":"primary"},"name":"primary","applicability":"","description":"","nodes":{"4368359affb04c85b1bb6fef13f0dc20":{"id":"4368359affb04c85b1bb6fef13f0dc20","stepType":"Start","name":"Start","greetingResponse":{"mode":"simple","value":""}},"ebe24b588b7c4d53a0f7795de5a06460":{"id":"ebe24b588b7c4d53a0f7795de5a06460","stepType":"TerminateGoal","name":"End","confirmationMessage":{"mode":"simple","value":""}}},"edges":[{"id":"db12f9413a0c47ddb93c34e68a36ec58","edgeType":"Edge","source":"4368359affb04c85b1bb6fef13f0dc20","target":"ebe24b588b7c4d53a0f7795de5a06460","sourcePort":"","targetPort":""}]}}}</graph>
+        <name>My Topic Block</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2025-05-05 12:23:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3fd1e1c6c39da654cf1bb11ed4013172</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_cb_design_topic_3fd1e1c6c39da654cf1bb11ed4013172</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2025-05-05 12:23:56</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

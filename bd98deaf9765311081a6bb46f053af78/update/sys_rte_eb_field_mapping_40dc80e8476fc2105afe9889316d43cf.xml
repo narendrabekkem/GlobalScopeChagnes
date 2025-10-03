@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field_mapping">
     <sys_rte_eb_field_mapping action="INSERT_OR_UPDATE">
         <order>100</order>
-        <referenced_sys_rte_eb_entity/>
-        <source_sys_rte_eb_field display_value="Business Service">41f8c4ec472fc2105afe9889316d4372</source_sys_rte_eb_field>
+        <referenced_sys_rte_eb_entity display_value="Business Service">22878ce8472fc2105afe9889316d4323</referenced_sys_rte_eb_entity>
+        <source_sys_rte_eb_field/>
         <sys_class_name>sys_rte_eb_field_mapping</sys_class_name>
         <sys_created_by>narendranath.reddy</sys_created_by>
         <sys_created_on>2024-07-18 18:20:36</sys_created_on>
         <sys_id>40dc80e8476fc2105afe9889316d43cf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
         <sys_policy/>
@@ -15,8 +15,8 @@
         <sys_rte_eb_entity_mapping display_value="Load Relationship">d93b0464476fc2105afe9889316d4327</sys_rte_eb_entity_mapping>
         <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
         <sys_update_name>sys_rte_eb_field_mapping_40dc80e8476fc2105afe9889316d43cf</sys_update_name>
-        <sys_updated_by>narendranath.reddy</sys_updated_by>
-        <sys_updated_on>2024-07-18 18:20:36</sys_updated_on>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2025-01-28 17:44:41</sys_updated_on>
         <target_sys_rte_eb_field display_value="Parent">d45a8ce0476fc2105afe9889316d43f2</target_sys_rte_eb_field>
     </sys_rte_eb_field_mapping>
 </record_update>

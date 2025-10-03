@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic">
+    <sys_cs_topic action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability>true</applicability>
+        <autopilot_topic>false</autopilot_topic>
+        <cb_topic_id display_value="Dummy Block">3860b14ac3d5e654cf1bb11ed4013171</cb_topic_id>
+        <channels/>
+        <definition>{"id":"3860b14ac3d5e654cf1bb11ed4013171","name":"Dummy Block","system_topic":false,"autopilot_topic":false,"vendor_id":"c2f0b8f187033200246ddd4c97cb0bb9","applicability":"true","categories":[],"key_phrases":["Dummy Block"],"variables":[{"name":"__segment_trigger_2247cf0a00f14828b4cbf37fe3a764ef_done","type":"java.lang.Object","init_value":"false"},{"name":"previous_graph_node","type":"java.lang.Object"}],"fields":[{"type":"Reference","table_name":"sys_user","auto_select":false,"name":"user","unique":false,"key_phrases":[],"mask_type":"NONE","input_format_type":"","list":false,"expert_mode":false,"choices":[],"static_enum_list":[]},{"type":"Boolean","name":"RootDecisionBranch_2844a5149c6b4dd58e75efedd9d51340","unique":false,"default_value":"true","key_phrases":[],"mask_type":"NONE","input_format_type":"","list":false,"expert_mode":false,"choices":[],"static_enum_list":[]},{"type":"String","name":"__silent_StartGoal_50b39e9e7cf2474eb2d94b70ca78644b","unique":false,"key_phrases":[],"mask_type":"NONE","input_format_type":"","list":false,"expert_mode":false,"choices":[],"static_enum_list":[],"encrypt_if_secure":true},{"type":"String","name":"__silent_Decision_RootDecision_a3383f8df2d44660a33f9986e2685eaa","unique":false,"key_phrases":[],"mask_type":"NONE","input_format_type":"","list":false,"expert_mode":false,"choices":[],"static_enum_list":[],"encrypt_if_secure":true},{"type":"String","name":"__silent_Branch_RootDecisionBranch_3cdba22adead47338ce31ff23d08e406","unique":false,"key_phrases":[],"mask_type":"NONE","input_format_type":"","list":false,"expert_mode":false,"choices":[],"static_enum_list":[],"encrypt_if_secure":true},{"type":"String","name":"__silent_TerminateGoal_8d38d4ab29d54c929f719d24ba4236ae","unique":false,"key_phrases":[],"mask_type":"NONE","input_format_type":"","list":false,"expert_mode":false,"choices":[],"static_enum_list":[],"encrypt_if_secure":true}],"actions":[],"tasks":[{"type":"Consumer to system","show_as_button":true,"name":"primary","description":"primary","applicability":"vaVars.__segment_trigger_2247cf0a00f14828b4cbf37fe3a764ef_done==false &amp;&amp; true","mode":"Qmode","key_phrases":[],"greeting_msg":"vaInputs.initialize(\"user\");vaInputs.initialize(\"RootDecisionBranch_2844a5149c6b4dd58e75efedd9d51340\");vaInputs.initialize(\"__silent_Branch_RootDecisionBranch_3cdba22adead47338ce31ff23d08e406\");vaInputs.initialize(\"__silent_TerminateGoal_8d38d4ab29d54c929f719d24ba4236ae\");vaInputs.initialize(\"__silent_StartGoal_50b39e9e7cf2474eb2d94b70ca78644b\");vaInputs.initialize(\"__silent_Decision_RootDecision_a3383f8df2d44660a33f9986e2685eaa\");null;","fields":[{"name":"__silent_Decision_RootDecision_a3383f8df2d44660a33f9986e2685eaa","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"RootDecision_for_goal_primary___RootDecision_a3383f8df2d44660a33f9986e2685eaa\";vaInputs.__silent_Decision_RootDecision_a3383f8df2d44660a33f9986e2685eaa=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"RootDecision_for_goal_primary___RootDecision_a3383f8df2d44660a33f9986e2685eaa\";var ackMsg=null;ackMsg=null;vaInputs.RootDecisionBranch_2844a5149c6b4dd58e75efedd9d51340=true;(function() {vaInputs.__silent_Branch_RootDecisionBranch_3cdba22adead47338ce31ff23d08e406.reset();})();ackMsg;"},{"name":"__silent_Branch_RootDecisionBranch_3cdba22adead47338ce31ff23d08e406","applicable":"(vaVars.previous_graph_node==\"RootDecision_for_goal_primary___RootDecision_a3383f8df2d44660a33f9986e2685eaa\") &amp;&amp; (((vaInputs.RootDecisionBranch_2844a5149c6b4dd58e75efedd9d51340.getValue() == true)))","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"RootDecisionBranch_3cdba22adead47338ce31ff23d08e406___RootDecisionBranch_3cdba22adead47338ce31ff23d08e406\";vaInputs.__silent_Branch_RootDecisionBranch_3cdba22adead47338ce31ff23d08e406=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"RootDecisionBranch_3cdba22adead47338ce31ff23d08e406___RootDecisionBranch_3cdba22adead47338ce31ff23d08e406\";var ackMsg=null;ackMsg=null;(function() {vaInputs.__silent_StartGoal_50b39e9e7cf2474eb2d94b70ca78644b.reset();})();ackMsg;"},{"name":"__silent_StartGoal_50b39e9e7cf2474eb2d94b70ca78644b","applicable":"(vaVars.previous_graph_node==\"RootDecisionBranch_3cdba22adead47338ce31ff23d08e406___RootDecisionBranch_3cdba22adead47338ce31ff23d08e406\")","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"Start___50b39e9e7cf2474eb2d94b70ca78644b\";vaInputs.__silent_StartGoal_50b39e9e7cf2474eb2d94b70ca78644b=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"Start___50b39e9e7cf2474eb2d94b70ca78644b\";var ackMsg=null;ackMsg=null;(function() {vaInputs.__silent_TerminateGoal_8d38d4ab29d54c929f719d24ba4236ae.reset();})();ackMsg;"},{"name":"__silent_TerminateGoal_8d38d4ab29d54c929f719d24ba4236ae","applicable":"(vaVars.previous_graph_node==\"Start___50b39e9e7cf2474eb2d94b70ca78644b\")","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"End___8d38d4ab29d54c929f719d24ba4236ae\";vaInputs.__silent_TerminateGoal_8d38d4ab29d54c929f719d24ba4236ae=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"End___8d38d4ab29d54c929f719d24ba4236ae\";var ackMsg=null;ackMsg=null;vaVars.__segment_trigger_2247cf0a00f14828b4cbf37fe3a764ef_done=true;ackMsg;"}],"variables_update":[]}],"roles":[],"active":true,"published":true,"library":false,"expose_on_palette":false,"palette_label":"","flexible_conversation_switching":false,"design_categories":[],"nlu_provider":"","nlu_model":"","nlu_intent":"","topic_type":"STANDARD","channels":[],"triggerable_by_notification":false,"secure_custom_input_control":false,"foundational":false,"modelType":"nlu_keyword","score":0.0,"visible":true,"discoverable":true,"sys_scope":"bd98deaf9765311081a6bb46f053af78","sys_domain":"global","title":"Dummy Block","nlu_intent_label":"","nlu_model_label":"","dialog_acts_enabled":false,"modify_confirmation_enabled":false}</definition>
+        <description/>
+        <design_category/>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <discoverable>true</discoverable>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <input_variables>[]</input_variables>
+        <is_system_topic>false</is_system_topic>
+        <key_phrases>Dummy Block</key_phrases>
+        <last_published_on>2025-05-05 13:33:35</last_published_on>
+        <library>false</library>
+        <library_usage>null</library_usage>
+        <metaphone/>
+        <model_type>nlu_keyword</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>Dummy Block</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <published>true</published>
+        <roles/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <sys_class_name>sys_cs_topic</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2025-05-05 13:33:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>84d1b58ac319e654cf1bb11ed4013147</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Dummy Block</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_cs_topic_84d1b58ac319e654cf1bb11ed4013147</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2025-05-05 13:33:35</sys_updated_on>
+        <title>Dummy Block</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <vendor display_value="ServiceNow">c2f0b8f187033200246ddd4c97cb0bb9</vendor>
+        <visible>true</visible>
+    </sys_cs_topic>
+    <sys_translated_text action="delete_multiple" query="documentkey=84d1b58ac319e654cf1bb11ed4013147"/>
+</record_update>

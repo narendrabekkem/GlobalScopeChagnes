@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_template">
+    <sys_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <global>false</global>
+        <group/>
+        <groups/>
+        <link_element/>
+        <name>Incident Main Template</name>
+        <next/>
+        <next_child display_value="Incident Tasl 1 Template">adce102ac3d79e50cf1bb11ed4013135</next_child>
+        <roles/>
+        <short_description>Mian incident Template</short_description>
+        <show_on_template_bar>true</show_on_template_bar>
+        <stand_alone>false</stand_alone>
+        <sys_class_name>sys_template</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2025-01-27 10:41:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>da7e5c26c3d79e50cf1bb11ed40131af</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Incident Main Template</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_template_da7e5c26c3d79e50cf1bb11ed40131af</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2025-01-27 10:49:53</sys_updated_on>
+        <table>incident</table>
+        <template>short_description=Mian incident Template^category=software^caller_id=0a826bf03710200044e0bfc8bcbe5d7a^EQ</template>
+        <user display_value="Narendranath Reddy">f0f2932ac3831210cf1bb11ed401312f</user>
+        <view/>
+    </sys_template>
+</record_update>

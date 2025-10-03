@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.validatePIUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>validatePIUtil</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var validatePIUtil = Class.create();
+validatePIUtil.PIStateIBStateMap = {};
+validatePIUtil.PIStateAppServStateMap = {};
+validatePIUtil.prototype = {
+    initialize: function(pid, pistate) {
+        this.pid = pid;
+        this.pistate = pistate;
+    },
+    IsInstallBaseCorrect: function(pid, messages) {
+        var ib = new GlideRecord('sn_install_base_item');
+        ib.addQuery('u_pi_external_id', pid);
+        ib.addQuery('state', 'active');
+        ib.query();
+        if (ib.hasNext()) {
+            if (ib.getRowCount() <= 1) {
+                return true;
+
+            } else {
+                messages = messages + '\n' + 'More than one install Base exists for PID' + pid;
+                return false;
+            }
+
+        } else {
+            messages = messages + '\n' + 'No install Base record exists for PID' + pid;
+            return false;
+        }
+
+
+    },
+    IsAppServiceCorrect: function(pid, messages) {
+        var mas = new GlideRecord('cmdb_ci_service_discovered');
+        mas.addQuery('u_pi_external_id', pid);
+        mas.addQuery('operational_status', 1);
+        mas.query();
+        if (mas.hasNext()) {
+            if (mas.getRowCount() <= 1) {
+
+                return true;
+
+
+            } else {
+                messages = messages + '\n' + 'More than one MappAppService exists for PID' + pid;
+                return false;
+
+            }
+
+        } else {
+            messages = messages + '\n' + 'No MappAppService exists for PID' + pid;
+            return false;
+        }
+
+    },
+    IsServiceAssocCorrect: function(masid, messages) {
+		var validation=true;
+        var logcons = getLogicalConnections(pigr.u_uprn);
+        //check CI association for all logical connections
+        logcons.forEach(function(logcon) {
+            var svc = new GlideRecord('svc_ci_assoc');
+            svc.addQuery('ci_id', logcon);
+            svc.query();
+            if (!svc.hasNext()) {
+                validation= false;
+            }
+			return validation;
+        });
+
+
+
+    },
+    getLogicalConnections: function(uprn) {
+        var logcons = [];
+        var lgr = new GlideRecord('cmdb_ci_ni_logical_path');
+        lgr.addEncodedQuery('site_z.location.u_uprnSTARTSWITH' + uprn);
+        lgr.query();
+        while (lgr.next()) {
+            logcons.push(lgr.sys_id);
+        }
+        return logcons;
+
+    }
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2025-09-05 02:44:55</sys_created_on>
+        <sys_id>9c18f8e9c3b7e610cf1bb11ed40131a5</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>validatePIUtil</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_script_include_9c18f8e9c3b7e610cf1bb11ed40131a5</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2025-09-05 15:32:43</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>9c18f8e9c3b7e610cf1bb11ed40131a5</id>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2025-09-05 02:44:54</sys_created_on>
+        <sys_id>d9e8bc69c3b7e610cf1bb11ed401317b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2025-09-05 02:44:54</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

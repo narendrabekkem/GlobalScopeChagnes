@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[addLoadEvent(setval);
+function setval(){
+g_form.setValue('description','Passed Preferences '+ "${JS,HTML:RP.getWindowProperties().get('table_name')}"+ ': '+record_sys_id+':\n User: '+user);
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint/>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+    <j:set var="jvar_table_name" value="${JS,HTML:RP.getParameterValue('sysparm_table_name')}" />
+    <j:set var="jvar_record_sys_id" value="${JS,HTML:RP.getParameterValue('sysparm_record_sys_id')}" />
+    <g:evaluate var="jvar_user_object">
+        var user={
+        user_name: gs.getUserName(),
+        user_id: gs.getUserID(),
+        user_email: gs.getUser().getEmail()
+        }
+        user;
+    </g:evaluate>
+    <script>
+        var table_name = "${RP.getWindowProperties().get('table_name')}";
+        var record_sys_id = "${jvar_record_sys_id}";
+        var user = "${JSON.stringify(user)}";
+    </script>
+    <h3>"${jvar_table_name}"</h3>
+    <h3>"${jvar_record_sys_id}"</h3>
+</j:jelly>]]></html>
+        <name>TestAccessingUIPageParams</name>
+        <processing_script><![CDATA[var gr= new GlideRecord(table);
+gr.get(recsysid);
+gr.work_notes='test worklog added from UI pages';
+gr.update();]]></processing_script>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2025-01-26 07:35:05</sys_created_on>
+        <sys_id>935a6e8ec3db1250cf1bb11ed401318c</sys_id>
+        <sys_mod_count>87</sys_mod_count>
+        <sys_name>TestAccessingUIPageParams</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_ui_page_935a6e8ec3db1250cf1bb11ed401318c</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2025-04-21 15:35:46</sys_updated_on>
+    </sys_ui_page>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>935a6e8ec3db1250cf1bb11ed401318c</id>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2025-01-26 07:35:49</sys_created_on>
+        <sys_id>c28a2242c31f1250cf1bb11ed401316a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2025-01-26 07:35:49</sys_updated_on>
+        <table>sys_ui_page</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

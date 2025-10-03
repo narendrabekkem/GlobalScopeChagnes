@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic">
+    <sys_cs_topic action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability>true</applicability>
+        <autopilot_topic>false</autopilot_topic>
+        <cb_topic_id display_value="My Topic Block">c2d16d42c39da654cf1bb11ed4013157</cb_topic_id>
+        <channels/>
+        <definition>{"id":"c2d16d42c39da654cf1bb11ed4013157","name":"My Topic Block","system_topic":false,"autopilot_topic":false,"vendor_id":"c2f0b8f187033200246ddd4c97cb0bb9","description":"","applicability":"true","categories":[],"key_phrases":[],"variables":[{"name":"_reusable_topic_outputs_var","type":"java.lang.Object","init_value":"(function execute() {return JSON.stringify({\"populated\":false,\"values\":{}})})()"},{"name":"__segment_trigger_98fe90fdb9d84bebb9c692c331059cce_done","type":"java.lang.Object","init_value":"false"},{"name":"previous_graph_node","type":"java.lang.Object"}],"fields":[{"type":"Reference","table_name":"sys_user","auto_select":false,"name":"user","unique":false,"key_phrases":[],"mask_type":"NONE","input_format_type":"","list":false,"expert_mode":false,"choices":[],"static_enum_list":[]},{"type":"Boolean","name":"RootDecisionBranch_e81d58b4200146c980c8ff02489ce4e8","unique":false,"default_value":"true","key_phrases":[],"mask_type":"NONE","input_format_type":"","list":false,"expert_mode":false,"choices":[],"static_enum_list":[]},{"type":"String","name":"__silent_StartGoal_4368359affb04c85b1bb6fef13f0dc20","unique":false,"key_phrases":[],"mask_type":"NONE","input_format_type":"","list":false,"expert_mode":false,"choices":[],"static_enum_list":[],"encrypt_if_secure":true},{"type":"String","name":"__silent_Branch_RootDecisionBranch_f5209f6ac3df44f3890c231fd84ecd3b","unique":false,"key_phrases":[],"mask_type":"NONE","input_format_type":"","list":false,"expert_mode":false,"choices":[],"static_enum_list":[],"encrypt_if_secure":true},{"type":"String","name":"__silent_TerminateGoal_ebe24b588b7c4d53a0f7795de5a06460","unique":false,"key_phrases":[],"mask_type":"NONE","input_format_type":"","list":false,"expert_mode":false,"choices":[],"static_enum_list":[],"encrypt_if_secure":true},{"type":"String","name":"__silent_Decision_RootDecision_b900122322f9470db3aa1dbc9678e509","unique":false,"key_phrases":[],"mask_type":"NONE","input_format_type":"","list":false,"expert_mode":false,"choices":[],"static_enum_list":[],"encrypt_if_secure":true}],"actions":[],"tasks":[{"type":"Consumer to system","show_as_button":true,"name":"primary","description":"primary","applicability":"vaVars.__segment_trigger_98fe90fdb9d84bebb9c692c331059cce_done==false &amp;&amp; true","mode":"Qmode","key_phrases":[],"greeting_msg":"vaInputs.initialize(\"user\");vaInputs.initialize(\"RootDecisionBranch_e81d58b4200146c980c8ff02489ce4e8\");vaInputs.initialize(\"__silent_TerminateGoal_ebe24b588b7c4d53a0f7795de5a06460\");vaInputs.initialize(\"__silent_Branch_RootDecisionBranch_f5209f6ac3df44f3890c231fd84ecd3b\");vaInputs.initialize(\"__silent_StartGoal_4368359affb04c85b1bb6fef13f0dc20\");vaInputs.initialize(\"__silent_Decision_RootDecision_b900122322f9470db3aa1dbc9678e509\");null;","fields":[{"name":"__silent_Decision_RootDecision_b900122322f9470db3aa1dbc9678e509","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"RootDecision_for_goal_primary___RootDecision_b900122322f9470db3aa1dbc9678e509\";vaInputs.__silent_Decision_RootDecision_b900122322f9470db3aa1dbc9678e509=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"RootDecision_for_goal_primary___RootDecision_b900122322f9470db3aa1dbc9678e509\";var ackMsg=null;ackMsg=null;vaInputs.RootDecisionBranch_e81d58b4200146c980c8ff02489ce4e8=true;(function() {vaInputs.__silent_Branch_RootDecisionBranch_f5209f6ac3df44f3890c231fd84ecd3b.reset();})();ackMsg;"},{"name":"__silent_Branch_RootDecisionBranch_f5209f6ac3df44f3890c231fd84ecd3b","applicable":"(vaVars.previous_graph_node==\"RootDecision_for_goal_primary___RootDecision_b900122322f9470db3aa1dbc9678e509\") &amp;&amp; (((vaInputs.RootDecisionBranch_e81d58b4200146c980c8ff02489ce4e8.getValue() == true)))","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"RootDecisionBranch_f5209f6ac3df44f3890c231fd84ecd3b___RootDecisionBranch_f5209f6ac3df44f3890c231fd84ecd3b\";vaInputs.__silent_Branch_RootDecisionBranch_f5209f6ac3df44f3890c231fd84ecd3b=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"RootDecisionBranch_f5209f6ac3df44f3890c231fd84ecd3b___RootDecisionBranch_f5209f6ac3df44f3890c231fd84ecd3b\";var ackMsg=null;ackMsg=null;(function() {vaInputs.__silent_StartGoal_4368359affb04c85b1bb6fef13f0dc20.reset();})();ackMsg;"},{"name":"__silent_StartGoal_4368359affb04c85b1bb6fef13f0dc20","applicable":"(vaVars.previous_graph_node==\"RootDecisionBranch_f5209f6ac3df44f3890c231fd84ecd3b___RootDecisionBranch_f5209f6ac3df44f3890c231fd84ecd3b\")","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"Start___4368359affb04c85b1bb6fef13f0dc20\";vaInputs.__silent_StartGoal_4368359affb04c85b1bb6fef13f0dc20=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"Start___4368359affb04c85b1bb6fef13f0dc20\";var ackMsg=null;ackMsg=null;(function() {vaInputs.__silent_TerminateGoal_ebe24b588b7c4d53a0f7795de5a06460.reset();})();ackMsg;"},{"name":"__silent_TerminateGoal_ebe24b588b7c4d53a0f7795de5a06460","applicable":"(vaVars.previous_graph_node==\"Start___4368359affb04c85b1bb6fef13f0dc20\")","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"End___ebe24b588b7c4d53a0f7795de5a06460\";vaInputs.__silent_TerminateGoal_ebe24b588b7c4d53a0f7795de5a06460=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"End___ebe24b588b7c4d53a0f7795de5a06460\";var ackMsg=null;ackMsg=null;vaVars.__segment_trigger_98fe90fdb9d84bebb9c692c331059cce_done=true;(function execute() {var tmp={values:{}};tmp.populated=true;vaVars._reusable_topic_outputs_var=JSON.stringify(tmp);})();ackMsg;"}],"variables_update":[]}],"roles":[],"active":true,"published":true,"library":true,"expose_on_palette":false,"palette_label":"My Topic Block","flexible_conversation_switching":true,"design_categories":[],"nlu_provider":"","nlu_model":"","nlu_intent":"","topic_type":"TOPIC_BLOCK","channels":[],"triggerable_by_notification":false,"secure_custom_input_control":false,"foundational":false,"modelType":"nlu_keyword","score":0.0,"visible":false,"discoverable":false,"sys_scope":"bd98deaf9765311081a6bb46f053af78","sys_domain":"global","title":"My Topic Block","nlu_intent_label":"","nlu_model_label":"","dialog_acts_enabled":false,"modify_confirmation_enabled":false}</definition>
+        <description/>
+        <design_category/>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <discoverable>false</discoverable>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>true</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <input_variables>[]</input_variables>
+        <is_system_topic>false</is_system_topic>
+        <key_phrases/>
+        <last_published_on>2025-05-05 12:23:55</last_published_on>
+        <library>true</library>
+        <library_usage>{"type":"Library","input-parameters":[],"return-values-mapping":[]}</library_usage>
+        <metaphone/>
+        <model_type>nlu_keyword</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>My Topic Block</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label>My Topic Block</palette_label>
+        <published>true</published>
+        <roles/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <sys_class_name>sys_cs_topic</sys_class_name>
+        <sys_created_by>narendrabekkem</sys_created_by>
+        <sys_created_on>2025-05-05 12:23:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>37d16946c39da654cf1bb11ed4013109</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Topic Block</sys_name>
+        <sys_package display_value="GlobalScopeChagnes" source="bd98deaf9765311081a6bb46f053af78">bd98deaf9765311081a6bb46f053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GlobalScopeChagnes">bd98deaf9765311081a6bb46f053af78</sys_scope>
+        <sys_update_name>sys_cs_topic_37d16946c39da654cf1bb11ed4013109</sys_update_name>
+        <sys_updated_by>narendrabekkem</sys_updated_by>
+        <sys_updated_on>2025-05-05 12:23:56</sys_updated_on>
+        <title>My Topic Block</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>TOPIC_BLOCK</type>
+        <vendor display_value="ServiceNow">c2f0b8f187033200246ddd4c97cb0bb9</vendor>
+        <visible>false</visible>
+    </sys_cs_topic>
+    <sys_translated_text action="delete_multiple" query="documentkey=37d16946c39da654cf1bb11ed4013109"/>
+</record_update>
